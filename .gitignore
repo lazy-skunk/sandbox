@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+.mypy_cache
+.pytest_cache
+htmlcov
+__pycache__
+.coverage
