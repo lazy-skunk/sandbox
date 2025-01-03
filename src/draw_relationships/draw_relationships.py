@@ -2,7 +2,6 @@ import csv
 import tkinter
 from tkinter import filedialog
 
-import matplotlib.font_manager as font_manager
 import matplotlib.pyplot as pyplot
 import networkx
 
@@ -14,12 +13,8 @@ COLOR_FOR_UG = "lightblue"
 COLOR_FOR_NT_CC = "lightgreen"
 COLOR_FOR_OTHERS = "lightpink"
 
-FONT_PATH = "C:\\Windows\\Fonts\\YuGothM.ttc"
-font_prop = font_manager.FontProperties(fname=FONT_PATH)
-pyplot.rcParams["font.family"] = font_prop.get_name()
 
-
-def read_relationships_from_csv(file_path):
+def read_relationships_from_csv(file_path: str) -> dict[str, list[str]]:
     """
     指定されたCSVファイルから関係性を読み込む。
 
@@ -41,7 +36,7 @@ def read_relationships_from_csv(file_path):
         dict: 読み込んだ関係性を格納した辞書。
               キーは「親ノード」、値は「子ノード」のリストです。
     """
-    relationships = {}
+    relationships: dict[str, list[str]] = {}
 
     with open(file_path, mode="r", encoding="utf-8") as f:
         reader = csv.reader(f)
@@ -54,7 +49,9 @@ def read_relationships_from_csv(file_path):
     return relationships
 
 
-def add_edges_to_graph_from_relationships(user_groups_graph, relationships):
+def add_edges_to_graph_from_relationships(
+    user_groups_graph: networkx.DiGraph, relationships: dict[str, list[str]]
+) -> None:
     """
     与えられた関係性の辞書からグラフにエッジ(辺)を追加します。
 
@@ -81,7 +78,7 @@ def add_edges_to_graph_from_relationships(user_groups_graph, relationships):
             user_groups_graph.add_edge(user_group, sub_group)
 
 
-def get_root_nodes(user_groups_graph):
+def get_root_nodes(user_groups_graph: networkx.DiGraph) -> list[str]:
     """
     有向グラフ(user_groups_graph)からルートノード(入次数が0のノード)を探し、そのリストを返します。
 
@@ -104,7 +101,9 @@ def get_root_nodes(user_groups_graph):
     return root_nodes
 
 
-def set_x_axis_recursively_from_roots(user_groups_graph, root_nodes):
+def set_x_axis_recursively_from_roots(
+    user_groups_graph: networkx.DiGraph, root_nodes: list[str]
+) -> dict[str, tuple[int, float | None]]:
     """
     与えられた有向グラフ(user_groups_graph)とルートノード(root_nodes)に基づいて、
     各ノードの x 座標を再帰的に設定します。
@@ -120,14 +119,19 @@ def set_x_axis_recursively_from_roots(user_groups_graph, root_nodes):
         dict: 各ノードのx座標を格納した辞書
     """
 
-    def _set_x_axis(graph, node, coordinates, x=0):
+    def _set_x_axis(
+        graph: networkx.DiGraph,
+        node: str,
+        coordinates: dict[str, tuple[int, float | None]],
+        x: int = 0,
+    ) -> None:
         """指定されたノードとその子ノードに再帰的に x 座標を設定します。"""
         coordinates[node] = (x, None)
 
         for sub_group in graph.successors(node):
             _set_x_axis(graph, sub_group, coordinates, x + 1)
 
-    coordinates = {}
+    coordinates: dict[str, tuple[int, float | None]] = {}
 
     for root_node in root_nodes:
         _set_x_axis(user_groups_graph, root_node, coordinates)
@@ -135,7 +139,9 @@ def set_x_axis_recursively_from_roots(user_groups_graph, root_nodes):
     return coordinates
 
 
-def build_layer_info_recursively_from_roots(user_groups_graph, root_nodes):
+def build_layer_info_recursively_from_roots(
+    user_groups_graph: networkx.DiGraph, root_nodes: list[str]
+) -> dict[int, list[str]]:
     """
     与えられた有向グラフ(user_groups_graph)とルートノード(root_nodes)に基づいて、
     各ノードがどの「層(レイヤー)」に属するかの情報を再帰的に生成します。
@@ -152,7 +158,12 @@ def build_layer_info_recursively_from_roots(user_groups_graph, root_nodes):
       値がその「層」に属するノードのリストとなる辞書
     """
 
-    def _build_layers(graph, node, layer_nodes, x=0):
+    def _build_layers(
+        graph: networkx.DiGraph,
+        node: str,
+        layer_nodes: dict[int, set[str]],
+        x: int = 0,
+    ) -> None:
         if x not in layer_nodes:
             layer_nodes[x] = set()
 
@@ -161,18 +172,18 @@ def build_layer_info_recursively_from_roots(user_groups_graph, root_nodes):
         for sub_group in graph.successors(node):
             _build_layers(graph, sub_group, layer_nodes, x + 1)
 
-    layer_nodes = {}
+    layer_nodes: dict[int, set[str]] = {}
 
     for root_node in root_nodes:
         _build_layers(user_groups_graph, root_node, layer_nodes)
 
-    for x, nodes in layer_nodes.items():
-        layer_nodes[x] = list(nodes)
-
-    return layer_nodes
+    return {x: list(nodes) for x, nodes in layer_nodes.items()}
 
 
-def set_y_axis(nodes_per_layer, coordinates):
+def set_y_axis(
+    nodes_per_layer: dict[int, list[str]],
+    coordinates: dict[str, tuple[int, float | None]],
+) -> None:
     """
     各ノードのy座標を設定します。各「層(レイヤー)」に属するノードが等間隔で配置されるようにy座標を計算します。
 
@@ -197,7 +208,7 @@ def set_y_axis(nodes_per_layer, coordinates):
             coordinates[node] = (x, y)
 
 
-def set_node_colors(user_groups_graph):
+def set_node_colors(user_groups_graph: networkx.DiGraph) -> list[str]:
     """
     各ノードに適切な色を割り当てます。具体的には以下の条件に基づいてノードの色を設定します：
 
@@ -208,11 +219,12 @@ def set_node_colors(user_groups_graph):
 
     各ノードに割り当てられた色は、リスト形式で返されます。
     """
-    node_colors = []
+    node_colors: list[str] = []
 
     for node in user_groups_graph.nodes():
         if "UG-" not in node and any(
-            "UG-" in super_group for super_group in user_groups_graph.predecessors(node)
+            "UG-" in super_group
+            for super_group in user_groups_graph.predecessors(node)
         ):
             node_colors.append(COLOR_FOR_SUSPICIOUS_NODE)
         elif "UG-" in node:
@@ -225,33 +237,44 @@ def set_node_colors(user_groups_graph):
     return node_colors
 
 
-def draw_graph(user_groups_graph, coordinates, node_colors):
+def draw_graph(
+    user_groups_graph: networkx.DiGraph,
+    coordinates: dict[str, tuple[int, float | None]],
+    node_colors: list[str],
+) -> None:
     """ユーザーグループの関連性を表す有向グラフを描画します。"""
 
-    def draw_graph_elements(user_groups_graph, coordinates, node_colors):
+    def draw_graph_elements(
+        graph: networkx.DiGraph,
+        coords: dict[str, tuple[int, float | None]],
+        colors: list[str],
+    ) -> None:
         """グラフの主要な要素を描画する"""
         networkx.draw(
             user_groups_graph,
             coordinates,
             with_labels=True,
-            font_family=font_prop.get_name(),
             node_color=node_colors,
             edge_color="lightgray",
             arrows=True,
             node_shape="o",
         )
 
-    def set_legend():
+    def set_legend() -> None:
         """凡例を設定する"""
-        pyplot.scatter([], [], c=COLOR_FOR_UG, label="集約UG")
+        pyplot.scatter([], [], c=COLOR_FOR_UG, label="aggregated UG")
         pyplot.scatter([], [], c=COLOR_FOR_NT_CC, label="NT, CC")
-        pyplot.scatter([], [], c=COLOR_FOR_OTHERS, label="その他")
+        pyplot.scatter([], [], c=COLOR_FOR_OTHERS, label="other")
         pyplot.scatter(
-            [], [], c=COLOR_FOR_SUSPICIOUS_NODE, label="怪しいノード（集約 UG から接続された「その他」のノード）"
+            [],
+            [],
+            c=COLOR_FOR_SUSPICIOUS_NODE,
+            label="Suspicious node (a node categorized as 'Others'"
+            " connected from an aggregated UG)",
         )
         pyplot.legend()
 
-    def set_caption():
+    def set_caption() -> None:
         """補足説明を設定する"""
         x_limit = pyplot.xlim()
         y_limit = pyplot.ylim()
@@ -262,7 +285,8 @@ def draw_graph(user_groups_graph, coordinates, node_colors):
         pyplot.text(
             x_axis_for_text,
             y_axis_for_text,
-            "各ノードから見て左側にいるやつが親で、右側がサブグループ",
+            "The left side of each node represents its parent,"
+            " and the right side represents its subgroups.",
             fontsize=12,
             ha="left",
             va="top",
@@ -274,7 +298,7 @@ def draw_graph(user_groups_graph, coordinates, node_colors):
     pyplot.show()
 
 
-def main():
+def main() -> None:
     """
     主処理を行う関数。
     1. ユーザーが選択したCSVファイルから関連性データを読み込む。
@@ -293,7 +317,7 @@ def main():
     - グラフを描画。
     """
     file_path = filedialog.askopenfilename(
-        title="CSV を選んでください。", filetypes=[("CSV files", "*.csv")]
+        title="Select CSV file.", filetypes=[("CSV files", "*.csv")]
     )
 
     if not file_path:
@@ -306,7 +330,9 @@ def main():
 
     root_nodes = get_root_nodes(user_groups_graph)
 
-    coordinates = set_x_axis_recursively_from_roots(user_groups_graph, root_nodes)
+    coordinates = set_x_axis_recursively_from_roots(
+        user_groups_graph, root_nodes
+    )
     nodes_per_layer = build_layer_info_recursively_from_roots(
         user_groups_graph, root_nodes
     )
@@ -319,10 +345,10 @@ def main():
 
 # GUI の設定
 root = tkinter.Tk()
-root.title("関連図を描画します。")
+root.title("Draw Relationships")
 button = tkinter.Button(
     root,
-    text="CSV を選んで関連図を描画します。",
+    text="Select CSV file.",
     width=50,
     height=10,
     command=main,
