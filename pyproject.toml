@@ -16,6 +16,7 @@ dependencies = [
   "flask",
   "tabulate",
   "types-tabulate",
+  "sqlglot",
 ]
 requires-python = ">= 3.12"
 authors = [
