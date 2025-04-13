@@ -1,110 +1,227 @@
+from datetime import datetime, timedelta
 from itertools import product
-from typing import Any
+from pathlib import Path
+from typing import Any, TypedDict
 
-import pandas
-from pandas import DataFrame
+import pandas as pd
+
+_now = datetime.now()
 
 
-def generate_data_frame(
+class TableMeta(TypedDict):
+    schema_name: str
+    table_name: str
+    join_key_column: str
+    column_value_map: dict[str, list[Any]]
+
+
+def _generate_date_variations() -> dict[str, str]:
+    FORMAT = "%Y%m%d"
+    now = datetime.now()
+
+    return {
+        "today": now.strftime(FORMAT),
+        "yesterday": (now - timedelta(days=1)).strftime(FORMAT),
+        "tomorrow": (now + timedelta(days=1)).strftime(FORMAT),
+        "30_days_ago": (now - timedelta(days=30)).strftime(FORMAT),
+        "1_year_ago": (now - timedelta(days=365)).strftime(FORMAT),
+        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(FORMAT),
+        "10_years_ago": (now - timedelta(days=365 * 10)).strftime(FORMAT),
+    }
+
+
+def _generate_cartesian_df_from_column_value_map(
     column_value_map: dict[str, list[Any]],
-) -> DataFrame:
+) -> pd.DataFrame:
     column_names = list(column_value_map.keys())
-    value_combinations = [
+    value_lists = [
         column_value_map[column_name] for column_name in column_names
     ]
-    exhaustive_data_frame = DataFrame(
-        product(*value_combinations), columns=column_names
-    )
-    return exhaustive_data_frame
+    cartesian_df = pd.DataFrame(product(*value_lists), columns=column_names)
+
+    return cartesian_df
 
 
-def cross_join(
-    left_data_frame: DataFrame, right_data_frame: DataFrame
-) -> DataFrame:
+def _cross_join_dfs(dfs: list[pd.DataFrame]) -> pd.DataFrame:
     CROSS_JOIN_KEY = "_cross_join_key"
     DUMMY_VALUE = 0
-    left_data_frame[CROSS_JOIN_KEY] = DUMMY_VALUE
-    right_data_frame[CROSS_JOIN_KEY] = DUMMY_VALUE
 
-    cross_joined_data_frame = pandas.merge(
-        left_data_frame, right_data_frame, on=CROSS_JOIN_KEY
-    )
-    cross_joined_data_frame = cross_joined_data_frame.drop(
-        columns=CROSS_JOIN_KEY
-    )
+    left_df = dfs[0]
+    for right_df in dfs[1:]:
+        left_df[CROSS_JOIN_KEY] = DUMMY_VALUE
+        right_df[CROSS_JOIN_KEY] = DUMMY_VALUE
 
-    return cross_joined_data_frame
+        cross_joined_df = pd.merge(left_df, right_df, on=CROSS_JOIN_KEY)
+        left_df = cross_joined_df.drop(columns=CROSS_JOIN_KEY)
 
-
-def generate_exhaustive_combinations(
-    data_frames: list[DataFrame],
-) -> DataFrame:
-    base_data_frame = data_frames[0]
-    for data_frame in data_frames[1:]:
-        base_data_frame = cross_join(base_data_frame, data_frame)
-
-    return base_data_frame
+    return left_df
 
 
-def split_combined_data_frame(
-    combined_data_frame: DataFrame,
-    original_data_dicts: list[dict[str, list[Any]]],
-) -> list[DataFrame]:
-    split_data_frames = []
-    for data_dict in original_data_dicts:
-        column_names = list(data_dict.keys())
-        split_data_frame = combined_data_frame[column_names].copy()
-        split_data_frames.append(split_data_frame)
+def _split_df_by_table_meta(
+    combined_df: pd.DataFrame, tables_meta: list[TableMeta]
+) -> list[pd.DataFrame]:
+    split_dfs = []
+    for table_meta in tables_meta:
+        column_names = list(table_meta["column_value_map"].keys())
+        split_dfs.append(combined_df[column_names])
 
-    return split_data_frames
+    return split_dfs
 
 
-def add_sequential_id_column(
-    data_frame: DataFrame, column_name: str = "_sequential_id"
-) -> DataFrame:
-    data_frame[column_name] = range(1, len(data_frame) + 1)
-    return data_frame
+def _assign_join_key_values(
+    df: pd.DataFrame, column_name: str
+) -> pd.DataFrame:
+    # https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+    df.loc[:, column_name] = range(1, len(df) + 1)
+    return df
+
+
+def _prepare_output_file_path(table_meta: TableMeta, extension: str) -> Path:
+    base_dir = Path("src/test_data")
+    base_dir.mkdir(parents=True, exist_ok=True)
+
+    schema_name = table_meta["schema_name"]
+    table_name = table_meta["table_name"]
+    file_name = f"{schema_name}_{table_name}.{extension}"
+
+    file_path = base_dir / file_name
+
+    return file_path
+
+
+def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
+    def _format_value(value: Any) -> str:
+        if pd.isna(value):
+            return "NULL"
+        elif isinstance(value, str):
+            return f"'{value}'"
+        elif isinstance(value, bool):
+            return "TRUE" if value else "FALSE"
+        return str(value)
+
+    rows = [
+        "(" + ", ".join(_format_value(cell) for cell in row) + ")"
+        for row in df.itertuples(index=False, name=None)
+    ]
+    insert_values = ",\n".join(rows)
+
+    return insert_values
+
+
+def _save_insert_sql_to_file(
+    df: pd.DataFrame, table_name: str, file_path: Path
+) -> None:
+    columns = ", ".join(df.columns)
+    values = _convert_df_to_sql_insert_values(df)
+    sql = f"INSERT INTO {table_name} ({columns})\nVALUES\n{values};"
+    file_path.write_text(sql, encoding="utf-8")
 
 
 def example() -> None:
-    data_dicts = []
-    table_1_data: dict[str, list[Any]] = {
-        "table_1_col_1": ["い", "ろ", "は"],
-        "table_1_col_2": [1],
-        "table_1_col_3": [True, False, None],
-    }
-    data_dicts.append(table_1_data)
+    date_variations = _generate_date_variations()
 
-    table_2_data: dict[str, list[Any]] = {
-        "table_2_col_1": ["イ", "ロ"],
-        "table_2_col_2": [10, 20],
-        "table_2_col_3": [True, False, None],
-    }
-    data_dicts.append(table_2_data)
+    tables_meta: list[TableMeta] = [
+        {
+            "schema_name": "sandbox",
+            "table_name": "table_1",
+            "join_key_column": "table_1_join_key_column",
+            "column_value_map": {
+                "table_1_join_key_column": [""],
+                "table_1_col_1": ["い", "ろ", "は"],
+                "table_1_col_2": [1],
+                "table_1_col_3": [True, False, None],
+                "datetime": [
+                    date_variations["today"],
+                    date_variations["yesterday"],
+                ],
+            },
+        },
+        {
+            "schema_name": "sandbox",
+            "table_name": "table_2",
+            "join_key_column": "table_2_join_key_column",
+            "column_value_map": {
+                "table_2_join_key_column": [""],
+                "table_2_col_1": ["イ", "ロ"],
+                "table_2_col_2": [10, 20],
+                "table_2_col_3": [True, False, None],
+            },
+        },
+        {
+            "schema_name": "sandbox",
+            "table_name": "table_3",
+            "join_key_column": "table_3_join_key_column",
+            "column_value_map": {
+                "table_3_join_key_column": [""],
+                "table_3_col_1": ["i"],
+                "table_3_col_2": [100, 200, 300],
+                "table_3_col_3": [True, False, None],
+            },
+        },
+    ]
 
-    table_3_data: dict[str, list[Any]] = {
-        "table_3_col_1": ["i"],
-        "table_3_col_2": [100, 200, 300],
-        "table_3_col_3": [True, False, None],
-    }
-    data_dicts.append(table_3_data)
+    cartesian_dfs = [
+        _generate_cartesian_df_from_column_value_map(
+            table_meta["column_value_map"]
+        )
+        for table_meta in tables_meta
+    ]
 
-    original_data_frames = []
-    for data_dict in data_dicts:
-        data_frame = generate_data_frame(data_dict)
-        original_data_frames.append(data_frame)
+    # 全網羅のデータを組み合わせた場合の件数を知りたいので結合する。
+    combined_cartesian_df = _cross_join_dfs(cartesian_dfs)
 
-    combined_data_frame = generate_exhaustive_combinations(
-        original_data_frames
+    # 各テーブルの挿入データを作るため、分解する。
+    split_cartesian_dfs = _split_df_by_table_meta(
+        combined_cartesian_df, tables_meta
     )
 
-    split_data_frames = split_combined_data_frame(
-        combined_data_frame, data_dicts
-    )
-    for i, data_frame in enumerate(split_data_frames, 1):
-        data_frame_id_attached = add_sequential_id_column(data_frame)
-        print(data_frame_id_attached)
-        data_frame.to_csv(f"output{i}.csv", index=False, encoding="utf-8")
+    dfs_to_create_expected_df = []
+    for table_meta, split_cartesian_df in zip(
+        tables_meta, split_cartesian_dfs
+    ):
+        # テーブル結合用の列に共通の番号を付与する。
+        joined_key_assigned_df = _assign_join_key_values(
+            split_cartesian_df, table_meta["join_key_column"]
+        )
+
+        dfs_to_create_expected_df.append(joined_key_assigned_df)
+
+        csv_file_path = _prepare_output_file_path(table_meta, "csv")
+        joined_key_assigned_df.to_csv(
+            csv_file_path, index=False, encoding="utf-8"
+        )
+
+        sql_file_path = _prepare_output_file_path(table_meta, "sql")
+        _save_insert_sql_to_file(
+            joined_key_assigned_df, table_meta["table_name"], sql_file_path
+        )
+
+    expected_df = dfs_to_create_expected_df[0]
+
+    for df, table_meta in zip(dfs_to_create_expected_df[1:], tables_meta[1:]):
+        expected_df = pd.merge(
+            expected_df,
+            df,
+            left_on=tables_meta[0]["join_key_column"],
+            right_on=table_meta["join_key_column"],
+            how="inner",
+        )
+
+    exclude_conditions = {
+        "all_col3_null": (
+            expected_df["table_1_col_3"].isna()
+            & expected_df["table_2_col_3"].isna()
+            & expected_df["table_3_col_3"].isna()
+        ),
+        "today_is_invalid": expected_df["datetime"]
+        == date_variations["today"],
+    }
+    for exclude_condition in exclude_conditions.values():
+        remaining_rows = ~exclude_condition
+        expected_df = expected_df.loc[remaining_rows]
+
+    expected_df_path = Path("src/test_data/expected_df.csv")
+    expected_df.to_csv(expected_df_path, index=False, encoding="utf-8")
 
 
 if __name__ == "__main__":
