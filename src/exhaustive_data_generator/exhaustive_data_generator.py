@@ -30,6 +30,24 @@ def _generate_date_variations() -> dict[str, str]:
     }
 
 
+def _estimate_combination_count(tables_meta: list[TableMeta]) -> None:
+    total_combination_count = 1
+
+    for table_meta in tables_meta:
+        table_name = f"{table_meta['schema_name']}.{table_meta['table_name']}"
+        table_combination_count = 1
+        print(f"{table_name=}")
+
+        for column_values in table_meta["column_value_map"].values():
+            num_values = len(column_values)
+            table_combination_count *= num_values
+
+        print(f"  {table_combination_count=:,} patterns")
+        total_combination_count *= table_combination_count
+
+    print(f"{total_combination_count=:,} total patterns")
+
+
 def _generate_cartesian_df_from_column_value_map(
     column_value_map: dict[str, list[Any]],
 ) -> pd.DataFrame:
@@ -77,7 +95,7 @@ def _assign_join_key_values(
 
 
 def _prepare_output_file_path(table_meta: TableMeta, extension: str) -> Path:
-    base_dir = Path("src/test_data")
+    base_dir = Path("src/exhaustive_data_generator/output")
     base_dir.mkdir(parents=True, exist_ok=True)
 
     schema_name = table_meta["schema_name"]
@@ -128,7 +146,7 @@ def example() -> None:
             "column_value_map": {
                 "table_1_join_key_column": [""],
                 "table_1_col_1": ["い", "ろ", "は"],
-                "table_1_col_2": [1],
+                "table_1_col_2": [1, 2, 3, 4, 5, 6, 7, 8, 9],
                 "table_1_col_3": [True, False, None],
                 "datetime": [
                     date_variations["today"],
@@ -143,7 +161,7 @@ def example() -> None:
             "column_value_map": {
                 "table_2_join_key_column": [""],
                 "table_2_col_1": ["イ", "ロ"],
-                "table_2_col_2": [10, 20],
+                "table_2_col_2": [10, 20, 30, 40, 50, 60],
                 "table_2_col_3": [True, False, None],
             },
         },
@@ -159,6 +177,8 @@ def example() -> None:
             },
         },
     ]
+
+    _estimate_combination_count(tables_meta)
 
     cartesian_dfs = [
         _generate_cartesian_df_from_column_value_map(
@@ -220,7 +240,9 @@ def example() -> None:
         remaining_rows = ~exclude_condition
         expected_df = expected_df.loc[remaining_rows]
 
-    expected_df_path = Path("src/test_data/expected_df.csv")
+    expected_df_path = Path(
+        "src/exhaustive_data_generator/output/expected_df.csv"
+    )
     expected_df.to_csv(expected_df_path, index=False, encoding="utf-8")
 
 
