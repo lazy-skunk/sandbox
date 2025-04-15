@@ -30,7 +30,7 @@ def _generate_date_variations() -> dict[str, str]:
     }
 
 
-def _estimate_combination_count(tables_meta: list[TableMeta]) -> None:
+def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
     total_combination_count = 1
 
     for table_meta in tables_meta:
@@ -46,6 +46,7 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> None:
         total_combination_count *= table_combination_count
 
     print(f"{total_combination_count=:,} total patterns")
+    return total_combination_count
 
 
 def _generate_cartesian_df_from_column_value_map(
@@ -58,6 +59,18 @@ def _generate_cartesian_df_from_column_value_map(
     cartesian_df = pd.DataFrame(product(*value_lists), columns=column_names)
 
     return cartesian_df
+
+
+def _generate_pseudo_joined_df(
+    column_value_map: dict[str, list[Any]], total_combinations: int
+) -> pd.DataFrame:
+    cartesian_df = _generate_cartesian_df_from_column_value_map(
+        column_value_map
+    )
+    table_pattern_count = len(cartesian_df)
+    repetition = total_combinations // table_pattern_count
+    repeated_df = pd.concat([cartesian_df] * repetition, ignore_index=True)
+    return repeated_df
 
 
 def _cross_join_dfs(dfs: list[pd.DataFrame]) -> pd.DataFrame:
@@ -146,7 +159,7 @@ def example() -> None:
             "column_value_map": {
                 "table_1_join_key_column": [""],
                 "table_1_col_1": ["い", "ろ", "は"],
-                "table_1_col_2": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                "table_1_col_2": [1],
                 "table_1_col_3": [True, False, None],
                 "datetime": [
                     date_variations["today"],
@@ -161,7 +174,7 @@ def example() -> None:
             "column_value_map": {
                 "table_2_join_key_column": [""],
                 "table_2_col_1": ["イ", "ロ"],
-                "table_2_col_2": [10, 20, 30, 40, 50, 60],
+                "table_2_col_2": [10, 20],
                 "table_2_col_3": [True, False, None],
             },
         },
@@ -178,7 +191,16 @@ def example() -> None:
         },
     ]
 
-    _estimate_combination_count(tables_meta)
+    total_combinations = _estimate_combination_count(tables_meta)
+
+    pseudo_joined_dfs = [
+        _generate_pseudo_joined_df(
+            table_meta["column_value_map"], total_combinations
+        )
+        for table_meta in tables_meta
+    ]
+    for i, df in enumerate(pseudo_joined_dfs, 1):
+        df.to_csv(f"{i}.csv", index=False)
 
     cartesian_dfs = [
         _generate_cartesian_df_from_column_value_map(
