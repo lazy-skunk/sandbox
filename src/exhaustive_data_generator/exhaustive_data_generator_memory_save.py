@@ -1,9 +1,19 @@
+import logging
+import sys
 from datetime import datetime, timedelta
 from itertools import cycle, product
 from pathlib import Path
-from typing import Any, Generator, Hashable, TypedDict
+from typing import Any, Generator, TypedDict
 
 import pandas as pd
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(module)s.%(funcName)s - %(message)s",  # noqa E501
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
+_logger = logging.getLogger(__name__)
 
 
 class TableMeta(TypedDict):
@@ -14,17 +24,15 @@ class TableMeta(TypedDict):
 
 
 def _generate_date_variations() -> dict[str, str]:
-    FORMAT = "%Y%m%d"
+    YEAR = "%Y"
     now = datetime.now()
 
     return {
-        "today": now.strftime(FORMAT),
-        "yesterday": (now - timedelta(days=1)).strftime(FORMAT),
-        "tomorrow": (now + timedelta(days=1)).strftime(FORMAT),
-        "30_days_ago": (now - timedelta(days=30)).strftime(FORMAT),
-        "1_year_ago": (now - timedelta(days=365)).strftime(FORMAT),
-        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(FORMAT),
-        "10_years_ago": (now - timedelta(days=365 * 10)).strftime(FORMAT),
+        "today": now.strftime(YEAR),
+        "yesterday": (now - timedelta(days=1)).strftime(YEAR),
+        "tomorrow": (now + timedelta(days=1)).strftime(YEAR),
+        "30_days_ago": (now - timedelta(days=30)).strftime(YEAR),
+        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(YEAR),
     }
 
 
@@ -32,66 +40,66 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
     total_combination_count = 1
 
     for table_meta in tables_meta:
+        schema = table_meta["schema_name"]
+        table = table_meta["table_name"]
+        table_full_name = f"{schema}.{table}"
+
         table_combination_count = 1
+        for column, values in table_meta["column_value_map"].items():
+            value_count = len(values)
+            table_combination_count *= value_count
 
-        for column_values in table_meta["column_value_map"].values():
-            table_combination_count *= len(column_values)
-
+        _logger.debug(
+            f"{table_full_name} の組み合わせ数: {table_combination_count:,}"
+        )
         total_combination_count *= table_combination_count
 
     return total_combination_count
 
 
-def _generate_cartesian_df_from_column_value_map(
-    column_value_map: dict[str, list[Any]],
-) -> pd.DataFrame:
+def _generate_pseudo_joined_rows(
+    table_meta: TableMeta,
+    total_combinations: int,
+) -> Generator[dict[str, Any], Any, None]:
+    column_value_map = table_meta["column_value_map"]
+    join_key_column = table_meta["join_key_column"]
+
     column_names = list(column_value_map.keys())
     value_lists = [column_value_map[name] for name in column_names]
-    return pd.DataFrame(product(*value_lists), columns=column_names)
+    cartesian_iter = product(*value_lists)
 
+    for i, values in enumerate(cycle(cartesian_iter), 1):
+        if i > total_combinations:
+            break
 
-def _generate_pseudo_joined_rows(
-    column_value_map: dict[str, list[Any]],
-    total_combinations: int,
-    join_key_column: str | None = None,
-) -> Generator[dict[Hashable, Any], Any, None]:
-    base_df = _generate_cartesian_df_from_column_value_map(column_value_map)
-    repeated_iter = cycle(base_df.to_dict(orient="records"))
-
-    for i in range(1, total_combinations + 1):
-        row = next(repeated_iter)
+        row = dict(zip(column_names, values))
 
         if join_key_column:
-            row = row.copy()
             row[join_key_column] = i
+
         yield row
 
 
 def _write_pseudo_joined_csv(
-    column_value_map: dict[str, list[Any]],
+    table_meta: TableMeta,
     total_combinations: int,
-    output_path: Path,
-    join_key_column: str | None = None,
-    batch_size: int = 100_000,
+    file_path: Path,
+    batch_size: int = 10_000,
 ) -> None:
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    rows = _generate_pseudo_joined_rows(
-        column_value_map, total_combinations, join_key_column
-    )
+    rows = _generate_pseudo_joined_rows(table_meta, total_combinations)
     buffer = []
-    with output_path.open("w", encoding="utf-8") as f:
+    with file_path.open("w", encoding="utf-8") as file:
         for i, row in enumerate(rows, 1):
             buffer.append(row)
 
             if i % batch_size == 0:
                 pd.DataFrame(buffer).to_csv(
-                    f, index=False, header=(i == batch_size)
+                    file, index=False, header=(i == batch_size)
                 )
                 buffer.clear()
         if buffer:
             pd.DataFrame(buffer).to_csv(
-                f, index=False, header=(i < batch_size)
+                file, index=False, header=(i < batch_size)
             )
 
 
@@ -106,48 +114,41 @@ def _format_sql_value(value: Any) -> str:
 
 
 def _write_pseudo_joined_sql(
-    column_value_map: dict[str, list[Any]],
+    table_meta: TableMeta,
     total_combinations: int,
-    table_name: str,
-    output_path: Path,
-    join_key_column: str | None = None,
+    file_path: Path,
     batch_size: int = 100_000,
 ) -> None:
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    rows = _generate_pseudo_joined_rows(
-        column_value_map, total_combinations, join_key_column
-    )
+    column_value_map = table_meta["column_value_map"]
+    schema_name = table_meta["schema_name"]
+    table_name = table_meta["table_name"]
+    rows = _generate_pseudo_joined_rows(table_meta, total_combinations)
 
     column_names = list(column_value_map.keys())
-    if join_key_column and join_key_column not in column_names:
-        column_names = [join_key_column] + column_names
-
     column_list_sql = ", ".join(column_names)
 
-    with output_path.open("w", encoding="utf-8") as f:
+    with file_path.open("w", encoding="utf-8") as f:
         buffer = []
         for i, row in enumerate(rows, 1):
             values = [_format_sql_value(row[col]) for col in column_names]
             buffer.append(f"({', '.join(values)})")
 
             if i % batch_size == 0:
-                insert_stmt = (
-                    f"INSERT INTO {table_name} ({column_list_sql})\nVALUES\n"
-                )
+                insert_stmt = f"INSERT INTO\n{schema_name}.{table_name}"
+                insert_stmt += f" ({column_list_sql})\nVALUES\n"
                 insert_stmt += ",\n".join(buffer) + ";\n\n"
                 f.write(insert_stmt)
                 buffer.clear()
 
         if buffer:
-            insert_stmt = (
-                f"INSERT INTO {table_name} ({column_list_sql})\nVALUES\n"
-            )
+            insert_stmt = f"INSERT INTO\n{schema_name}.{table_name}"
+            insert_stmt += f" ({column_list_sql})\nVALUES\n"
             insert_stmt += ",\n".join(buffer) + ";\n\n"
             f.write(insert_stmt)
 
 
-def example() -> None:
+def main() -> None:
+    _logger.info("開始")
     date_variations = _generate_date_variations()
 
     tables_meta: list[TableMeta] = [
@@ -158,7 +159,7 @@ def example() -> None:
             "column_value_map": {
                 "table_1_join_key_column": [""],
                 "table_1_col_1": ["い", "ろ", "は"],
-                "table_1_col_2": list(range(1, 10)),
+                "table_1_col_2": list(range(1, 10, 5)),
                 "table_1_col_3": [True, False, None],
                 "datetime": list(date_variations.values()),
             },
@@ -170,7 +171,7 @@ def example() -> None:
             "column_value_map": {
                 "table_2_join_key_column": [""],
                 "table_2_col_1": ["イ", "ロ"],
-                "table_2_col_2": list(range(10, 100, 10)),
+                "table_2_col_2": list(range(10, 100, 50)),
                 "table_2_col_3": [True, False, None],
                 "datetime": list(date_variations.values()),
             },
@@ -182,7 +183,7 @@ def example() -> None:
             "column_value_map": {
                 "table_3_col_1": ["i"],
                 "table_3_join_key_column": [""],
-                "table_3_col_2": list(range(100, 1000, 100)),
+                "table_3_col_2": list(range(100, 1000, 500)),
                 "table_3_col_3": [True, False, None],
                 "datetime": list(date_variations.values()),
             },
@@ -190,29 +191,27 @@ def example() -> None:
     ]
 
     total_combinations = _estimate_combination_count(tables_meta)
+    _logger.info(f"全体の組み合わせ総数: {total_combinations:,}")
+
+    base_dir = Path("src/exhaustive_data_generator/output")
+    base_dir.mkdir(parents=True, exist_ok=True)
 
     for table_meta in tables_meta:
-        output_path = Path(
-            f"src/exhaustive_data_generator/output/{table_meta['schema_name']}_{table_meta['table_name']}.csv"
-        )
-        _write_pseudo_joined_csv(
-            table_meta["column_value_map"],
-            total_combinations,
-            output_path,
-            join_key_column=table_meta["join_key_column"],
-        )
+        schema_name = table_meta["schema_name"]
+        table_name = table_meta["table_name"]
 
-        sql_output_path = Path(
-            f"src/exhaustive_data_generator/output/{table_meta['schema_name']}_{table_meta['table_name']}.sql"
-        )
-        _write_pseudo_joined_sql(
-            column_value_map=table_meta["column_value_map"],
-            total_combinations=total_combinations,
-            table_name=table_meta["table_name"],
-            output_path=sql_output_path,
-            join_key_column=table_meta["join_key_column"],
-        )
+        csv_file_name = f"{schema_name}_{table_name}.csv"
+        csv_file_path = Path(base_dir / csv_file_name)
+        _logger.info(f"{csv_file_path} を作成します。")
+        _write_pseudo_joined_csv(table_meta, total_combinations, csv_file_path)
+        _logger.info(f"{csv_file_path} を作成しました。")
+
+        sql_file_name = f"{schema_name}_{table_name}.sql"
+        sql_file_path = Path(base_dir / sql_file_name)
+        _logger.info(f"{sql_file_path} を作成します。")
+        _write_pseudo_joined_sql(table_meta, total_combinations, sql_file_path)
+        _logger.info(f"{sql_file_path} を作成しました。")
 
 
 if __name__ == "__main__":
-    example()
+    main()
