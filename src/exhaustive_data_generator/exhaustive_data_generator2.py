@@ -134,18 +134,18 @@ def _create_expected_csv(
             how="inner",
         )
 
-    exclude_conditions = {
-        "all_col3_null": (
-            expected_df["table_1_col_3"].isna()
-            & expected_df["table_2_col_3"].isna()
-            & expected_df["table_3_col_3"].isna()
-        ),
-        "today_is_invalid": expected_df["datetime"]
-        == date_variations["today"],
-    }
-
-    for condition in exclude_conditions.values():
-        expected_df = expected_df.loc[~condition]
+    must_include_condition = (
+        (expected_df["table_1_col_3"] == True)
+        & (expected_df["table_2_col_3"] == True)
+        & (expected_df["table_3_col_3"] == True)
+    )
+    columns_to_keep = [
+        "table_1_col_1",
+        "table_2_col_2",
+        "table_3_col_3",
+        "datetime",
+    ]
+    expected_df = expected_df.loc[must_include_condition, columns_to_keep]
 
     expected_df_path = Path(
         "src/exhaustive_data_generator/output/expected_df.csv"
