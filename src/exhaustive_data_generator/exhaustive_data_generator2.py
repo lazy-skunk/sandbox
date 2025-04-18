@@ -5,8 +5,6 @@ from typing import Any, TypedDict
 
 import pandas as pd
 
-_now = datetime.now()
-
 
 class TableMeta(TypedDict):
     schema_name: str
@@ -16,17 +14,17 @@ class TableMeta(TypedDict):
 
 
 def _generate_date_variations() -> dict[str, str]:
-    FORMAT = "%Y%m%d"
+    YEAR = "%Y%m%d"
     now = datetime.now()
 
     return {
-        "today": now.strftime(FORMAT),
-        "yesterday": (now - timedelta(days=1)).strftime(FORMAT),
-        "tomorrow": (now + timedelta(days=1)).strftime(FORMAT),
-        "30_days_ago": (now - timedelta(days=30)).strftime(FORMAT),
-        "1_year_ago": (now - timedelta(days=365)).strftime(FORMAT),
-        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(FORMAT),
-        "10_years_ago": (now - timedelta(days=365 * 10)).strftime(FORMAT),
+        "today": now.strftime(YEAR),
+        "yesterday": (now - timedelta(days=1)).strftime(YEAR),
+        "tomorrow": (now + timedelta(days=1)).strftime(YEAR),
+        "30_days_ago": (now - timedelta(days=30)).strftime(YEAR),
+        "1_year_ago": (now - timedelta(days=365)).strftime(YEAR),
+        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(YEAR),
+        "10_years_ago": (now - timedelta(days=365 * 10)).strftime(YEAR),
     }
 
 
@@ -117,46 +115,10 @@ def _save_insert_sql_to_file(
     file_path.write_text(sql, encoding="utf-8")
 
 
-def _create_expected_csv(
-    dfs_before_join: list[pd.DataFrame],
-    tables_meta: list[TableMeta],
-    date_variations: dict[str, str],
-) -> None:
-    expected_df = dfs_before_join[0]
-    left_join_key = tables_meta[0]["join_key_column"]
-
-    for df, table_meta in zip(dfs_before_join[1:], tables_meta[1:]):
-        right_join_key = table_meta["join_key_column"]
-        expected_df = expected_df.merge(
-            df,
-            left_on=left_join_key,
-            right_on=right_join_key,
-            how="inner",
-        )
-
-    must_include_condition = (
-        (expected_df["table_1_col_3"] == True)
-        & (expected_df["table_2_col_3"] == True)
-        & (expected_df["table_3_col_3"] == True)
-    )
-    columns_to_keep = [
-        "table_1_col_1",
-        "table_2_col_2",
-        "table_3_col_3",
-        "datetime",
-    ]
-    expected_df = expected_df.loc[must_include_condition, columns_to_keep]
-
-    expected_df_path = Path(
-        "src/exhaustive_data_generator/output/expected_df.csv"
-    )
-    expected_df.to_csv(expected_df_path, index=False, encoding="utf-8")
-
-
 def example() -> None:
     date_variations = _generate_date_variations()
 
-    tables_meta: list[TableMeta] = [
+    tables_meta1: list[TableMeta] = [
         {
             "schema_name": "sandbox",
             "table_name": "table_1",
@@ -196,21 +158,77 @@ def example() -> None:
         },
     ]
 
-    total_combinations = _estimate_combination_count(tables_meta)
-
-    dfs_before_join = [
-        _prepare_df_for_join(table_meta, total_combinations)
-        for table_meta in tables_meta
+    tables_meta2: list[TableMeta] = [
+        {
+            "schema_name": "sandbox",
+            "table_name": "table_4",
+            "join_key_column": "table_4_join_key_column",
+            "column_value_map": {
+                "table_4_join_key_column": [""],
+                "table_4_col_1": ["い"],
+                "table_4_col_2": ["ろ"],
+                "table_4_col_3": ["は"],
+            },
+        },
+        {
+            "schema_name": "sandbox",
+            "table_name": "table_5",
+            "join_key_column": "table_5_join_key_column",
+            "column_value_map": {
+                "table_5_join_key_column": [""],
+                "table_5_col_1": ["に"],
+                "table_5_col_2": ["ほ"],
+                "table_5_col_3": ["へ"],
+            },
+        },
     ]
 
-    for df, table_meta in zip(dfs_before_join, tables_meta):
-        csv_file_path = _prepare_output_file_path(table_meta, "csv")
-        df.to_csv(csv_file_path, index=False, encoding="utf-8")
+    tables_meta_list = [tables_meta1, tables_meta2]
+    combined_dfs: list[pd.DataFrame] = []
 
-        sql_file_path = _prepare_output_file_path(table_meta, "sql")
-        _save_insert_sql_to_file(df, table_meta["table_name"], sql_file_path)
+    for tables_meta in tables_meta_list:
 
-    _create_expected_csv(dfs_before_join, tables_meta, date_variations)
+        total_combinations = _estimate_combination_count(tables_meta)
+
+        dfs_before_join = [
+            _prepare_df_for_join(table_meta, total_combinations)
+            for table_meta in tables_meta
+        ]
+
+        for df, table_meta in zip(dfs_before_join, tables_meta):
+            csv_file_path = _prepare_output_file_path(table_meta, "csv")
+            df.to_csv(csv_file_path, index=False, encoding="utf-8")
+
+            sql_file_path = _prepare_output_file_path(table_meta, "sql")
+            _save_insert_sql_to_file(
+                df, table_meta["table_name"], sql_file_path
+            )
+
+        combined_df = pd.concat(dfs_before_join, axis=1)
+        combined_dfs.append(combined_df)
+
+    df1 = combined_dfs[0]
+    df2 = combined_dfs[1]
+    expected_df = df1.merge(df2, how="cross")
+
+    must_include_condition = (
+        (expected_df["table_1_col_3"] == True)
+        & (expected_df["table_2_col_3"] == True)
+        & (expected_df["table_3_col_3"] == True)
+    )
+    columns_to_keep = [
+        "table_1_col_1",
+        "table_2_col_2",
+        "table_3_col_3",
+        "datetime",
+    ]
+    expected_df = expected_df.loc[must_include_condition, columns_to_keep]
+
+    expected_df.to_csv(
+        "src/exhaustive_data_generator/output/expected_df.csv",
+        index=False,
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":
