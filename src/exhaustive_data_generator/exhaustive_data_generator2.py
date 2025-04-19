@@ -41,18 +41,15 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
     total_combination_count = 1
 
     for table_meta in tables_meta:
-        table_name = f"{table_meta['schema_name']}.{table_meta['table_name']}"
         table_combination_count = 1
-        _logger.info(f"{table_name=}")
+        column_value_map = table_meta["column_value_map"]
 
-        for column_values in table_meta["column_value_map"].values():
+        for column_values in column_value_map.values():
             num_values = len(column_values)
             table_combination_count *= num_values
 
-        _logger.info(f"  {table_combination_count=:,} patterns")
         total_combination_count *= table_combination_count
 
-    _logger.info(f"{total_combination_count=:,} total patterns")
     return total_combination_count
 
 
@@ -105,12 +102,11 @@ def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
 def _save_insert_sql_to_file(
     df: pd.DataFrame, schema_name: str, table_name: str, file_path: Path
 ) -> None:
-    table_name_with_schema = f"{schema_name}.{table_name}"
     columns = ", ".join(df.columns)
     values = _convert_df_to_sql_insert_values(df)
     sql = (
         "INSERT INTO\n"
-        f"{table_name_with_schema}\n"
+        f"{schema_name}.{table_name}\n"
         f"({columns})\n"
         "VALUES\n"
         f"{values};"
@@ -233,12 +229,8 @@ def example() -> None:
         "datetime",
     ]
     expected_df = expected_df.loc[must_include_condition, columns_to_keep]
-
-    expected_df.to_csv(
-        "src/exhaustive_data_generator/output/expected_df.csv",
-        index=False,
-        encoding="utf-8",
-    )
+    expected_csv_file_path = base_dir / "expected.csv"
+    expected_df.to_csv(expected_csv_file_path, index=False, encoding="utf-8")
 
 
 if __name__ == "__main__":
