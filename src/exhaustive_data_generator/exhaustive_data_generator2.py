@@ -117,6 +117,13 @@ def _generate_insert_sql(
     return sql
 
 
+def _cross_merge_all(dfs: list[pd.DataFrame]) -> pd.DataFrame:
+    base_df = dfs[0]
+    for df in dfs[1:]:
+        base_df = base_df.merge(df, how="cross")
+    return base_df
+
+
 def example() -> None:
     date_variations = _generate_date_variations()
 
@@ -187,7 +194,7 @@ def example() -> None:
     ]
 
     tables_meta_list = [tables_meta1, tables_meta2]
-    combined_dfs: list[pd.DataFrame] = []
+    representative_table_dfs: list[pd.DataFrame] = []
 
     base_dir = Path("src/exhaustive_data_generator/output")
     base_dir.mkdir(parents=True, exist_ok=True)
@@ -230,19 +237,17 @@ def example() -> None:
             sql = _generate_insert_sql(df, schema_name, table_name)
             sql_file_path.write_text(sql, encoding="utf-8")
 
-        combined_df = pd.concat(dfs_before_join, axis=1)
-        combined_dfs.append(combined_df)
+        representative_table_df = pd.concat(dfs_before_join, axis=1)
+        representative_table_dfs.append(representative_table_df)
 
-    df1 = combined_dfs[0]
-    df2 = combined_dfs[1]
-    cross_merged_df = df1.merge(df2, how="cross")
+    cross_merged_df = _cross_merge_all(representative_table_dfs)
 
     must_include_condition = (
         (cross_merged_df["table_1_col_1"] == "い")
         & (pd.isna(cross_merged_df["table_1_col_3"]))
         & (pd.isna(cross_merged_df["table_2_col_3"]))
     )
-    row_excluded_df = cross_merged_df.loc[must_include_condition]
+    row_extracted_df = cross_merged_df.loc[must_include_condition]
 
     columns_to_keep = [
         "table_1_col_1",
@@ -250,9 +255,9 @@ def example() -> None:
         "table_3_col_3",
         "datetime",
     ]
-    column_excluded_df = row_excluded_df[columns_to_keep]
+    column_extracted_df = row_extracted_df[columns_to_keep]
 
-    expected_df = column_excluded_df.drop_duplicates()
+    expected_df = column_extracted_df.drop_duplicates()
 
     expected_csv_file_path = base_dir / "expected.csv"
     expected_df.to_csv(expected_csv_file_path, index=False, encoding="utf-8")
