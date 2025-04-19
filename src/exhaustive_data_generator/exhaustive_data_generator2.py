@@ -1,9 +1,19 @@
+import logging
+import sys
 from datetime import datetime, timedelta
 from itertools import product
 from pathlib import Path
 from typing import Any, TypedDict
 
 import pandas as pd
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(module)s.%(funcName)s - %(message)s",  # noqa E501
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
+_logger = logging.getLogger(__name__)
 
 
 class TableMeta(TypedDict):
@@ -14,17 +24,16 @@ class TableMeta(TypedDict):
 
 
 def _generate_date_variations() -> dict[str, str]:
-    YEAR = "%Y%m%d"
+    YYYY_MM_DD = "%Y-%m-%d"
+    YEAR_ONLY = "%Y"
     now = datetime.now()
 
     return {
-        "today": now.strftime(YEAR),
-        "yesterday": (now - timedelta(days=1)).strftime(YEAR),
-        "tomorrow": (now + timedelta(days=1)).strftime(YEAR),
-        "30_days_ago": (now - timedelta(days=30)).strftime(YEAR),
-        "1_year_ago": (now - timedelta(days=365)).strftime(YEAR),
-        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(YEAR),
-        "10_years_ago": (now - timedelta(days=365 * 10)).strftime(YEAR),
+        "today": now.strftime(YYYY_MM_DD),
+        "this_year": now.strftime(YEAR_ONLY),
+        "last_year": (now - timedelta(days=365)).strftime(YEAR_ONLY),
+        "2_years_ago": (now - timedelta(days=365 * 2)).strftime(YEAR_ONLY),
+        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(YEAR_ONLY),
     }
 
 
@@ -34,16 +43,16 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
     for table_meta in tables_meta:
         table_name = f"{table_meta['schema_name']}.{table_meta['table_name']}"
         table_combination_count = 1
-        print(f"{table_name=}")
+        _logger.info(f"{table_name=}")
 
         for column_values in table_meta["column_value_map"].values():
             num_values = len(column_values)
             table_combination_count *= num_values
 
-        print(f"  {table_combination_count=:,} patterns")
+        _logger.info(f"  {table_combination_count=:,} patterns")
         total_combination_count *= table_combination_count
 
-    print(f"{total_combination_count=:,} total patterns")
+    _logger.info(f"{total_combination_count=:,} total patterns")
     return total_combination_count
 
 
@@ -74,19 +83,6 @@ def _prepare_df_for_join(
     return expanded_df
 
 
-def _prepare_output_file_path(table_meta: TableMeta, extension: str) -> Path:
-    base_dir = Path("src/exhaustive_data_generator/output")
-    base_dir.mkdir(parents=True, exist_ok=True)
-
-    schema_name = table_meta["schema_name"]
-    table_name = table_meta["table_name"]
-    file_name = f"{schema_name}_{table_name}.{extension}"
-
-    file_path = base_dir / file_name
-
-    return file_path
-
-
 def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
     def _format_value(value: Any) -> str:
         if pd.isna(value):
@@ -107,11 +103,18 @@ def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
 
 
 def _save_insert_sql_to_file(
-    df: pd.DataFrame, table_name: str, file_path: Path
+    df: pd.DataFrame, schema_name: str, table_name: str, file_path: Path
 ) -> None:
+    table_name_with_schema = f"{schema_name}.{table_name}"
     columns = ", ".join(df.columns)
     values = _convert_df_to_sql_insert_values(df)
-    sql = f"INSERT INTO {table_name} ({columns})\nVALUES\n{values};"
+    sql = (
+        "INSERT INTO\n"
+        f"{table_name_with_schema}\n"
+        f"({columns})\n"
+        "VALUES\n"
+        f"{values};"
+    )
     file_path.write_text(sql, encoding="utf-8")
 
 
@@ -186,8 +189,10 @@ def example() -> None:
     tables_meta_list = [tables_meta1, tables_meta2]
     combined_dfs: list[pd.DataFrame] = []
 
-    for tables_meta in tables_meta_list:
+    base_dir = Path("src/exhaustive_data_generator/output")
+    base_dir.mkdir(parents=True, exist_ok=True)
 
+    for tables_meta in tables_meta_list:
         total_combinations = _estimate_combination_count(tables_meta)
 
         dfs_before_join = [
@@ -196,12 +201,17 @@ def example() -> None:
         ]
 
         for df, table_meta in zip(dfs_before_join, tables_meta):
-            csv_file_path = _prepare_output_file_path(table_meta, "csv")
+            schema_name = table_meta["schema_name"]
+            table_name = table_meta["table_name"]
+
+            csv_file_name = f"{schema_name}_{table_name}.csv"
+            csv_file_path = base_dir / csv_file_name
             df.to_csv(csv_file_path, index=False, encoding="utf-8")
 
-            sql_file_path = _prepare_output_file_path(table_meta, "sql")
+            sql_file_name = f"{schema_name}_{table_name}.sql"
+            sql_file_path = base_dir / sql_file_name
             _save_insert_sql_to_file(
-                df, table_meta["table_name"], sql_file_path
+                df, schema_name, table_name, sql_file_path
             )
 
         combined_df = pd.concat(dfs_before_join, axis=1)
