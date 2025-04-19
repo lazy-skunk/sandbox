@@ -65,19 +65,14 @@ def _generate_cartesian_df(
     return cartesian_df
 
 
-def _prepare_df_for_join(
-    table_meta: TableMeta, total_combinations: int
-) -> pd.DataFrame:
-    column_value_map = table_meta["column_value_map"]
-    join_key_column = table_meta["join_key_column"]
+def _expand_df_to_total_rows(df: pd.DataFrame, total: int) -> pd.DataFrame:
+    repeat_count = total // len(df)
+    return pd.concat([df] * repeat_count, ignore_index=True)
 
-    base_df = _generate_cartesian_df(column_value_map)
 
-    repeat_count = total_combinations // len(base_df)
-    expanded_df = pd.concat([base_df] * repeat_count, ignore_index=True)
-    expanded_df[join_key_column] = range(1, total_combinations + 1)
-
-    return expanded_df
+def _assign_sequential_id(df: pd.DataFrame, column_name: str) -> pd.DataFrame:
+    df[column_name] = range(1, len(df) + 1)
+    return df
 
 
 def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
@@ -129,7 +124,8 @@ def example() -> None:
                 "table_1_col_3": [True, False, None],
                 "datetime": [
                     date_variations["today"],
-                    date_variations["yesterday"],
+                    date_variations["this_year"],
+                    date_variations["last_year"],
                 ],
             },
         },
@@ -139,8 +135,8 @@ def example() -> None:
             "join_key_column": "table_2_join_key_column",
             "column_value_map": {
                 "table_2_join_key_column": [""],
-                "table_2_col_1": ["イ", "ロ"],
-                "table_2_col_2": [10, 20],
+                "table_2_col_1": ["イ"],
+                "table_2_col_2": [10],
                 "table_2_col_3": [True, False, None],
             },
         },
@@ -151,7 +147,7 @@ def example() -> None:
             "column_value_map": {
                 "table_3_join_key_column": [""],
                 "table_3_col_1": ["i"],
-                "table_3_col_2": [100, 200, 300],
+                "table_3_col_2": [100],
                 "table_3_col_3": [True, False, None],
             },
         },
@@ -191,10 +187,20 @@ def example() -> None:
     for tables_meta in tables_meta_list:
         total_combinations = _estimate_combination_count(tables_meta)
 
-        dfs_before_join = [
-            _prepare_df_for_join(table_meta, total_combinations)
-            for table_meta in tables_meta
-        ]
+        dfs_before_join = []
+        for table_meta in tables_meta:
+            column_value_map = table_meta["column_value_map"]
+            join_key_column = table_meta["join_key_column"]
+
+            cartesian_df = _generate_cartesian_df(column_value_map)
+            expanded_df = _expand_df_to_total_rows(
+                cartesian_df, total_combinations
+            )
+            expanded_df_with_sequential_id = _assign_sequential_id(
+                expanded_df, join_key_column
+            )
+
+            dfs_before_join.append(expanded_df_with_sequential_id)
 
         for df, table_meta in zip(dfs_before_join, tables_meta):
             schema_name = table_meta["schema_name"]
@@ -215,20 +221,25 @@ def example() -> None:
 
     df1 = combined_dfs[0]
     df2 = combined_dfs[1]
-    expected_df = df1.merge(df2, how="cross")
+    cross_merged_df = df1.merge(df2, how="cross")
 
     must_include_condition = (
-        (expected_df["table_1_col_3"] == True)
-        & (expected_df["table_2_col_3"] == True)
-        & (expected_df["table_3_col_3"] == True)
+        (cross_merged_df["table_1_col_1"] == "い")
+        & (pd.isna(cross_merged_df["table_1_col_3"]))
+        & (pd.isna(cross_merged_df["table_2_col_3"]))
     )
+    row_excluded_df = cross_merged_df.loc[must_include_condition]
+
     columns_to_keep = [
         "table_1_col_1",
         "table_2_col_2",
         "table_3_col_3",
         "datetime",
     ]
-    expected_df = expected_df.loc[must_include_condition, columns_to_keep]
+    column_excluded_df = row_excluded_df[columns_to_keep]
+
+    expected_df = column_excluded_df.drop_duplicates()
+
     expected_csv_file_path = base_dir / "expected.csv"
     expected_df.to_csv(expected_csv_file_path, index=False, encoding="utf-8")
 
