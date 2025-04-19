@@ -42,14 +42,20 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
 
     for table_meta in tables_meta:
         table_combination_count = 1
+        schema_name = table_meta["schema_name"]
+        table_name = table_meta["table_name"]
         column_value_map = table_meta["column_value_map"]
 
         for column_values in column_value_map.values():
             num_values = len(column_values)
             table_combination_count *= num_values
 
+        _logger.debug(
+            f"{schema_name}.{table_name}: {table_combination_count=:,}"
+        )
         total_combination_count *= table_combination_count
 
+    _logger.debug(f"{total_combination_count=:,}")
     return total_combination_count
 
 
@@ -65,8 +71,10 @@ def _generate_cartesian_df(
     return cartesian_df
 
 
-def _expand_df_to_total_rows(df: pd.DataFrame, total: int) -> pd.DataFrame:
-    repeat_count = total // len(df)
+def _expand_df_to_total_rows(
+    df: pd.DataFrame, total_combinations: int
+) -> pd.DataFrame:
+    repeat_count = total_combinations // len(df)
     return pd.concat([df] * repeat_count, ignore_index=True)
 
 
@@ -186,6 +194,13 @@ def example() -> None:
 
     for tables_meta in tables_meta_list:
         total_combinations = _estimate_combination_count(tables_meta)
+        _logger.info(f"{total_combinations=}")
+
+        if total_combinations > 5000:
+            _logger.warning(
+                "Out of Memory の可能性があるので処理を中断します。"
+            )
+            return
 
         dfs_before_join = []
         for table_meta in tables_meta:
@@ -210,7 +225,7 @@ def example() -> None:
             csv_file_path = base_dir / csv_file_name
             df.to_csv(csv_file_path, index=False, encoding="utf-8")
 
-            sql_file_name = f"{schema_name}_{table_name}.sql"
+            sql_file_name = f"insert_{schema_name}_{table_name}.sql"
             sql_file_path = base_dir / sql_file_name
             _save_insert_sql_to_file(
                 df, schema_name, table_name, sql_file_path
