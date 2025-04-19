@@ -102,9 +102,9 @@ def _convert_df_to_sql_insert_values(df: pd.DataFrame) -> str:
     return insert_values
 
 
-def _save_insert_sql_to_file(
-    df: pd.DataFrame, schema_name: str, table_name: str, file_path: Path
-) -> None:
+def _generate_insert_sql(
+    df: pd.DataFrame, schema_name: str, table_name: str
+) -> str:
     columns = ", ".join(df.columns)
     values = _convert_df_to_sql_insert_values(df)
     sql = (
@@ -114,7 +114,7 @@ def _save_insert_sql_to_file(
         "VALUES\n"
         f"{values};"
     )
-    file_path.write_text(sql, encoding="utf-8")
+    return sql
 
 
 def example() -> None:
@@ -198,7 +198,7 @@ def example() -> None:
 
         if total_combinations > 5000:
             _logger.warning(
-                "Out of Memory の可能性があるので処理を中断します。"
+                "環境次第では、Out of Memory の可能性があるので処理を中断します。"
             )
             return
 
@@ -227,9 +227,8 @@ def example() -> None:
 
             sql_file_name = f"insert_{schema_name}_{table_name}.sql"
             sql_file_path = base_dir / sql_file_name
-            _save_insert_sql_to_file(
-                df, schema_name, table_name, sql_file_path
-            )
+            sql = _generate_insert_sql(df, schema_name, table_name)
+            sql_file_path.write_text(sql, encoding="utf-8")
 
         combined_df = pd.concat(dfs_before_join, axis=1)
         combined_dfs.append(combined_df)
