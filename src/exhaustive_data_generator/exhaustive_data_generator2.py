@@ -23,20 +23,6 @@ class TableMeta(TypedDict):
     column_value_map: dict[str, list[Any]]
 
 
-def _generate_date_variations() -> dict[str, str]:
-    YYYY_MM_DD = "%Y-%m-%d"
-    YEAR_ONLY = "%Y"
-    now = datetime.now()
-
-    return {
-        "today": now.strftime(YYYY_MM_DD),
-        "this_year": now.strftime(YEAR_ONLY),
-        "last_year": (now - timedelta(days=365)).strftime(YEAR_ONLY),
-        "2_years_ago": (now - timedelta(days=365 * 2)).strftime(YEAR_ONLY),
-        "3_years_ago": (now - timedelta(days=365 * 3)).strftime(YEAR_ONLY),
-    }
-
-
 def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
     total_combination_count = 1
 
@@ -125,7 +111,12 @@ def _cross_merge_all(dfs: list[pd.DataFrame]) -> pd.DataFrame:
 
 
 def example() -> None:
-    date_variations = _generate_date_variations()
+    now = datetime.now()
+    YYYY_MM_DD = "%Y-%m-%d"
+    YEAR_ONLY = "%Y"
+    today = now.strftime(YYYY_MM_DD)
+    this_year = now.strftime(YEAR_ONLY)
+    last_year = (now - timedelta(days=365)).strftime(YEAR_ONLY)
 
     tables_meta1: list[TableMeta] = [
         {
@@ -137,11 +128,7 @@ def example() -> None:
                 "table_1_col_1": ["い", "ろ", "は"],
                 "table_1_col_2": [1],
                 "table_1_col_3": [True, False, None],
-                "datetime": [
-                    date_variations["today"],
-                    date_variations["this_year"],
-                    date_variations["last_year"],
-                ],
+                "datetime": [today, this_year, last_year],
             },
         },
         {
