@@ -1,7 +1,7 @@
 import pandas as pd
 
-from sandbox.test_pytest.database_client import DatabaseClient
-from sandbox.test_pytest.feature_engineer import FeatureEngineer
+from sandbox.test_pytest.src.database_client import DatabaseClient
+from sandbox.test_pytest.src.feature_engineer import FeatureEngineer
 
 
 def run_feature_pipeline(
