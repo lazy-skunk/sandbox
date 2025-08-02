@@ -34,4 +34,16 @@
     "isort.args": [
         "--settings-path=pyproject.toml"
     ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true,
+        "**/sandbox.egg-info": true,
+        }
 }
