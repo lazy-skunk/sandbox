@@ -1,45 +1,41 @@
-[build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "sandbox"
+name = "Sandbox"
 version = "0.1.0"
-dependencies = [
-  "jupyter",
-  "scikit-learn",
-  "numpy",
-  "pandas",
-  "matplotlib",
-  "networkx",
-  "pyautogui",
-  "flask",
-  "tabulate",
-  "types-tabulate",
-  "sqlglot",
-  "psycopg2",
-]
-requires-python = ">= 3.12"
+description = "Just for learning."
 authors = [
-  {name = "lazy_skunk"}
+    {name = "lazy-skunk"}
 ]
 maintainers = [
-  {name = "lazy_skunk"}
+    {name = "lazy-skunk"}
 ]
-description = "sandbox"
+license = {text = "MIT"}
 readme = "README.md"
-license = {file = "LICENSE.txt"}
-
-[project.optional-dependencies]
-dev = [
-  "pytest",
-  "pytest-cov",
-  "pytest-mock",
-  "black",
-  "flake8",
-  "isort",
-  "mypy",
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "scikit-learn (>=1.7.1,<2.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "networkx (>=3.5,<4.0)",
+    "sqlglot (>=27.6.0,<28.0.0)",
 ]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+pytest-mock = "^3.14.1"
+black = "^25.1.0"
+flake8 = "^7.3.0"
+isort = "^6.0.1"
+mypy = "^1.17.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 # addopts = "--cov=src --cov-config=.coveragerc --cov-report=html"
