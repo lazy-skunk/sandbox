@@ -2,8 +2,8 @@ import pandas as pd
 import pytest
 from pytest_mock import MockerFixture
 
-from src.test_pytest.database_client import DatabaseClient
-from src.test_pytest.feature_engineer import FeatureEngineer
+from sandbox.test_pytest.database_client import DatabaseClient
+from sandbox.test_pytest.feature_engineer import FeatureEngineer
 
 
 @pytest.fixture

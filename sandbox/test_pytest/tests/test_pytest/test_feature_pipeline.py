@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from pytest_mock import MockerFixture
 
-from src.test_pytest.feature_pipeline import run_feature_pipeline
+from sandbox.test_pytest.feature_pipeline import run_feature_pipeline
 
 
 class TestRunFeaturePipeline:
@@ -29,13 +29,13 @@ class TestRunFeaturePipeline:
         expected_df: pd.DataFrame,
     ) -> None:
         self.mock_client_class = mocker.patch(
-            "src.test_pytest.feature_pipeline.DatabaseClient"
+            "sandbox.test_pytest.feature_pipeline.DatabaseClient"
         )
         self.mock_client = self.mock_client_class.return_value
         self.mock_client.fetch_table.return_value = sample_df
 
         self.mock_engineer_class = mocker.patch(
-            "src.test_pytest.feature_pipeline.FeatureEngineer"
+            "sandbox.test_pytest.feature_pipeline.FeatureEngineer"
         )
         self.mock_engineer = self.mock_engineer_class.return_value
         self.mock_engineer.add_square_feature.return_value = self.mock_engineer
