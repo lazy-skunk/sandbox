@@ -1,4 +1,0 @@
-targets:
-  - abc0
-  - def0
-processing_time_threshold_seconds: 120
