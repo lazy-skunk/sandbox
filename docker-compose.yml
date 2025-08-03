@@ -1,17 +1,48 @@
 services:
-  app:
+  playground:
     build:
-      context: .
+      context: ./playground
       dockerfile: Dockerfile
     environment:
-      PYTHONPATH: /app
+      PYTHONPATH: /playground
       PYTHONUNBUFFERED: 1
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
-      - .:/app
+      - ./playground:/playground
+      - ./.git:/playground/.git
       - ~/.gitconfig:/root/.gitconfig
+    stdin_open: true
+    tty: true
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      PYTHONPATH: /backend
+      PYTHONUNBUFFERED: 1
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./backend:/backend
+      - ./.git:/backend/.git
+      - ~/.gitconfig:/root/.gitconfig
+    stdin_open: true
+    tty: true
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/frontend
+      - ./.git:/backend/.git
+      - ~/.gitconfig:/root/.gitconfig
+    ports:
+      - "3000:3000"
     stdin_open: true
     tty: true
 

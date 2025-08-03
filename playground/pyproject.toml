@@ -1,0 +1,58 @@
+[project]
+name = "Sandbox"
+version = "0.1.0"
+description = "Just for learning."
+authors = [
+    {name = "lazy-skunk"}
+]
+maintainers = [
+    {name = "lazy-skunk"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "scikit-learn (>=1.7.1,<2.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "networkx (>=3.5,<4.0)",
+    "sqlglot (>=27.6.0,<28.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "nbconvert (>=7.16.6,<8.0.0)",
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+pytest-mock = "^3.14.1"
+black = "^25.1.0"
+flake8 = "^7.3.0"
+isort = "^6.0.1"
+mypy = "^1.17.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+# addopts = "--cov=src --cov-config=.coveragerc --cov-report=html"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 79
+
+# Flake8 cannot be configured via pyproject.toml
+# [tool.flake8]
+# max-line-length = 79
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
