@@ -42,7 +42,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 # addopts = "--cov=src --cov-config=.coveragerc --cov-report=html"
-testpaths = ["sandbox"]
+testpaths = ["tests"]
 
 [tool.black]
 line-length = 79
