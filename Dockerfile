@@ -23,5 +23,3 @@ RUN poetry run jupyter notebook --generate-config \
    && echo "c.NotebookApp.password_required = False" >> /root/.jupyter/jupyter_notebook_config.py
 
 COPY . .
-
-ENTRYPOINT ["poetry", "run", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
