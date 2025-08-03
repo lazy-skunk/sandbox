@@ -1,0 +1,3009 @@
+2024-09-10 12:48:01 - INFO - Starting to merge.
+2024-09-10 12:48:01 - INFO - Added sheet: 19880209. (1/2)
+2024-09-10 12:48:01 - INFO - Added sheet: 19880229. (2/2)
+2024-09-10 12:48:01 - INFO - Merging completed.
+2024-09-10 12:51:58 - INFO - Starting to merge.
+2024-09-10 12:51:58 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 12:51:58 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 12:51:58 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 12:51:58 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 12:51:58 - INFO - Merging completed.
+2024-09-10 13:07:03 - INFO - Starting to merge.
+2024-09-10 13:07:03 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:07:03 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:07:03 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:07:03 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:07:03 - INFO - Merging completed.
+2024-09-10 13:07:41 - INFO - Starting to merge.
+2024-09-10 13:07:41 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:07:41 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:07:41 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:07:41 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:07:41 - INFO - Merging completed.
+2024-09-10 13:17:56 - INFO - Starting to merge.
+2024-09-10 13:17:56 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:17:56 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:17:56 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:17:56 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:17:56 - INFO - Merging completed.
+2024-09-10 13:19:00 - INFO - Starting to merge.
+2024-09-10 13:19:00 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:19:00 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:19:00 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:19:00 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:19:00 - INFO - Merging completed.
+2024-09-10 13:19:30 - INFO - Starting to merge.
+2024-09-10 13:19:30 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:19:30 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:19:30 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:19:30 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:19:30 - INFO - Merging completed.
+2024-09-10 13:19:59 - INFO - Starting to merge.
+2024-09-10 13:19:59 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:19:59 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:19:59 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:19:59 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:19:59 - INFO - Merging completed.
+2024-09-10 13:22:22 - INFO - Starting to merge.
+2024-09-10 13:22:22 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:22:22 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:22:22 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:22:22 - INFO - Added sheet: 19880230. (3/3)
+2024-09-10 13:22:22 - INFO - Merging completed.
+2024-09-10 13:23:02 - INFO - Starting to merge.
+2024-09-10 13:23:03 - INFO - Added sheet: 19880209. (1/3)
+2024-09-10 13:23:03 - INFO - Added sheet: 19880229. (2/3)
+2024-09-10 13:23:35 - INFO - Starting to merge.
+2024-09-10 13:27:00 - INFO - Starting to merge.
+2024-09-10 13:27:00 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 13:27:00 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 13:27:00 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:27:00 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 13:27:00 - INFO - Merging completed.
+2024-09-10 13:27:43 - INFO - Starting to merge.
+2024-09-10 13:27:43 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 13:27:43 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 13:27:43 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:27:43 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 13:27:43 - INFO - Merging completed.
+2024-09-10 13:29:50 - INFO - Starting to merge.
+2024-09-10 13:29:50 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 13:29:50 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 13:29:50 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:29:50 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 13:29:50 - INFO - Merging completed.
+2024-09-10 13:32:54 - INFO - Starting to merge.
+2024-09-10 13:32:54 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 13:32:54 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 13:32:54 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 13:32:54 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 13:32:54 - INFO - Merging completed.
+2024-09-10 13:57:40 - INFO - Starting to highlight.
+2024-09-10 13:58:37 - INFO - Starting to highlight.
+2024-09-10 13:59:38 - INFO - Starting to highlight.
+2024-09-10 14:03:02 - INFO - Starting to highlight.
+2024-09-10 14:04:40 - INFO - Starting to highlight.
+2024-09-10 14:04:40 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-10 14:04:40 - WARNING - Anomaly value detected for host: target_1.
+2024-09-10 14:04:40 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-10 14:04:40 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-10 14:04:40 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-10 14:04:40 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-10 14:04:40 - WARNING - Anomaly value detected for host: target_3.
+2024-09-10 14:04:40 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-10 14:04:40 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-10 14:04:40 - INFO - Highlighting completed.
+2024-09-10 14:04:55 - INFO - Starting to merge.
+2024-09-10 14:04:55 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 14:04:55 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 14:04:55 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 14:04:55 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 14:04:55 - INFO - Merging completed.
+2024-09-10 14:04:55 - INFO - Starting to highlight.
+2024-09-10 14:04:55 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-10 14:04:55 - WARNING - Anomaly value detected for host: target_1.
+2024-09-10 14:04:55 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-10 14:04:55 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-10 14:04:55 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-10 14:04:55 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-10 14:04:55 - WARNING - Anomaly value detected for host: target_3.
+2024-09-10 14:04:55 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-10 14:04:55 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-10 14:04:55 - INFO - Highlighting completed.
+2024-09-10 14:07:32 - INFO - Starting to merge.
+2024-09-10 14:07:32 - INFO - Added sheet: target_0. (1/3)
+2024-09-10 14:07:32 - INFO - Added sheet: target_1. (2/3)
+2024-09-10 14:07:32 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-10 14:07:32 - INFO - Added sheet: target_2. (3/3)
+2024-09-10 14:07:32 - INFO - Merging completed.
+2024-09-10 14:07:32 - INFO - Starting to highlight.
+2024-09-10 14:07:32 - WARNING - Invalid processing time value: INVALID
+2024-09-10 14:07:32 - WARNING - Invalid JSON format found: INVALID
+2024-09-10 14:07:32 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-10 14:07:32 - WARNING - Anomaly value detected for host: target_1.
+2024-09-10 14:07:32 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-10 14:07:32 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-10 14:07:32 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-10 14:07:32 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-10 14:07:32 - WARNING - Anomaly value detected for host: target_3.
+2024-09-10 14:07:32 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-10 14:07:32 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-10 14:07:32 - INFO - Highlighting completed.
+2024-09-11 09:22:58 - INFO - Starting to merge.
+2024-09-11 09:22:58 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 09:22:58 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 09:22:58 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 09:22:58 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 09:22:58 - INFO - Merging completed.
+2024-09-11 09:22:58 - INFO - Starting to highlight.
+2024-09-11 09:22:58 - WARNING - Invalid processing time value: INVALID
+2024-09-11 09:22:58 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 09:22:58 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 09:22:58 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 09:22:58 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 09:22:58 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 09:22:58 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 09:22:58 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 09:22:58 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 09:22:58 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 09:22:58 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 09:22:58 - INFO - Highlighting completed.
+2024-09-11 12:40:46 - INFO - Starting to highlight.
+2024-09-11 12:40:46 - WARNING - Invalid processing time value: INVALID
+2024-09-11 12:40:46 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 12:40:46 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 12:40:46 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 12:40:46 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 12:40:46 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 12:40:46 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 12:40:46 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 12:40:46 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 12:40:46 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 12:40:46 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 12:40:46 - INFO - Highlighting completed.
+2024-09-11 12:42:20 - INFO - Starting to merge.
+2024-09-11 12:42:21 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 12:42:21 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 12:42:21 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 12:42:21 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 12:42:21 - INFO - Merging completed.
+2024-09-11 12:42:21 - INFO - Starting to highlight.
+2024-09-11 12:42:21 - WARNING - Invalid processing time value: INVALID
+2024-09-11 12:42:21 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 12:42:21 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 12:42:21 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 12:42:21 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 12:42:21 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 12:42:21 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 12:42:21 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 12:42:21 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 12:42:21 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 12:42:21 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 12:42:21 - INFO - Highlighting completed.
+2024-09-11 12:49:10 - INFO - Starting to merge.
+2024-09-11 12:49:11 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 12:49:11 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 12:49:11 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 12:49:11 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 12:49:11 - INFO - Merging completed.
+2024-09-11 12:49:11 - INFO - Starting to highlight.
+2024-09-11 12:49:11 - WARNING - Invalid processing time value: INVALID
+2024-09-11 12:49:11 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 12:49:11 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 12:49:11 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 12:49:11 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 12:49:11 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 12:49:11 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 12:49:11 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 12:49:11 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 12:49:11 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 12:49:11 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 12:49:11 - INFO - Highlighting completed.
+2024-09-11 12:49:35 - INFO - Starting to merge.
+2024-09-11 12:49:35 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 12:49:35 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 12:49:35 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 12:49:35 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 12:49:35 - INFO - Merging completed.
+2024-09-11 12:49:36 - INFO - Starting to highlight.
+2024-09-11 12:49:36 - WARNING - Invalid processing time value: INVALID
+2024-09-11 12:49:36 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 12:49:36 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 12:49:36 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 12:49:36 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 12:49:36 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 12:49:36 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 12:49:36 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 12:49:36 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 12:49:36 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 12:49:36 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 12:49:36 - INFO - Highlighting completed.
+2024-09-11 13:12:52 - INFO - Starting to highlight.
+2024-09-11 13:12:52 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:12:52 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:12:52 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:12:52 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:12:52 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:12:52 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:12:52 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:12:52 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:12:52 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:12:52 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:12:52 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:12:52 - INFO - Highlighting completed.
+2024-09-11 13:19:59 - INFO - Starting to highlight.
+2024-09-11 13:19:59 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:19:59 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:19:59 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:19:59 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:19:59 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:19:59 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:19:59 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:19:59 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:19:59 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:19:59 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:19:59 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:19:59 - INFO - Highlighting completed.
+2024-09-11 13:22:47 - INFO - Starting to merge.
+2024-09-11 13:22:47 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 13:22:47 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 13:22:47 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 13:22:47 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 13:22:47 - INFO - Merging completed.
+2024-09-11 13:22:47 - INFO - Starting to highlight.
+2024-09-11 13:22:47 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:22:47 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:22:47 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:22:47 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:22:47 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:22:47 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:22:47 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:22:47 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:22:47 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:22:47 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:22:47 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:22:47 - INFO - Highlighting completed.
+2024-09-11 13:22:47 - INFO - Starting to reorder.
+2024-09-11 13:22:47 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-11 13:22:47 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-11 13:22:47 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-11 13:22:47 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-11 13:22:47 - INFO - Reordering completed.
+2024-09-11 13:23:17 - INFO - Starting to highlight.
+2024-09-11 13:23:17 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:23:17 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:23:17 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:23:17 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:23:17 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:23:17 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:23:17 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:23:17 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:23:17 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:23:17 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:23:17 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:23:17 - INFO - Highlighting completed.
+2024-09-11 13:24:43 - INFO - Starting to highlight.
+2024-09-11 13:24:43 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:24:43 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:24:43 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:24:43 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:24:43 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:24:43 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:24:43 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:24:43 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:24:43 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:24:43 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:24:43 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:24:43 - INFO - Highlighting completed.
+2024-09-11 13:25:56 - INFO - Starting to highlight.
+2024-09-11 13:25:56 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:25:56 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:25:56 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:25:56 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:25:56 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:25:56 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:25:56 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:25:56 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:25:56 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:25:56 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:25:56 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:25:56 - INFO - Highlighting completed.
+2024-09-11 13:28:00 - INFO - Starting to merge.
+2024-09-11 13:28:00 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 13:28:00 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 13:28:00 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 13:28:00 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 13:28:00 - INFO - Merging completed.
+2024-09-11 13:28:00 - INFO - Starting to highlight.
+2024-09-11 13:28:00 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:28:00 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:28:00 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:28:00 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:28:00 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:28:00 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:28:00 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:28:00 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:28:00 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:28:00 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:28:00 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:28:00 - INFO - Highlighting completed.
+2024-09-11 13:28:00 - INFO - Starting to reorder.
+2024-09-11 13:28:00 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-11 13:28:00 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-11 13:28:00 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-11 13:28:00 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-11 13:28:00 - INFO - Reordering completed.
+2024-09-11 13:28:55 - INFO - Starting to highlight.
+2024-09-11 13:28:55 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:28:55 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:28:55 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:28:55 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:28:55 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:28:55 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:28:55 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:28:55 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:28:55 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:28:55 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:28:55 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:28:55 - INFO - Highlighting completed.
+2024-09-11 13:29:35 - INFO - Starting to merge.
+2024-09-11 13:29:35 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 13:29:35 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 13:29:35 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 13:29:35 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 13:29:35 - INFO - Merging completed.
+2024-09-11 13:29:35 - INFO - Starting to highlight.
+2024-09-11 13:29:35 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:29:35 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:29:35 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:29:35 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:29:35 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:29:35 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:29:35 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:29:35 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:29:35 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:29:35 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:29:35 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:29:35 - INFO - Highlighting completed.
+2024-09-11 13:29:35 - INFO - Starting to reorder.
+2024-09-11 13:29:35 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-11 13:29:35 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-11 13:29:35 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-11 13:29:35 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-11 13:29:35 - INFO - Reordering completed.
+2024-09-11 13:31:59 - INFO - Starting to highlight.
+2024-09-11 13:32:52 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:32:52 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:32:53 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:33:48 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:33:48 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:34:10 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:34:10 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:34:11 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:34:11 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:34:11 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:34:11 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:34:11 - INFO - Highlighting completed.
+2024-09-11 13:36:11 - INFO - Starting to highlight.
+2024-09-11 13:36:11 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:36:11 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:36:11 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:36:11 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:36:11 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:36:11 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:36:11 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:36:11 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:36:11 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:36:11 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:36:11 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:36:11 - INFO - Highlighting completed.
+2024-09-11 13:36:28 - INFO - Starting to highlight.
+2024-09-11 13:36:28 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:36:28 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:36:28 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:36:28 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:36:28 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:36:28 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:36:28 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:36:28 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:36:28 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:36:28 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:36:28 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:36:28 - INFO - Highlighting completed.
+2024-09-11 13:46:33 - INFO - Starting to highlight.
+2024-09-11 13:46:33 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:46:33 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:46:33 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:46:33 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:46:33 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:46:33 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:46:33 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:46:33 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:46:33 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:46:33 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:46:33 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:46:33 - INFO - Highlighting completed.
+2024-09-11 13:48:58 - INFO - Starting to highlight.
+2024-09-11 13:48:58 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:48:58 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:48:58 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:48:58 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:48:58 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:48:58 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:48:58 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:48:58 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:48:58 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:48:58 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:48:58 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:48:58 - INFO - Highlighting completed.
+2024-09-11 13:49:06 - INFO - Starting to merge.
+2024-09-11 13:49:06 - INFO - Added sheet: target_0. (1/3)
+2024-09-11 13:49:06 - INFO - Added sheet: target_1. (2/3)
+2024-09-11 13:49:06 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-11 13:49:06 - INFO - Added sheet: target_2. (3/3)
+2024-09-11 13:49:06 - INFO - Merging completed.
+2024-09-11 13:49:06 - INFO - Starting to highlight.
+2024-09-11 13:49:06 - WARNING - Invalid processing time value: INVALID
+2024-09-11 13:49:06 - WARNING - Invalid JSON format found: INVALID
+2024-09-11 13:49:06 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-11 13:49:06 - WARNING - Anomaly value detected for host: target_1.
+2024-09-11 13:49:06 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-11 13:49:06 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-11 13:49:06 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-11 13:49:06 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-11 13:49:06 - WARNING - Anomaly value detected for host: target_3.
+2024-09-11 13:49:06 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-11 13:49:06 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-11 13:49:06 - INFO - Highlighting completed.
+2024-09-11 13:49:07 - INFO - Starting to reorder.
+2024-09-11 13:49:07 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-11 13:49:07 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-11 13:49:07 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-11 13:49:07 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-11 13:49:07 - INFO - Reordering completed.
+2024-09-11 13:49:32 - INFO - Starting to reorder.
+2024-09-12 01:23:22 - INFO - Process started.
+2024-09-12 01:23:22 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 01:24:03 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 01:24:27 - INFO - Starting to merge.
+2024-09-12 01:25:02 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 01:25:06 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 01:25:06 - INFO - Merging completed.
+2024-09-12 01:25:06 - INFO - Starting to highlight.
+2024-09-12 01:25:17 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 01:25:17 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 01:25:17 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 01:25:29 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 01:25:29 - WARNING - Anomaly value detected for host: 19880210.
+2024-09-12 01:25:29 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 01:25:29 - INFO - Highlighting completed.
+2024-09-12 01:25:29 - INFO - Starting to reorder.
+2024-09-12 01:25:29 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 01:25:29 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 01:25:29 - INFO - Reordering completed.
+2024-09-12 01:25:29 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 01:25:41 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 01:25:44 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 01:25:44 - INFO - Starting to merge.
+2024-09-12 01:25:44 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 01:25:44 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 01:25:44 - INFO - Merging completed.
+2024-09-12 01:25:44 - INFO - Starting to highlight.
+2024-09-12 01:25:45 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 01:25:45 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 01:25:45 - INFO - Highlighting completed.
+2024-09-12 01:25:45 - INFO - Starting to reorder.
+2024-09-12 01:25:45 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 01:25:45 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 01:25:45 - INFO - Reordering completed.
+2024-09-12 01:25:45 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 01:25:45 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 01:25:45 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 01:25:45 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 01:25:45 - INFO - Starting to merge.
+2024-09-12 01:25:49 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 01:25:49 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 01:25:49 - INFO - Merging completed.
+2024-09-12 01:25:49 - INFO - Starting to highlight.
+2024-09-12 01:26:01 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 01:26:01 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 01:26:01 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 01:26:01 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 01:26:01 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 01:26:01 - INFO - Highlighting completed.
+2024-09-12 01:26:01 - INFO - Starting to reorder.
+2024-09-12 01:26:01 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 01:26:01 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 01:26:01 - INFO - Reordering completed.
+2024-09-12 01:26:01 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 01:26:08 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 01:26:08 - INFO - Starting to log summary.
+2024-09-12 01:26:08 - INFO - Summary for 19880209:
+2024-09-12 01:26:08 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-12 01:26:08 - INFO - Summary for 19880210:
+2024-09-12 01:26:08 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-12 01:26:08 - INFO - Finished logging summary.
+2024-09-12 01:26:08 - INFO - Process completed.
+2024-09-12 04:21:12 - INFO - Process started.
+2024-09-12 04:21:12 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 05:40:16 - INFO - Process started.
+2024-09-12 05:40:16 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 08:16:19 - INFO - Process started.
+2024-09-12 08:16:19 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 08:31:14 - INFO - Process started.
+2024-09-12 08:31:14 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 08:32:25 - WARNING - No CSV files found for host 'abc01-foo'.
+2024-09-12 08:38:39 - INFO - Process started.
+2024-09-12 08:38:39 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 08:39:27 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 08:39:36 - INFO - Starting to merge.
+2024-09-12 09:01:53 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:02:06 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:02:10 - INFO - Merging completed.
+2024-09-12 09:02:16 - INFO - Starting to highlight.
+2024-09-12 09:02:43 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:02:43 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:02:43 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:03:09 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:03:09 - WARNING - Anomaly value detected for host: 19880210.
+2024-09-12 09:03:09 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:03:09 - INFO - Highlighting completed.
+2024-09-12 09:03:14 - INFO - Starting to reorder.
+2024-09-12 09:03:14 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:03:14 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:03:14 - INFO - Reordering completed.
+2024-09-12 09:03:17 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 09:03:52 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 09:03:54 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 09:03:54 - INFO - Starting to merge.
+2024-09-12 09:03:55 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:03:56 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:03:56 - INFO - Merging completed.
+2024-09-12 09:03:56 - INFO - Starting to highlight.
+2024-09-12 09:03:56 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:03:56 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:03:56 - INFO - Highlighting completed.
+2024-09-12 09:03:56 - INFO - Starting to reorder.
+2024-09-12 09:03:56 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:03:56 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:03:56 - INFO - Reordering completed.
+2024-09-12 09:03:56 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 09:03:56 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 09:03:58 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 09:03:58 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 09:03:58 - INFO - Starting to merge.
+2024-09-12 09:04:04 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:04:06 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:04:06 - INFO - Merging completed.
+2024-09-12 09:04:06 - INFO - Starting to highlight.
+2024-09-12 09:04:17 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:04:17 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:04:17 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:04:17 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:04:17 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:04:17 - INFO - Highlighting completed.
+2024-09-12 09:04:17 - INFO - Starting to reorder.
+2024-09-12 09:04:17 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:04:17 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:04:17 - INFO - Reordering completed.
+2024-09-12 09:04:17 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 09:04:24 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 09:04:26 - INFO - Starting to log summary.
+2024-09-12 09:04:26 - INFO - Summary for abc01-foo:
+2024-09-12 09:04:26 - WARNING - Exceeded threshold detected for hosts: {'19880209', '19880210'}
+2024-09-12 09:04:26 - WARNING - Anomaly value detected for hosts: {'19880209', '19880210'}
+2024-09-12 09:04:26 - INFO - Summary for abc02-foo:
+2024-09-12 09:04:26 - INFO - No anomalies detected.
+2024-09-12 09:04:26 - INFO - Summary for def01-foo:
+2024-09-12 09:04:26 - WARNING - Missing CSV for date 19880209
+2024-09-12 09:04:26 - WARNING - Missing CSV for date 19880210
+2024-09-12 09:04:26 - INFO - Summary for def02-foo:
+2024-09-12 09:04:26 - WARNING - Exceeded threshold detected for hosts: {'19880209', '19880210'}
+2024-09-12 09:04:26 - WARNING - Anomaly value detected for hosts: {'19880209'}
+2024-09-12 09:04:26 - INFO - Finished logging summary.
+2024-09-12 09:04:26 - INFO - Process completed.
+2024-09-12 09:29:12 - INFO - Process started.
+2024-09-12 09:29:12 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 09:29:12 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 09:29:12 - INFO - Starting to merge.
+2024-09-12 09:29:16 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:29:21 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:29:21 - INFO - Merging completed.
+2024-09-12 09:29:21 - INFO - Starting to highlight.
+2024-09-12 09:29:32 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:29:32 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:29:32 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:29:44 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:29:44 - WARNING - Anomaly value detected for host: 19880210.
+2024-09-12 09:29:44 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:29:44 - INFO - Highlighting completed.
+2024-09-12 09:29:44 - INFO - Starting to reorder.
+2024-09-12 09:29:44 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:29:44 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:29:44 - INFO - Reordering completed.
+2024-09-12 09:29:44 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 09:29:55 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 09:29:55 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 09:29:55 - INFO - Starting to merge.
+2024-09-12 09:29:55 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:29:55 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:29:55 - INFO - Merging completed.
+2024-09-12 09:29:55 - INFO - Starting to highlight.
+2024-09-12 09:29:55 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:29:55 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:29:55 - INFO - Highlighting completed.
+2024-09-12 09:29:55 - INFO - Starting to reorder.
+2024-09-12 09:29:55 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:29:55 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:29:55 - INFO - Reordering completed.
+2024-09-12 09:29:55 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 09:29:56 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 09:29:56 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 09:29:56 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 09:29:56 - INFO - Starting to merge.
+2024-09-12 09:29:59 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:30:00 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:30:00 - INFO - Merging completed.
+2024-09-12 09:30:00 - INFO - Starting to highlight.
+2024-09-12 09:30:09 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:30:09 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:30:09 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:30:09 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:30:09 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:30:09 - INFO - Highlighting completed.
+2024-09-12 09:30:09 - INFO - Starting to reorder.
+2024-09-12 09:30:09 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:30:09 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:30:09 - INFO - Reordering completed.
+2024-09-12 09:30:09 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 09:30:15 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 09:30:15 - INFO - Starting to log summary.
+2024-09-12 09:30:15 - INFO - Summary for abc01-foo:
+2024-09-12 09:30:15 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 09:30:15 - WARNING - Anomaly value detected for dates: {'19880209', '19880210'}
+2024-09-12 09:30:15 - INFO - Summary for abc02-foo:
+2024-09-12 09:30:15 - INFO - No anomalies detected.
+2024-09-12 09:30:15 - INFO - Summary for def01-foo:
+2024-09-12 09:30:15 - WARNING - Missing CSV for date 19880209
+2024-09-12 09:30:15 - WARNING - Missing CSV for date 19880210
+2024-09-12 09:30:15 - INFO - Summary for def02-foo:
+2024-09-12 09:30:15 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 09:30:15 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 09:30:15 - INFO - Finished logging summary.
+2024-09-12 09:30:15 - INFO - Process completed.
+2024-09-12 09:30:59 - INFO - Process started.
+2024-09-12 09:30:59 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 09:30:59 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 09:30:59 - INFO - Starting to merge.
+2024-09-12 09:31:00 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:31:00 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:31:00 - INFO - Merging completed.
+2024-09-12 09:31:00 - INFO - Starting to highlight.
+2024-09-12 09:31:01 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:31:01 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:31:01 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:31:03 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:31:03 - WARNING - Anomaly value detected for host: 19880210.
+2024-09-12 09:31:03 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:31:03 - INFO - Highlighting completed.
+2024-09-12 09:31:03 - INFO - Starting to reorder.
+2024-09-12 09:31:03 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:31:03 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:31:03 - INFO - Reordering completed.
+2024-09-12 09:31:03 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 09:31:05 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 09:31:05 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 09:31:05 - INFO - Starting to merge.
+2024-09-12 09:31:05 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:31:05 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:31:05 - INFO - Merging completed.
+2024-09-12 09:31:05 - INFO - Starting to highlight.
+2024-09-12 09:31:05 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:31:05 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:31:05 - INFO - Highlighting completed.
+2024-09-12 09:31:05 - INFO - Starting to reorder.
+2024-09-12 09:31:05 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:31:05 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:31:05 - INFO - Reordering completed.
+2024-09-12 09:31:05 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 09:31:05 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 09:31:05 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 09:31:05 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 09:31:05 - INFO - Starting to merge.
+2024-09-12 09:31:05 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 09:31:05 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 09:31:05 - INFO - Merging completed.
+2024-09-12 09:31:05 - INFO - Starting to highlight.
+2024-09-12 09:31:07 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 09:31:07 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 09:31:07 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 09:31:07 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 09:31:07 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 09:31:07 - INFO - Highlighting completed.
+2024-09-12 09:31:07 - INFO - Starting to reorder.
+2024-09-12 09:31:07 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 09:31:07 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 09:31:07 - INFO - Reordering completed.
+2024-09-12 09:31:07 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 09:31:08 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 09:31:08 - INFO - Starting to log summary.
+2024-09-12 09:31:08 - INFO - Summary for abc01-foo:
+2024-09-12 09:31:08 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 09:31:08 - WARNING - Anomaly value detected for dates: {'19880209', '19880210'}
+2024-09-12 09:31:08 - INFO - Summary for abc02-foo:
+2024-09-12 09:31:08 - INFO - No anomalies detected.
+2024-09-12 09:31:08 - INFO - Summary for def01-foo:
+2024-09-12 09:31:08 - WARNING - Missing CSV for date 19880209
+2024-09-12 09:31:08 - WARNING - Missing CSV for date 19880210
+2024-09-12 09:31:08 - INFO - Summary for def02-foo:
+2024-09-12 09:31:08 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 09:31:08 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 09:31:08 - INFO - Finished logging summary.
+2024-09-12 09:31:08 - INFO - Process completed.
+2024-09-12 11:01:11 - INFO - Process started.
+2024-09-12 11:01:11 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 11:01:11 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 11:01:11 - INFO - Starting to merge.
+2024-09-12 11:01:12 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:01:12 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:01:12 - INFO - Merging completed.
+2024-09-12 11:01:12 - INFO - Starting to highlight.
+2024-09-12 11:01:14 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 11:01:14 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 11:01:14 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:01:15 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 11:01:15 - WARNING - Anomaly value detected for host: 19880210.
+2024-09-12 11:01:15 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:01:15 - INFO - Highlighting completed.
+2024-09-12 11:01:15 - INFO - Starting to reorder.
+2024-09-12 11:01:15 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:01:15 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:01:15 - INFO - Reordering completed.
+2024-09-12 11:01:15 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 11:01:17 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 11:01:17 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 11:01:17 - INFO - Starting to merge.
+2024-09-12 11:01:17 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:01:17 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:01:17 - INFO - Merging completed.
+2024-09-12 11:01:17 - INFO - Starting to highlight.
+2024-09-12 11:01:17 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:01:17 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:01:17 - INFO - Highlighting completed.
+2024-09-12 11:01:17 - INFO - Starting to reorder.
+2024-09-12 11:01:17 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:01:17 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:01:17 - INFO - Reordering completed.
+2024-09-12 11:01:17 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 11:01:17 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 11:01:17 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 11:01:17 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 11:01:17 - INFO - Starting to merge.
+2024-09-12 11:01:18 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:01:18 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:01:18 - INFO - Merging completed.
+2024-09-12 11:01:18 - INFO - Starting to highlight.
+2024-09-12 11:01:19 - WARNING - Exceeded processing time threshold detected for host: 19880209.
+2024-09-12 11:01:19 - WARNING - Anomaly value detected for host: 19880209.
+2024-09-12 11:01:19 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:01:19 - WARNING - Exceeded processing time threshold detected for host: 19880210.
+2024-09-12 11:01:19 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:01:19 - INFO - Highlighting completed.
+2024-09-12 11:01:19 - INFO - Starting to reorder.
+2024-09-12 11:01:19 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:01:19 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:01:19 - INFO - Reordering completed.
+2024-09-12 11:01:19 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 11:01:20 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 11:01:20 - INFO - Starting to log summary.
+2024-09-12 11:01:20 - INFO - Summary for abc01-foo:
+2024-09-12 11:01:20 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 11:01:20 - WARNING - Anomaly value detected for dates: {'19880210', '19880209'}
+2024-09-12 11:01:20 - INFO - Summary for abc02-foo:
+2024-09-12 11:01:20 - INFO - No anomalies detected.
+2024-09-12 11:01:20 - INFO - Summary for def01-foo:
+2024-09-12 11:01:20 - WARNING - Missing CSV for date 19880209
+2024-09-12 11:01:20 - WARNING - Missing CSV for date 19880210
+2024-09-12 11:01:20 - INFO - Summary for def02-foo:
+2024-09-12 11:01:20 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 11:01:20 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 11:01:20 - INFO - Finished logging summary.
+2024-09-12 11:01:20 - INFO - Process completed.
+2024-09-12 11:05:09 - INFO - Process started.
+2024-09-12 11:05:09 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 11:05:09 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 11:05:09 - INFO - Starting to merge.
+2024-09-12 11:05:10 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:05:10 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:05:10 - INFO - Merging completed.
+2024-09-12 11:05:11 - INFO - Starting to highlight.
+2024-09-12 11:05:12 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 11:05:12 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 11:05:12 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:05:13 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 11:05:13 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 11:05:13 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:05:13 - INFO - Highlighting completed.
+2024-09-12 11:05:13 - INFO - Starting to reorder.
+2024-09-12 11:05:13 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:05:13 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:05:13 - INFO - Reordering completed.
+2024-09-12 11:05:13 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 11:05:16 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 11:05:16 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 11:05:16 - INFO - Starting to merge.
+2024-09-12 11:05:16 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:05:16 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:05:16 - INFO - Merging completed.
+2024-09-12 11:05:16 - INFO - Starting to highlight.
+2024-09-12 11:05:16 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:05:16 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:05:16 - INFO - Highlighting completed.
+2024-09-12 11:05:16 - INFO - Starting to reorder.
+2024-09-12 11:05:16 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:05:16 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:05:16 - INFO - Reordering completed.
+2024-09-12 11:05:16 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 11:05:16 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 11:05:16 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 11:05:16 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 11:05:16 - INFO - Starting to merge.
+2024-09-12 11:05:16 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 11:05:16 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 11:05:16 - INFO - Merging completed.
+2024-09-12 11:05:16 - INFO - Starting to highlight.
+2024-09-12 11:05:18 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 11:05:18 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 11:05:18 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 11:05:18 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 11:05:18 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 11:05:18 - INFO - Highlighting completed.
+2024-09-12 11:05:18 - INFO - Starting to reorder.
+2024-09-12 11:05:18 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 11:05:18 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 11:05:18 - INFO - Reordering completed.
+2024-09-12 11:05:18 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 11:05:19 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 11:05:19 - INFO - Starting to log summary.
+2024-09-12 11:05:19 - INFO - Summary for abc01-foo:
+2024-09-12 11:05:19 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 11:05:19 - WARNING - Anomaly value detected for dates: {'19880210', '19880209'}
+2024-09-12 11:05:19 - INFO - Summary for abc02-foo:
+2024-09-12 11:05:19 - INFO - No anomalies detected.
+2024-09-12 11:05:19 - INFO - Summary for def01-foo:
+2024-09-12 11:05:19 - WARNING - Missing CSV for date 19880209
+2024-09-12 11:05:19 - WARNING - Missing CSV for date 19880210
+2024-09-12 11:05:19 - INFO - Summary for def02-foo:
+2024-09-12 11:05:19 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 11:05:19 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 11:05:19 - INFO - Finished logging summary.
+2024-09-12 11:05:19 - INFO - Process completed.
+2024-09-12 12:04:13 - INFO - Process started.
+2024-09-12 12:04:13 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:09:28 - INFO - Process started.
+2024-09-12 12:09:28 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:30:44 - INFO - Process started.
+2024-09-12 12:30:44 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:30:53 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 12:30:53 - INFO - Starting to merge.
+2024-09-12 12:31:00 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:31:05 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:31:05 - INFO - Merging completed.
+2024-09-12 12:31:05 - INFO - Starting to highlight.
+2024-09-12 12:31:17 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:31:17 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:31:17 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:31:29 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:31:29 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 12:31:29 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:31:29 - INFO - Highlighting completed.
+2024-09-12 12:31:29 - INFO - Starting to reorder.
+2024-09-12 12:31:29 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:31:29 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:31:29 - INFO - Reordering completed.
+2024-09-12 12:31:29 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 12:31:41 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 12:31:41 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 12:31:41 - INFO - Starting to merge.
+2024-09-12 12:31:41 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:31:41 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:31:41 - INFO - Merging completed.
+2024-09-12 12:31:41 - INFO - Starting to highlight.
+2024-09-12 12:31:41 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:31:41 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:31:41 - INFO - Highlighting completed.
+2024-09-12 12:31:41 - INFO - Starting to reorder.
+2024-09-12 12:31:41 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:31:41 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:31:41 - INFO - Reordering completed.
+2024-09-12 12:31:41 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 12:31:41 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 12:31:41 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 12:31:41 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 12:31:41 - INFO - Starting to merge.
+2024-09-12 12:31:46 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:31:46 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:31:46 - INFO - Merging completed.
+2024-09-12 12:31:46 - INFO - Starting to highlight.
+2024-09-12 12:31:58 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:31:58 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:31:58 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:31:58 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:31:58 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:31:58 - INFO - Highlighting completed.
+2024-09-12 12:31:58 - INFO - Starting to reorder.
+2024-09-12 12:31:58 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:31:58 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:31:58 - INFO - Reordering completed.
+2024-09-12 12:31:58 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 12:32:04 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 12:32:04 - INFO - Starting to log summary.
+2024-09-12 12:32:04 - INFO - Summary for abc01-foo:
+2024-09-12 12:32:04 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 12:32:04 - WARNING - Anomaly value detected for dates: {'19880210', '19880209'}
+2024-09-12 12:32:04 - INFO - Summary for abc02-foo:
+2024-09-12 12:32:04 - INFO - No anomalies detected.
+2024-09-12 12:32:04 - INFO - Summary for def01-foo:
+2024-09-12 12:32:04 - WARNING - Missing CSV for date 19880209
+2024-09-12 12:32:04 - WARNING - Missing CSV for date 19880210
+2024-09-12 12:32:04 - INFO - Summary for def02-foo:
+2024-09-12 12:32:04 - WARNING - Exceeded threshold detected for dates: {'19880210', '19880209'}
+2024-09-12 12:32:04 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 12:32:04 - INFO - Finished logging summary.
+2024-09-12 12:32:04 - INFO - Process completed.
+2024-09-12 12:45:44 - INFO - Process started.
+2024-09-12 12:45:44 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:45:44 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 12:45:44 - INFO - Starting to merge.
+2024-09-12 12:45:45 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:45:45 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:45:45 - INFO - Merging completed.
+2024-09-12 12:45:45 - INFO - Starting to highlight.
+2024-09-12 12:45:46 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:45:47 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:45:47 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:45:48 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:45:48 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 12:45:48 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:45:48 - INFO - Highlighting completed.
+2024-09-12 12:45:48 - INFO - Starting to reorder.
+2024-09-12 12:45:48 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:45:48 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:45:48 - INFO - Reordering completed.
+2024-09-12 12:45:48 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 12:45:50 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 12:45:50 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 12:45:50 - INFO - Starting to merge.
+2024-09-12 12:45:50 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:45:50 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:45:50 - INFO - Merging completed.
+2024-09-12 12:45:50 - INFO - Starting to highlight.
+2024-09-12 12:45:50 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:45:50 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:45:50 - INFO - Highlighting completed.
+2024-09-12 12:45:50 - INFO - Starting to reorder.
+2024-09-12 12:45:50 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:45:50 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:45:50 - INFO - Reordering completed.
+2024-09-12 12:45:50 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 12:45:50 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 12:45:50 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 12:45:50 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 12:45:50 - INFO - Starting to merge.
+2024-09-12 12:45:51 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:45:51 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:45:51 - INFO - Merging completed.
+2024-09-12 12:45:51 - INFO - Starting to highlight.
+2024-09-12 12:45:52 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:45:52 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:45:52 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:45:52 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:45:52 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:45:52 - INFO - Highlighting completed.
+2024-09-12 12:45:52 - INFO - Starting to reorder.
+2024-09-12 12:45:52 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:45:52 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:45:52 - INFO - Reordering completed.
+2024-09-12 12:45:52 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 12:45:53 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 12:45:53 - INFO - Starting to log summary.
+2024-09-12 12:45:53 - INFO - Summary for def01-foo:
+2024-09-12 12:45:53 - WARNING - Missing CSV for date 19880209
+2024-09-12 12:45:53 - WARNING - Missing CSV for date 19880210
+2024-09-12 12:45:53 - INFO - Finished logging summary.
+2024-09-12 12:45:53 - INFO - Process completed.
+2024-09-12 12:46:34 - INFO - Process started.
+2024-09-12 12:46:34 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:46:34 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 12:46:34 - INFO - Starting to merge.
+2024-09-12 12:46:35 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:46:36 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:46:36 - INFO - Merging completed.
+2024-09-12 12:46:36 - INFO - Starting to highlight.
+2024-09-12 12:46:37 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:46:37 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:46:37 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:46:39 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:46:39 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 12:46:39 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:46:39 - INFO - Highlighting completed.
+2024-09-12 12:46:39 - INFO - Starting to reorder.
+2024-09-12 12:46:39 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:46:39 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:46:39 - INFO - Reordering completed.
+2024-09-12 12:46:39 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 12:46:42 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 12:46:42 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 12:46:42 - INFO - Starting to merge.
+2024-09-12 12:46:42 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:46:42 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:46:42 - INFO - Merging completed.
+2024-09-12 12:46:42 - INFO - Starting to highlight.
+2024-09-12 12:46:42 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:46:42 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:46:42 - INFO - Highlighting completed.
+2024-09-12 12:46:42 - INFO - Starting to reorder.
+2024-09-12 12:46:42 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:46:42 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:46:42 - INFO - Reordering completed.
+2024-09-12 12:46:42 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 12:46:42 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 12:46:42 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 12:46:42 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 12:46:42 - INFO - Starting to merge.
+2024-09-12 12:46:42 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:46:42 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:46:42 - INFO - Merging completed.
+2024-09-12 12:46:42 - INFO - Starting to highlight.
+2024-09-12 12:46:44 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:46:44 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:46:44 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:46:44 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:46:44 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:46:44 - INFO - Highlighting completed.
+2024-09-12 12:46:44 - INFO - Starting to reorder.
+2024-09-12 12:46:44 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:46:44 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:46:44 - INFO - Reordering completed.
+2024-09-12 12:46:44 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 12:46:45 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 12:46:45 - INFO - Starting to log summary.
+2024-09-12 12:46:45 - INFO - Summary for def01-foo:
+2024-09-12 12:46:45 - WARNING - Missing CSV for date 19880209
+2024-09-12 12:46:45 - WARNING - Missing CSV for date 19880210
+2024-09-12 12:46:45 - INFO - Finished logging summary.
+2024-09-12 12:46:45 - INFO - Process completed.
+2024-09-12 12:47:22 - INFO - Process started.
+2024-09-12 12:47:22 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:47:22 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 12:47:22 - INFO - Starting to merge.
+2024-09-12 12:47:23 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:47:24 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:47:24 - INFO - Merging completed.
+2024-09-12 12:47:24 - INFO - Starting to highlight.
+2024-09-12 12:47:25 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:47:25 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:47:25 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:47:27 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:47:27 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 12:47:27 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:47:27 - INFO - Highlighting completed.
+2024-09-12 12:47:27 - INFO - Starting to reorder.
+2024-09-12 12:47:27 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:47:27 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:47:27 - INFO - Reordering completed.
+2024-09-12 12:47:27 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 12:47:29 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 12:47:29 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 12:47:29 - INFO - Starting to merge.
+2024-09-12 12:47:29 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:47:29 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:47:29 - INFO - Merging completed.
+2024-09-12 12:47:29 - INFO - Starting to highlight.
+2024-09-12 12:47:29 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:47:29 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:47:29 - INFO - Highlighting completed.
+2024-09-12 12:47:29 - INFO - Starting to reorder.
+2024-09-12 12:47:29 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:47:29 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:47:29 - INFO - Reordering completed.
+2024-09-12 12:47:29 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 12:47:29 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 12:47:29 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 12:47:29 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 12:47:29 - INFO - Starting to merge.
+2024-09-12 12:47:30 - INFO - Added sheet: 19880209. (1/2)
+2024-09-12 12:47:30 - INFO - Added sheet: 19880210. (2/2)
+2024-09-12 12:47:30 - INFO - Merging completed.
+2024-09-12 12:47:30 - INFO - Starting to highlight.
+2024-09-12 12:47:31 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:47:31 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:47:31 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-12 12:47:31 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:47:31 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-12 12:47:31 - INFO - Highlighting completed.
+2024-09-12 12:47:31 - INFO - Starting to reorder.
+2024-09-12 12:47:31 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-12 12:47:31 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-12 12:47:31 - INFO - Reordering completed.
+2024-09-12 12:47:31 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 12:47:32 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 12:47:32 - INFO - Starting to log summary.
+2024-09-12 12:47:32 - INFO - Summary for abc01-foo:
+2024-09-12 12:47:32 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 12:47:32 - WARNING - Anomaly value detected for dates: {'19880209', '19880210'}
+2024-09-12 12:47:32 - INFO - Summary for abc02-foo:
+2024-09-12 12:47:32 - INFO - No anomalies detected.
+2024-09-12 12:47:32 - INFO - Summary for def01-foo:
+2024-09-12 12:47:32 - WARNING - Missing CSV for date 19880209
+2024-09-12 12:47:32 - WARNING - Missing CSV for date 19880210
+2024-09-12 12:47:32 - INFO - Summary for def02-foo:
+2024-09-12 12:47:32 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 12:47:32 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 12:47:32 - INFO - Finished logging summary.
+2024-09-12 12:47:32 - INFO - Process completed.
+2024-09-12 12:47:55 - INFO - Process started.
+2024-09-12 12:47:55 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 12:47:55 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-12 12:47:55 - INFO - Starting to merge.
+2024-09-12 12:47:56 - INFO - Added sheet: 19880209. (1/4)
+2024-09-12 12:47:56 - INFO - Added sheet: 19880210. (2/4)
+2024-09-12 12:47:56 - INFO - Added sheet: 19880211. (3/4)
+2024-09-12 12:47:56 - INFO - Added sheet: 19880212. (4/4)
+2024-09-12 12:47:56 - INFO - Merging completed.
+2024-09-12 12:47:56 - INFO - Starting to highlight.
+2024-09-12 12:47:58 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:47:58 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:47:58 - INFO - Analyzed sheet: 19880209. (1/4)
+2024-09-12 12:47:59 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:47:59 - WARNING - Anomaly value detected for date: 19880210.
+2024-09-12 12:47:59 - INFO - Analyzed sheet: 19880210. (2/4)
+2024-09-12 12:47:59 - INFO - Analyzed sheet: 19880211. (3/4)
+2024-09-12 12:47:59 - INFO - Analyzed sheet: 19880212. (4/4)
+2024-09-12 12:47:59 - INFO - Highlighting completed.
+2024-09-12 12:47:59 - INFO - Starting to reorder.
+2024-09-12 12:47:59 - INFO - Reordered sheet: 19880209. (1/4)
+2024-09-12 12:47:59 - INFO - Reordered sheet: 19880210. (2/4)
+2024-09-12 12:47:59 - INFO - Reordered sheet: 19880211. (3/4)
+2024-09-12 12:47:59 - INFO - Reordered sheet: 19880212. (4/4)
+2024-09-12 12:47:59 - INFO - Reordering completed.
+2024-09-12 12:47:59 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-12 12:48:01 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-12 12:48:01 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-12 12:48:01 - INFO - Starting to merge.
+2024-09-12 12:48:01 - INFO - Added sheet: 19880209. (1/4)
+2024-09-12 12:48:01 - INFO - Added sheet: 19880210. (2/4)
+2024-09-12 12:48:01 - INFO - Added sheet: 19880211. (3/4)
+2024-09-12 12:48:01 - INFO - Added sheet: 19880212. (4/4)
+2024-09-12 12:48:01 - INFO - Merging completed.
+2024-09-12 12:48:01 - INFO - Starting to highlight.
+2024-09-12 12:48:01 - INFO - Analyzed sheet: 19880209. (1/4)
+2024-09-12 12:48:01 - INFO - Analyzed sheet: 19880210. (2/4)
+2024-09-12 12:48:01 - INFO - Analyzed sheet: 19880211. (3/4)
+2024-09-12 12:48:01 - INFO - Analyzed sheet: 19880212. (4/4)
+2024-09-12 12:48:01 - INFO - Highlighting completed.
+2024-09-12 12:48:01 - INFO - Starting to reorder.
+2024-09-12 12:48:01 - INFO - Reordered sheet: 19880209. (1/4)
+2024-09-12 12:48:01 - INFO - Reordered sheet: 19880210. (2/4)
+2024-09-12 12:48:01 - INFO - Reordered sheet: 19880211. (3/4)
+2024-09-12 12:48:01 - INFO - Reordered sheet: 19880212. (4/4)
+2024-09-12 12:48:01 - INFO - Reordering completed.
+2024-09-12 12:48:01 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-12 12:48:01 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-12 12:48:01 - WARNING - No CSV files found for host 'def01-foo'.
+2024-09-12 12:48:01 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-12 12:48:01 - INFO - Starting to merge.
+2024-09-12 12:48:02 - INFO - Added sheet: 19880209. (1/4)
+2024-09-12 12:48:02 - INFO - Added sheet: 19880210. (2/4)
+2024-09-12 12:48:02 - INFO - Added sheet: 19880211. (3/4)
+2024-09-12 12:48:02 - INFO - Added sheet: 19880212. (4/4)
+2024-09-12 12:48:02 - INFO - Merging completed.
+2024-09-12 12:48:02 - INFO - Starting to highlight.
+2024-09-12 12:48:03 - WARNING - Exceeded processing time threshold detected for date: 19880209.
+2024-09-12 12:48:03 - WARNING - Anomaly value detected for date: 19880209.
+2024-09-12 12:48:03 - INFO - Analyzed sheet: 19880209. (1/4)
+2024-09-12 12:48:03 - WARNING - Exceeded processing time threshold detected for date: 19880210.
+2024-09-12 12:48:03 - INFO - Analyzed sheet: 19880210. (2/4)
+2024-09-12 12:48:03 - INFO - Analyzed sheet: 19880211. (3/4)
+2024-09-12 12:48:03 - INFO - Analyzed sheet: 19880212. (4/4)
+2024-09-12 12:48:03 - INFO - Highlighting completed.
+2024-09-12 12:48:03 - INFO - Starting to reorder.
+2024-09-12 12:48:03 - INFO - Reordered sheet: 19880209. (1/4)
+2024-09-12 12:48:03 - INFO - Reordered sheet: 19880210. (2/4)
+2024-09-12 12:48:03 - INFO - Reordered sheet: 19880211. (3/4)
+2024-09-12 12:48:03 - INFO - Reordered sheet: 19880212. (4/4)
+2024-09-12 12:48:03 - INFO - Reordering completed.
+2024-09-12 12:48:03 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-12 12:48:05 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-12 12:48:05 - INFO - Starting to log summary.
+2024-09-12 12:48:05 - INFO - Summary for abc01-foo:
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880211
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880212
+2024-09-12 12:48:05 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 12:48:05 - WARNING - Anomaly value detected for dates: {'19880209', '19880210'}
+2024-09-12 12:48:05 - INFO - Summary for abc02-foo:
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880211
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880212
+2024-09-12 12:48:05 - INFO - Summary for def01-foo:
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880209
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880210
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880211
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880212
+2024-09-12 12:48:05 - INFO - Summary for def02-foo:
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880211
+2024-09-12 12:48:05 - WARNING - Missing CSV for date 19880212
+2024-09-12 12:48:05 - WARNING - Exceeded threshold detected for dates: {'19880209', '19880210'}
+2024-09-12 12:48:05 - WARNING - Anomaly value detected for dates: {'19880209'}
+2024-09-12 12:48:05 - INFO - Finished logging summary.
+2024-09-12 12:48:05 - INFO - Process completed.
+2024-09-12 12:54:58 - INFO - Starting to merge.
+2024-09-12 12:54:58 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 12:54:58 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 12:54:58 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 12:54:58 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 12:54:58 - INFO - Merging completed.
+2024-09-12 12:54:58 - INFO - Starting to highlight.
+2024-09-12 12:54:58 - WARNING - Invalid processing time value: INVALID
+2024-09-12 12:54:58 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 12:54:58 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 12:54:58 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 12:54:58 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 12:54:58 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 12:54:58 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 12:54:58 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 12:54:58 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 12:54:58 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 12:54:58 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 12:54:58 - INFO - Highlighting completed.
+2024-09-12 12:54:58 - INFO - Starting to reorder.
+2024-09-12 12:54:58 - INFO - Reordered sheet: target_0. (1/5)
+2024-09-12 12:54:58 - INFO - Reordering completed.
+2024-09-12 12:56:02 - INFO - Starting to highlight.
+2024-09-12 12:56:02 - WARNING - Invalid processing time value: INVALID
+2024-09-12 12:56:02 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 12:56:02 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 12:56:02 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 12:56:02 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 12:56:02 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 12:56:02 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 12:56:02 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 12:56:02 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 12:56:02 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 12:56:02 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 12:56:02 - INFO - Highlighting completed.
+2024-09-12 12:56:02 - INFO - Starting to reorder.
+2024-09-12 12:56:02 - INFO - Reordered sheet: target_0. (1/5)
+2024-09-12 12:56:02 - INFO - Reordering completed.
+2024-09-12 12:56:31 - INFO - Starting to merge.
+2024-09-12 12:56:31 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 12:56:31 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 12:56:31 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 12:56:31 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 12:56:31 - INFO - Merging completed.
+2024-09-12 12:56:31 - INFO - Starting to highlight.
+2024-09-12 12:56:31 - WARNING - Invalid processing time value: INVALID
+2024-09-12 12:56:31 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 12:56:31 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 12:56:31 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 12:56:31 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 12:56:31 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 12:56:31 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 12:56:31 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 12:56:31 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 12:56:31 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 12:56:31 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 12:56:31 - INFO - Highlighting completed.
+2024-09-12 12:56:32 - INFO - Starting to reorder.
+2024-09-12 12:56:32 - INFO - Reordered sheet: target_0. (1/5)
+2024-09-12 12:56:32 - INFO - Reordering completed.
+2024-09-12 12:56:57 - INFO - Starting to merge.
+2024-09-12 12:56:57 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 12:56:57 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 12:56:57 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 12:56:57 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 12:56:57 - INFO - Merging completed.
+2024-09-12 12:56:57 - INFO - Starting to highlight.
+2024-09-12 12:56:57 - WARNING - Invalid processing time value: INVALID
+2024-09-12 12:56:57 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 12:56:57 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 12:56:57 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 12:56:57 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 12:56:57 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 12:56:57 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 12:56:57 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 12:56:57 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 12:56:57 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 12:56:57 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 12:56:57 - INFO - Highlighting completed.
+2024-09-12 12:56:57 - INFO - Starting to reorder.
+2024-09-12 12:56:57 - INFO - Reordered sheet: target_0. (1/5)
+2024-09-12 12:56:57 - INFO - Reordering completed.
+2024-09-12 13:06:23 - INFO - Starting to merge.
+2024-09-12 13:06:23 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 13:06:23 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 13:06:23 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 13:06:23 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 13:06:23 - INFO - Merging completed.
+2024-09-12 13:06:23 - INFO - Starting to highlight.
+2024-09-12 13:06:23 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:06:23 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:06:23 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:06:23 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 13:06:23 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 13:06:23 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 13:06:23 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 13:06:23 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 13:06:23 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 13:06:23 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 13:06:23 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 13:06:23 - INFO - Highlighting completed.
+2024-09-12 13:06:23 - INFO - Starting to reorder.
+2024-09-12 13:06:23 - INFO - Reordered sheet: target_0. (1/5)
+2024-09-12 13:06:23 - INFO - Reordering completed.
+2024-09-12 13:11:57 - INFO - Starting to reorder.
+2024-09-12 13:22:18 - INFO - Starting to highlight.
+2024-09-12 13:22:18 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:22:18 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:22:18 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:22:18 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 13:22:18 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 13:22:18 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 13:22:18 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 13:22:18 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 13:22:18 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 13:22:18 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 13:22:18 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 13:22:18 - INFO - Highlighting completed.
+2024-09-12 13:22:18 - INFO - Starting to reorder.
+2024-09-12 13:22:18 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-12 13:22:18 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-12 13:22:18 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-12 13:22:18 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-12 13:22:18 - INFO - Reordering completed.
+2024-09-12 13:22:34 - INFO - Starting to merge.
+2024-09-12 13:22:34 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 13:22:34 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 13:22:34 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 13:22:34 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 13:22:34 - INFO - Merging completed.
+2024-09-12 13:22:34 - INFO - Starting to highlight.
+2024-09-12 13:22:34 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:22:34 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:22:34 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:22:34 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 13:22:34 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 13:22:34 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 13:22:34 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 13:22:34 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 13:22:34 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 13:22:34 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 13:22:34 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 13:22:34 - INFO - Highlighting completed.
+2024-09-12 13:22:34 - INFO - Starting to reorder.
+2024-09-12 13:22:34 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-12 13:22:34 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-12 13:22:34 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-12 13:22:34 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-12 13:22:34 - INFO - Reordering completed.
+2024-09-12 13:26:34 - INFO - Process started.
+2024-09-12 13:26:34 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-12 13:26:34 - INFO - Starting to create 'output/19880209/19880209_abc0.xlsx'.
+2024-09-12 13:26:34 - INFO - Starting to merge.
+2024-09-12 13:26:39 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-12 13:26:39 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-12 13:26:39 - INFO - Merging completed.
+2024-09-12 13:26:39 - INFO - Starting to highlight.
+2024-09-12 13:26:51 - WARNING - Exceeded processing time threshold detected for host: abc01-foo.
+2024-09-12 13:26:51 - WARNING - Anomaly value detected for host: abc01-foo.
+2024-09-12 13:26:51 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-12 13:26:51 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-12 13:26:51 - INFO - Highlighting completed.
+2024-09-12 13:26:51 - INFO - Starting to reorder.
+2024-09-12 13:26:51 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-12 13:26:51 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-12 13:26:51 - INFO - Reordering completed.
+2024-09-12 13:26:51 - INFO - Saving 'output/19880209/19880209_abc0.xlsx'.
+2024-09-12 13:26:57 - INFO - Finished creating 'output/19880209/19880209_abc0.xlsx'.
+2024-09-12 13:27:07 - INFO - Starting to highlight.
+2024-09-12 13:27:19 - WARNING - Exceeded processing time threshold detected for host: abc01-foo.
+2024-09-12 13:27:19 - WARNING - Anomaly value detected for host: abc01-foo.
+2024-09-12 13:27:19 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-12 13:27:19 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-12 13:27:19 - INFO - Highlighting completed.
+2024-09-12 13:27:23 - INFO - Starting to reorder.
+2024-09-12 13:27:51 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-12 13:27:51 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-12 13:27:51 - INFO - Reordering completed.
+2024-09-12 13:27:57 - INFO - Starting to create 'output/19880209/19880209_def0.xlsx'.
+2024-09-12 13:27:57 - INFO - Starting to merge.
+2024-09-12 13:27:57 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-12 13:28:02 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-12 13:28:02 - INFO - Merging completed.
+2024-09-12 13:28:02 - INFO - Starting to highlight.
+2024-09-12 13:28:02 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-12 13:28:14 - WARNING - Exceeded processing time threshold detected for host: def02-foo.
+2024-09-12 13:28:14 - WARNING - Anomaly value detected for host: def02-foo.
+2024-09-12 13:28:14 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-12 13:28:14 - INFO - Highlighting completed.
+2024-09-12 13:28:14 - INFO - Starting to reorder.
+2024-09-12 13:31:11 - INFO - Starting to reorder.
+2024-09-12 13:38:02 - INFO - Starting to reorder.
+2024-09-12 13:40:08 - INFO - Starting to highlight.
+2024-09-12 13:41:02 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:41:02 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:41:02 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:46:46 - INFO - Starting to highlight.
+2024-09-12 13:46:46 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:46:46 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:46:46 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:46:46 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 13:46:46 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 13:46:46 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 13:46:46 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 13:46:46 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 13:46:46 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 13:46:46 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 13:46:46 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 13:46:46 - INFO - Highlighting completed.
+2024-09-12 13:47:11 - INFO - Starting to reorder.
+2024-09-12 13:47:11 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-12 13:47:11 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-12 13:47:11 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-12 13:47:11 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-12 13:47:11 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-12 13:47:11 - INFO - Reordering completed.
+2024-09-12 13:58:32 - INFO - Starting to merge.
+2024-09-12 13:58:32 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 13:58:32 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 13:58:32 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 13:58:32 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 13:58:32 - INFO - Merging completed.
+2024-09-12 13:58:32 - INFO - Starting to highlight.
+2024-09-12 13:58:32 - WARNING - Invalid processing time value: INVALID
+2024-09-12 13:58:32 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 13:58:32 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 13:58:32 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 13:58:32 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 13:58:32 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 13:58:32 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 13:58:32 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 13:58:32 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 13:58:32 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 13:58:32 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 13:58:32 - INFO - Highlighting completed.
+2024-09-12 13:58:32 - INFO - Starting to reorder.
+2024-09-12 13:58:32 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-12 13:58:32 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-12 13:58:32 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-12 13:58:32 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-12 13:58:32 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-12 13:58:32 - INFO - Reordering completed.
+2024-09-12 14:00:02 - INFO - Starting to highlight.
+2024-09-12 14:00:02 - WARNING - Invalid processing time value: INVALID
+2024-09-12 14:00:02 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 14:00:02 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 14:00:02 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 14:00:02 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 14:00:02 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 14:00:02 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 14:00:02 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 14:00:02 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 14:00:02 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 14:00:02 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 14:00:02 - INFO - Highlighting completed.
+2024-09-12 14:00:16 - INFO - Starting to merge.
+2024-09-12 14:00:16 - INFO - Added sheet: target_0. (1/3)
+2024-09-12 14:00:16 - INFO - Added sheet: target_1. (2/3)
+2024-09-12 14:00:16 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-12 14:00:16 - INFO - Added sheet: target_2. (3/3)
+2024-09-12 14:00:16 - INFO - Merging completed.
+2024-09-12 14:00:16 - INFO - Starting to highlight.
+2024-09-12 14:00:16 - WARNING - Invalid processing time value: INVALID
+2024-09-12 14:00:16 - WARNING - Invalid JSON format found: INVALID
+2024-09-12 14:00:16 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-12 14:00:16 - WARNING - Anomaly value detected for host: target_1.
+2024-09-12 14:00:16 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-12 14:00:16 - WARNING - Exceeded processing time threshold detected for host: target_2.
+2024-09-12 14:00:16 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-12 14:00:16 - WARNING - Exceeded processing time threshold detected for host: target_3.
+2024-09-12 14:00:16 - WARNING - Anomaly value detected for host: target_3.
+2024-09-12 14:00:16 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-12 14:00:16 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-12 14:00:16 - INFO - Highlighting completed.
+2024-09-12 14:00:16 - INFO - Starting to reorder.
+2024-09-12 14:00:16 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-12 14:00:16 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-12 14:00:16 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-12 14:00:16 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-12 14:00:16 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-12 14:00:16 - INFO - Reordering completed.
+2024-09-15 04:14:42 - INFO - Process started.
+2024-09-15 04:14:42 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 04:14:43 - INFO - Starting to create 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:14:43 - INFO - Starting to merge.
+2024-09-15 04:14:43 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:14:43 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:14:43 - INFO - Merging completed.
+2024-09-15 04:14:43 - INFO - Starting to highlight.
+2024-09-15 04:14:45 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:14:45 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:14:45 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:14:45 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:14:45 - INFO - Highlighting completed.
+2024-09-15 04:14:45 - INFO - Starting to reorder.
+2024-09-15 04:14:45 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:14:45 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:14:45 - INFO - Reordering completed.
+2024-09-15 04:14:45 - INFO - Saving 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:14:46 - INFO - Finished creating 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:14:46 - INFO - Starting to create 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:14:46 - INFO - Starting to merge.
+2024-09-15 04:14:46 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:14:46 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:14:46 - INFO - Merging completed.
+2024-09-15 04:14:46 - INFO - Starting to highlight.
+2024-09-15 04:14:46 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:14:48 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:14:48 - WARNING - Anomaly value detected : def02-foo
+2024-09-15 04:14:48 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:14:48 - INFO - Highlighting completed.
+2024-09-15 04:14:48 - INFO - Starting to reorder.
+2024-09-15 04:14:48 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:14:48 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:14:48 - INFO - Reordering completed.
+2024-09-15 04:14:48 - INFO - Saving 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:14:49 - INFO - Finished creating 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:14:49 - INFO - Starting to create 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:14:49 - INFO - Starting to merge.
+2024-09-15 04:14:49 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:14:49 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:14:49 - INFO - Merging completed.
+2024-09-15 04:14:49 - INFO - Starting to highlight.
+2024-09-15 04:14:51 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:14:51 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:14:51 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:14:51 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:14:51 - INFO - Highlighting completed.
+2024-09-15 04:14:51 - INFO - Starting to reorder.
+2024-09-15 04:14:51 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:14:51 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:14:51 - INFO - Reordering completed.
+2024-09-15 04:14:51 - INFO - Saving 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:14:52 - INFO - Finished creating 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:14:52 - INFO - Starting to create 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:14:52 - INFO - Starting to merge.
+2024-09-15 04:14:52 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:14:52 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Merging completed.
+2024-09-15 04:14:52 - INFO - Starting to highlight.
+2024-09-15 04:14:52 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:14:52 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:14:52 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Highlighting completed.
+2024-09-15 04:14:52 - INFO - Starting to reorder.
+2024-09-15 04:14:52 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:14:52 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Reordering completed.
+2024-09-15 04:14:52 - INFO - Saving 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:14:52 - INFO - Finished creating 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:14:52 - WARNING - No CSV files found for date 19880211.
+2024-09-15 04:14:52 - WARNING - No CSV files found for date 19880212.
+2024-09-15 04:14:52 - WARNING - No CSV files found for target prefix 'abc0' on date 19880213.
+2024-09-15 04:14:52 - INFO - Starting to create 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:14:52 - INFO - Starting to merge.
+2024-09-15 04:14:52 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:14:52 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Merging completed.
+2024-09-15 04:14:52 - INFO - Starting to highlight.
+2024-09-15 04:14:52 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:14:52 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Highlighting completed.
+2024-09-15 04:14:52 - INFO - Starting to reorder.
+2024-09-15 04:14:52 - INFO - Reordered sheet: def01-foo. (1/2)
+2024-09-15 04:14:52 - INFO - Reordered sheet: def02-foo. (2/2)
+2024-09-15 04:14:52 - INFO - Reordering completed.
+2024-09-15 04:14:52 - INFO - Saving 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:14:52 - INFO - Finished creating 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:14:52 - WARNING - No CSV files found for date 19880214.
+2024-09-15 04:14:52 - INFO - Starting to log summary.
+2024-09-15 04:14:52 - INFO - Summary for 19880209:
+2024-09-15 04:14:52 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-15 04:14:52 - WARNING - Exceeded threshold detected for hosts: {'abc01-foo', 'def02-foo'}
+2024-09-15 04:14:52 - WARNING - Anomaly value detected for hosts: {'abc01-foo', 'def02-foo'}
+2024-09-15 04:14:52 - INFO - Summary for 19880210:
+2024-09-15 04:14:52 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-15 04:14:52 - WARNING - Exceeded threshold detected for hosts: {'abc01-foo', 'def02-foo'}
+2024-09-15 04:14:52 - WARNING - Anomaly value detected for hosts: {'abc01-foo'}
+2024-09-15 04:14:52 - INFO - Summary for 19880211:
+2024-09-15 04:14:52 - WARNING - No CSV files found.
+2024-09-15 04:14:52 - INFO - Summary for 19880212:
+2024-09-15 04:14:52 - WARNING - No CSV files found.
+2024-09-15 04:14:52 - INFO - Summary for 19880213:
+2024-09-15 04:14:52 - WARNING - Partial data loss, missing hosts: ['abc01-foo', 'abc02-foo', 'def02-foo']
+2024-09-15 04:14:52 - INFO - Summary for 19880214:
+2024-09-15 04:14:52 - WARNING - No CSV files found.
+2024-09-15 04:14:52 - INFO - Finished logging summary.
+2024-09-15 04:14:52 - INFO - Process completed.
+2024-09-15 04:16:40 - INFO - Process started.
+2024-09-15 04:16:40 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 04:16:40 - INFO - Starting to create 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:16:40 - INFO - Starting to merge.
+2024-09-15 04:16:41 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:16:41 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:16:41 - INFO - Merging completed.
+2024-09-15 04:16:41 - INFO - Starting to highlight.
+2024-09-15 04:16:43 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:16:43 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:16:43 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:16:43 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:16:43 - INFO - Highlighting completed.
+2024-09-15 04:16:43 - INFO - Starting to reorder.
+2024-09-15 04:16:43 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:16:43 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:16:43 - INFO - Reordering completed.
+2024-09-15 04:16:43 - INFO - Saving 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:16:44 - INFO - Finished creating 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:16:44 - INFO - Starting to create 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:16:44 - INFO - Starting to merge.
+2024-09-15 04:16:44 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:16:45 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:16:45 - INFO - Merging completed.
+2024-09-15 04:16:45 - INFO - Starting to highlight.
+2024-09-15 04:16:45 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:16:46 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:16:46 - WARNING - Anomaly value detected : def02-foo
+2024-09-15 04:16:46 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:16:46 - INFO - Highlighting completed.
+2024-09-15 04:16:46 - INFO - Starting to reorder.
+2024-09-15 04:16:46 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:16:46 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:16:46 - INFO - Reordering completed.
+2024-09-15 04:16:46 - INFO - Saving 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:16:47 - INFO - Finished creating 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:16:47 - INFO - Starting to create 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:16:47 - INFO - Starting to merge.
+2024-09-15 04:16:48 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:16:48 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:16:48 - INFO - Merging completed.
+2024-09-15 04:16:48 - INFO - Starting to highlight.
+2024-09-15 04:16:49 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:16:49 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:16:49 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:16:49 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:16:49 - INFO - Highlighting completed.
+2024-09-15 04:16:49 - INFO - Starting to reorder.
+2024-09-15 04:16:49 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:16:49 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:16:49 - INFO - Reordering completed.
+2024-09-15 04:16:49 - INFO - Saving 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:16:50 - INFO - Finished creating 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:16:50 - INFO - Starting to create 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:16:50 - INFO - Starting to merge.
+2024-09-15 04:16:50 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:16:50 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Merging completed.
+2024-09-15 04:16:50 - INFO - Starting to highlight.
+2024-09-15 04:16:50 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:16:50 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:16:50 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Highlighting completed.
+2024-09-15 04:16:50 - INFO - Starting to reorder.
+2024-09-15 04:16:50 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:16:50 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Reordering completed.
+2024-09-15 04:16:50 - INFO - Saving 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:16:50 - INFO - Finished creating 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:16:50 - WARNING - No CSV files found for date 19880211.
+2024-09-15 04:16:50 - WARNING - No CSV files found for date 19880212.
+2024-09-15 04:16:50 - WARNING - No CSV files found for target prefix 'abc0' on date 19880213.
+2024-09-15 04:16:50 - INFO - Starting to create 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:16:50 - INFO - Starting to merge.
+2024-09-15 04:16:50 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:16:50 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Merging completed.
+2024-09-15 04:16:50 - INFO - Starting to highlight.
+2024-09-15 04:16:50 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:16:50 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Highlighting completed.
+2024-09-15 04:16:50 - INFO - Starting to reorder.
+2024-09-15 04:16:50 - INFO - Reordered sheet: def01-foo. (1/2)
+2024-09-15 04:16:50 - INFO - Reordered sheet: def02-foo. (2/2)
+2024-09-15 04:16:50 - INFO - Reordering completed.
+2024-09-15 04:16:50 - INFO - Saving 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:16:50 - INFO - Finished creating 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:16:50 - WARNING - No CSV files found for date 19880214.
+2024-09-15 04:16:50 - INFO - Starting to log summary.
+2024-09-15 04:16:50 - INFO - Summary for 19880209:
+2024-09-15 04:16:50 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-15 04:16:50 - WARNING - Exceeded threshold detected : {'abc01-foo', 'def02-foo'}
+2024-09-15 04:16:50 - WARNING - Anomaly value detected : {'abc01-foo', 'def02-foo'}
+2024-09-15 04:16:50 - INFO - Summary for 19880210:
+2024-09-15 04:16:50 - WARNING - Partial data loss, missing hosts: ['def01-foo']
+2024-09-15 04:16:50 - WARNING - Exceeded threshold detected : {'abc01-foo', 'def02-foo'}
+2024-09-15 04:16:50 - WARNING - Anomaly value detected : {'abc01-foo'}
+2024-09-15 04:16:50 - INFO - Summary for 19880211:
+2024-09-15 04:16:50 - WARNING - No CSV files found.
+2024-09-15 04:16:50 - INFO - Summary for 19880212:
+2024-09-15 04:16:50 - WARNING - No CSV files found.
+2024-09-15 04:16:50 - INFO - Summary for 19880213:
+2024-09-15 04:16:50 - WARNING - Partial data loss, missing hosts: ['abc01-foo', 'abc02-foo', 'def02-foo']
+2024-09-15 04:16:50 - INFO - Summary for 19880214:
+2024-09-15 04:16:50 - WARNING - No CSV files found.
+2024-09-15 04:16:50 - INFO - Finished logging summary.
+2024-09-15 04:16:50 - INFO - Process completed.
+2024-09-15 04:31:54 - INFO - Process started.
+2024-09-15 04:31:54 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 04:31:54 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-15 04:31:54 - INFO - Starting to merge.
+2024-09-15 04:31:54 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 04:31:55 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 04:31:55 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 04:31:55 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 04:31:55 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 04:31:55 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 04:31:55 - INFO - Merging completed.
+2024-09-15 04:31:55 - INFO - Starting to highlight.
+2024-09-15 04:31:56 - WARNING - Exceeded processing time threshold detected : 19880209
+2024-09-15 04:31:56 - WARNING - Anomaly value detected : 19880209
+2024-09-15 04:31:56 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 04:31:58 - WARNING - Exceeded processing time threshold detected : 19880210
+2024-09-15 04:31:58 - WARNING - Anomaly value detected : 19880210
+2024-09-15 04:31:58 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 04:31:58 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 04:31:58 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 04:31:58 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 04:31:58 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 04:31:58 - INFO - Highlighting completed.
+2024-09-15 04:31:58 - INFO - Starting to reorder.
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 04:31:58 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 04:31:58 - INFO - Reordering completed.
+2024-09-15 04:31:58 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to merge.
+2024-09-15 04:32:00 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Merging completed.
+2024-09-15 04:32:00 - INFO - Starting to highlight.
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Highlighting completed.
+2024-09-15 04:32:00 - INFO - Starting to reorder.
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Reordering completed.
+2024-09-15 04:32:00 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to create 'output/def01-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to merge.
+2024-09-15 04:32:00 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 04:32:00 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Merging completed.
+2024-09-15 04:32:00 - INFO - Starting to highlight.
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 04:32:00 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Highlighting completed.
+2024-09-15 04:32:00 - INFO - Starting to reorder.
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880213. (1/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880209. (2/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880210. (3/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880211. (4/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880212. (5/6)
+2024-09-15 04:32:00 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 04:32:00 - INFO - Reordering completed.
+2024-09-15 04:32:00 - INFO - Saving 'output/def01-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Finished creating 'output/def01-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-15 04:32:00 - INFO - Starting to merge.
+2024-09-15 04:32:01 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 04:32:01 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 04:32:01 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 04:32:01 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 04:32:01 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 04:32:01 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 04:32:01 - INFO - Merging completed.
+2024-09-15 04:32:01 - INFO - Starting to highlight.
+2024-09-15 04:32:02 - WARNING - Exceeded processing time threshold detected : 19880209
+2024-09-15 04:32:02 - WARNING - Anomaly value detected : 19880209
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 04:32:02 - WARNING - Exceeded processing time threshold detected : 19880210
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 04:32:02 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 04:32:02 - INFO - Highlighting completed.
+2024-09-15 04:32:02 - INFO - Starting to reorder.
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 04:32:02 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 04:32:02 - INFO - Reordering completed.
+2024-09-15 04:32:02 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-15 04:32:03 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-15 04:32:03 - INFO - Starting to log summary.
+2024-09-15 04:32:03 - INFO - Summary for abc01-foo:
+2024-09-15 04:32:03 - WARNING - Partial data loss, missing hosts: ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 04:32:03 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-15 04:32:03 - WARNING - Anomaly value detected : {'19880209', '19880210'}
+2024-09-15 04:32:03 - INFO - Summary for abc02-foo:
+2024-09-15 04:32:03 - WARNING - Partial data loss, missing hosts: ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 04:32:03 - INFO - Summary for def01-foo:
+2024-09-15 04:32:03 - WARNING - Partial data loss, missing hosts: ['19880209', '19880210', '19880211', '19880212', '19880214']
+2024-09-15 04:32:03 - INFO - Summary for def02-foo:
+2024-09-15 04:32:03 - WARNING - Partial data loss, missing hosts: ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 04:32:03 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-15 04:32:03 - WARNING - Anomaly value detected : {'19880209'}
+2024-09-15 04:32:03 - INFO - Finished logging summary.
+2024-09-15 04:32:03 - INFO - Process completed.
+2024-09-15 04:44:38 - INFO - Process started.
+2024-09-15 04:44:38 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 04:44:38 - INFO - Starting to create 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:44:38 - INFO - Starting to merge.
+2024-09-15 04:44:39 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:44:39 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:44:39 - INFO - Merging completed.
+2024-09-15 04:44:39 - INFO - Starting to highlight.
+2024-09-15 04:44:40 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:44:40 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:44:40 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:44:40 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:44:40 - INFO - Highlighting completed.
+2024-09-15 04:44:40 - INFO - Starting to reorder.
+2024-09-15 04:44:40 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:44:40 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:44:40 - INFO - Reordering completed.
+2024-09-15 04:44:40 - INFO - Saving 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:44:41 - INFO - Finished creating 'output/19880209/19880209_abc0.xlsx'.
+2024-09-15 04:44:41 - INFO - Starting to create 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:44:41 - INFO - Starting to merge.
+2024-09-15 04:44:41 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:44:42 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:44:42 - INFO - Merging completed.
+2024-09-15 04:44:42 - INFO - Starting to highlight.
+2024-09-15 04:44:42 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:44:43 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:44:43 - WARNING - Anomaly value detected : def02-foo
+2024-09-15 04:44:43 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:44:43 - INFO - Highlighting completed.
+2024-09-15 04:44:43 - INFO - Starting to reorder.
+2024-09-15 04:44:43 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:44:43 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:44:43 - INFO - Reordering completed.
+2024-09-15 04:44:43 - INFO - Saving 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:44:44 - INFO - Finished creating 'output/19880209/19880209_def0.xlsx'.
+2024-09-15 04:44:44 - INFO - Starting to create 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:44:44 - INFO - Starting to merge.
+2024-09-15 04:44:45 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-15 04:44:45 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-15 04:44:45 - INFO - Merging completed.
+2024-09-15 04:44:45 - INFO - Starting to highlight.
+2024-09-15 04:44:46 - WARNING - Exceeded processing time threshold detected : abc01-foo
+2024-09-15 04:44:46 - WARNING - Anomaly value detected : abc01-foo
+2024-09-15 04:44:46 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-15 04:44:46 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-15 04:44:46 - INFO - Highlighting completed.
+2024-09-15 04:44:46 - INFO - Starting to reorder.
+2024-09-15 04:44:46 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-15 04:44:46 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-15 04:44:46 - INFO - Reordering completed.
+2024-09-15 04:44:46 - INFO - Saving 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:44:47 - INFO - Finished creating 'output/19880210/19880210_abc0.xlsx'.
+2024-09-15 04:44:47 - INFO - Starting to create 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:44:47 - INFO - Starting to merge.
+2024-09-15 04:44:47 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:44:47 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Merging completed.
+2024-09-15 04:44:47 - INFO - Starting to highlight.
+2024-09-15 04:44:47 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:44:47 - WARNING - Exceeded processing time threshold detected : def02-foo
+2024-09-15 04:44:47 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Highlighting completed.
+2024-09-15 04:44:47 - INFO - Starting to reorder.
+2024-09-15 04:44:47 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-15 04:44:47 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Reordering completed.
+2024-09-15 04:44:47 - INFO - Saving 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:44:47 - INFO - Finished creating 'output/19880210/19880210_def0.xlsx'.
+2024-09-15 04:44:47 - WARNING - No CSV files found for date 19880211.
+2024-09-15 04:44:47 - WARNING - No CSV files found for date 19880212.
+2024-09-15 04:44:47 - WARNING - No CSV files found for target prefix 'abc0' on date 19880213.
+2024-09-15 04:44:47 - INFO - Starting to create 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:44:47 - INFO - Starting to merge.
+2024-09-15 04:44:47 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-15 04:44:47 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Merging completed.
+2024-09-15 04:44:47 - INFO - Starting to highlight.
+2024-09-15 04:44:47 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-15 04:44:47 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Highlighting completed.
+2024-09-15 04:44:47 - INFO - Starting to reorder.
+2024-09-15 04:44:47 - INFO - Reordered sheet: def01-foo. (1/2)
+2024-09-15 04:44:47 - INFO - Reordered sheet: def02-foo. (2/2)
+2024-09-15 04:44:47 - INFO - Reordering completed.
+2024-09-15 04:44:47 - INFO - Saving 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:44:48 - INFO - Finished creating 'output/19880213/19880213_def0.xlsx'.
+2024-09-15 04:44:48 - WARNING - No CSV files found for date 19880214.
+2024-09-15 04:44:48 - INFO - Starting to log summary.
+2024-09-15 04:44:48 - INFO - Summary for 19880209:
+2024-09-15 04:44:48 - WARNING - Partial data loss : ['def01-foo']
+2024-09-15 04:44:48 - WARNING - Exceeded threshold detected : {'def02-foo', 'abc01-foo'}
+2024-09-15 04:44:48 - WARNING - Anomaly value detected : {'def02-foo', 'abc01-foo'}
+2024-09-15 04:44:48 - INFO - Summary for 19880210:
+2024-09-15 04:44:48 - WARNING - Partial data loss : ['def01-foo']
+2024-09-15 04:44:48 - WARNING - Exceeded threshold detected : {'def02-foo', 'abc01-foo'}
+2024-09-15 04:44:48 - WARNING - Anomaly value detected : {'abc01-foo'}
+2024-09-15 04:44:48 - INFO - Summary for 19880211:
+2024-09-15 04:44:48 - WARNING - No CSV files found.
+2024-09-15 04:44:48 - INFO - Summary for 19880212:
+2024-09-15 04:44:48 - WARNING - No CSV files found.
+2024-09-15 04:44:48 - INFO - Summary for 19880213:
+2024-09-15 04:44:48 - WARNING - Partial data loss : ['abc01-foo', 'abc02-foo', 'def02-foo']
+2024-09-15 04:44:48 - INFO - Summary for 19880214:
+2024-09-15 04:44:48 - WARNING - No CSV files found.
+2024-09-15 04:44:48 - INFO - Finished logging summary.
+2024-09-15 04:44:48 - INFO - Process completed.
+2024-09-15 08:00:57 - INFO - Process started.
+2024-09-15 08:00:57 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 08:00:57 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-15 08:00:57 - INFO - Starting to merge.
+2024-09-15 08:00:58 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 08:00:58 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 08:00:58 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 08:00:58 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 08:00:58 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 08:00:58 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 08:00:58 - INFO - Merging completed.
+2024-09-15 08:00:58 - INFO - Starting to highlight.
+2024-09-15 08:01:00 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-15 08:01:00 - WARNING - Anomaly value detected: 19880209
+2024-09-15 08:01:00 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 08:01:01 - WARNING - Processing time threshold exceeded: 19880210
+2024-09-15 08:01:01 - WARNING - Anomaly value detected: 19880210
+2024-09-15 08:01:01 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 08:01:01 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 08:01:01 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 08:01:01 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 08:01:01 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 08:01:01 - INFO - Highlighting completed.
+2024-09-15 08:01:01 - INFO - Starting to reorder.
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 08:01:01 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 08:01:01 - INFO - Reordering completed.
+2024-09-15 08:01:01 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-15 08:01:03 - ERROR - An error occurred: 'merge_failed_sheets'
+Traceback (most recent call last):
+  File "/app/scripts/consolidate_csvs_to_excel_by_host.py", line 80, in main
+    processing_summary.save_daily_processing_results(
+  File "/app/src/processing_summary.py", line 59, in save_daily_processing_results
+    merge_failed_info["merge_failed_sheets"]
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'merge_failed_sheets'
+2024-09-15 08:02:59 - INFO - Process started.
+2024-09-15 08:02:59 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-15 08:02:59 - INFO - Starting to create 'output/abc01-foo.xlsx'.
+2024-09-15 08:02:59 - INFO - Starting to merge.
+2024-09-15 08:03:00 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 08:03:01 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 08:03:01 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 08:03:01 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 08:03:01 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 08:03:01 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 08:03:01 - INFO - Merging completed.
+2024-09-15 08:03:01 - INFO - Starting to highlight.
+2024-09-15 08:03:02 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-15 08:03:02 - WARNING - Anomaly value detected: 19880209
+2024-09-15 08:03:02 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 08:03:04 - WARNING - Processing time threshold exceeded: 19880210
+2024-09-15 08:03:04 - WARNING - Anomaly value detected: 19880210
+2024-09-15 08:03:04 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 08:03:04 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 08:03:04 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 08:03:04 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 08:03:04 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 08:03:04 - INFO - Highlighting completed.
+2024-09-15 08:03:04 - INFO - Starting to reorder.
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 08:03:04 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 08:03:04 - INFO - Reordering completed.
+2024-09-15 08:03:04 - INFO - Saving 'output/abc01-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Finished creating 'output/abc01-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to create 'output/abc02-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to merge.
+2024-09-15 08:03:06 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Merging completed.
+2024-09-15 08:03:06 - INFO - Starting to highlight.
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Highlighting completed.
+2024-09-15 08:03:06 - INFO - Starting to reorder.
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Reordering completed.
+2024-09-15 08:03:06 - INFO - Saving 'output/abc02-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Finished creating 'output/abc02-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to create 'output/def01-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to merge.
+2024-09-15 08:03:06 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 08:03:06 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Merging completed.
+2024-09-15 08:03:06 - INFO - Starting to highlight.
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 08:03:06 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Highlighting completed.
+2024-09-15 08:03:06 - INFO - Starting to reorder.
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880213. (1/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880209. (2/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880210. (3/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880211. (4/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880212. (5/6)
+2024-09-15 08:03:06 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 08:03:06 - INFO - Reordering completed.
+2024-09-15 08:03:06 - INFO - Saving 'output/def01-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Finished creating 'output/def01-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to create 'output/def02-foo.xlsx'.
+2024-09-15 08:03:06 - INFO - Starting to merge.
+2024-09-15 08:03:07 - INFO - Added sheet: 19880209. (1/6)
+2024-09-15 08:03:07 - INFO - Added sheet: 19880210. (2/6)
+2024-09-15 08:03:07 - INFO - Added sheet: 19880211. (3/6)
+2024-09-15 08:03:07 - INFO - Added sheet: 19880212. (4/6)
+2024-09-15 08:03:07 - INFO - Added sheet: 19880213. (5/6)
+2024-09-15 08:03:07 - INFO - Added sheet: 19880214. (6/6)
+2024-09-15 08:03:07 - INFO - Merging completed.
+2024-09-15 08:03:07 - INFO - Starting to highlight.
+2024-09-15 08:03:08 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-15 08:03:08 - WARNING - Anomaly value detected: 19880209
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880209. (1/6)
+2024-09-15 08:03:08 - WARNING - Processing time threshold exceeded: 19880210
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880210. (2/6)
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880211. (3/6)
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880212. (4/6)
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880213. (5/6)
+2024-09-15 08:03:08 - INFO - Analyzed sheet: 19880214. (6/6)
+2024-09-15 08:03:08 - INFO - Highlighting completed.
+2024-09-15 08:03:08 - INFO - Starting to reorder.
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880209. (1/6)
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880210. (2/6)
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880211. (3/6)
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880212. (4/6)
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880213. (5/6)
+2024-09-15 08:03:08 - INFO - Reordered sheet: 19880214. (6/6)
+2024-09-15 08:03:08 - INFO - Reordering completed.
+2024-09-15 08:03:08 - INFO - Saving 'output/def02-foo.xlsx'.
+2024-09-15 08:03:10 - INFO - Finished creating 'output/def02-foo.xlsx'.
+2024-09-15 08:03:10 - INFO - Starting to log summary.
+2024-09-15 08:03:10 - INFO - Summary for abc01-foo:
+2024-09-15 08:03:10 - WARNING - Partial data loss : ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 08:03:10 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-15 08:03:10 - WARNING - Anomaly value detected : {'19880209', '19880210'}
+2024-09-15 08:03:10 - INFO - Summary for abc02-foo:
+2024-09-15 08:03:10 - WARNING - Partial data loss : ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 08:03:10 - INFO - Summary for def01-foo:
+2024-09-15 08:03:10 - WARNING - Partial data loss : ['19880209', '19880210', '19880211', '19880212', '19880214']
+2024-09-15 08:03:10 - INFO - Summary for def02-foo:
+2024-09-15 08:03:10 - WARNING - Partial data loss : ['19880211', '19880212', '19880213', '19880214']
+2024-09-15 08:03:10 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-15 08:03:10 - WARNING - Anomaly value detected : {'19880209'}
+2024-09-15 08:03:10 - INFO - Finished logging summary.
+2024-09-15 08:03:10 - INFO - Process completed.
+2024-09-15 10:49:50 - INFO - Starting to merge.
+2024-09-15 10:49:50 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 10:49:50 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 10:49:50 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 10:49:50 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 10:49:50 - INFO - Merging completed.
+2024-09-15 11:30:34 - INFO - Starting to merge.
+2024-09-15 11:30:34 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 11:30:34 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 11:30:34 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 11:30:34 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 11:30:34 - INFO - Merging completed.
+2024-09-15 11:57:53 - INFO - Starting to merge.
+2024-09-15 11:57:53 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 11:57:53 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 11:57:53 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 11:57:53 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 11:57:53 - INFO - Merging completed.
+2024-09-15 12:06:34 - INFO - Starting to merge.
+2024-09-15 12:06:34 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 12:06:34 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 12:06:34 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 12:06:34 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 12:06:34 - INFO - Merging completed.
+2024-09-15 12:38:25 - INFO - Starting to highlight.
+2024-09-15 12:38:25 - WARNING - Invalid processing time value: INVALID
+2024-09-15 12:38:25 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 12:38:25 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 12:38:25 - WARNING - Anomaly value detected: target_1
+2024-09-15 12:38:25 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 12:38:25 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 12:38:25 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 12:38:25 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 12:38:25 - WARNING - Anomaly value detected: target_3
+2024-09-15 12:38:25 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 12:38:25 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 12:38:25 - INFO - Highlighting completed.
+2024-09-15 12:38:25 - INFO - Starting to reorder.
+2024-09-15 12:38:25 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 12:38:25 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 12:38:25 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 12:38:25 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 12:38:25 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 12:38:25 - INFO - Reordering completed.
+2024-09-15 12:51:48 - INFO - Starting to merge.
+2024-09-15 12:51:48 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 12:51:48 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 12:51:48 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 12:51:48 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 12:51:48 - INFO - Merging completed.
+2024-09-15 12:51:48 - INFO - Starting to highlight.
+2024-09-15 12:51:48 - WARNING - Invalid processing time value: INVALID
+2024-09-15 12:51:48 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 12:51:48 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 12:51:48 - WARNING - Anomaly value detected: target_1
+2024-09-15 12:51:48 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 12:51:48 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 12:51:48 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 12:51:48 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 12:51:48 - WARNING - Anomaly value detected: target_3
+2024-09-15 12:51:48 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 12:51:48 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 12:51:48 - INFO - Highlighting completed.
+2024-09-15 12:51:48 - INFO - Starting to reorder.
+2024-09-15 12:51:48 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 12:51:48 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 12:51:48 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 12:51:48 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 12:51:48 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 12:51:48 - INFO - Reordering completed.
+2024-09-15 13:11:12 - INFO - Starting to highlight.
+2024-09-15 13:11:12 - WARNING - Invalid processing time value: INVALID
+2024-09-15 13:11:12 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 13:11:12 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 13:11:12 - WARNING - Anomaly value detected: target_1
+2024-09-15 13:11:12 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 13:11:12 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 13:11:12 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 13:11:12 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 13:11:12 - WARNING - Anomaly value detected: target_3
+2024-09-15 13:11:12 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 13:11:12 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 13:11:12 - INFO - Highlighting completed.
+2024-09-15 13:11:12 - INFO - Starting to reorder.
+2024-09-15 13:11:12 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 13:11:12 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 13:11:12 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 13:11:12 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 13:11:12 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 13:11:12 - INFO - Reordering completed.
+2024-09-15 13:33:42 - INFO - Starting to merge.
+2024-09-15 13:33:42 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 13:33:42 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 13:33:42 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 13:33:42 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 13:33:42 - INFO - Merging completed.
+2024-09-15 13:33:42 - INFO - Starting to highlight.
+2024-09-15 13:33:42 - WARNING - Invalid processing time value: INVALID
+2024-09-15 13:33:42 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 13:33:42 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 13:33:42 - WARNING - Anomaly value detected: target_1
+2024-09-15 13:33:42 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 13:33:42 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 13:33:42 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 13:33:42 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 13:33:42 - WARNING - Anomaly value detected: target_3
+2024-09-15 13:33:42 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 13:33:42 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 13:33:42 - INFO - Highlighting completed.
+2024-09-15 13:33:43 - INFO - Starting to reorder.
+2024-09-15 13:33:43 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 13:33:43 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 13:33:43 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 13:33:43 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 13:33:43 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 13:33:43 - INFO - Reordering completed.
+2024-09-15 13:36:24 - INFO - Starting to merge.
+2024-09-15 13:36:24 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 13:36:24 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 13:36:24 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 13:36:24 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 13:36:24 - INFO - Merging completed.
+2024-09-15 13:36:24 - INFO - Starting to highlight.
+2024-09-15 13:36:24 - WARNING - Invalid processing time value: INVALID
+2024-09-15 13:36:24 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 13:36:24 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 13:36:24 - WARNING - Anomaly value detected: target_1
+2024-09-15 13:36:24 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 13:36:24 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 13:36:24 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 13:36:24 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 13:36:24 - WARNING - Anomaly value detected: target_3
+2024-09-15 13:36:24 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 13:36:24 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 13:36:24 - INFO - Highlighting completed.
+2024-09-15 13:36:24 - INFO - Starting to reorder.
+2024-09-15 13:36:24 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 13:36:24 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 13:36:24 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 13:36:24 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 13:36:24 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 13:36:24 - INFO - Reordering completed.
+2024-09-15 14:16:51 - INFO - Starting to merge.
+2024-09-15 14:16:51 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 14:16:51 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 14:16:51 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 14:16:51 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 14:16:51 - INFO - Merging completed.
+2024-09-15 14:16:51 - INFO - Starting to highlight.
+2024-09-15 14:16:51 - WARNING - Invalid processing time value: INVALID
+2024-09-15 14:16:51 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 14:16:51 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 14:16:51 - WARNING - Anomaly value detected: target_1
+2024-09-15 14:16:51 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 14:16:51 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 14:16:51 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 14:16:51 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 14:16:51 - WARNING - Anomaly value detected: target_3
+2024-09-15 14:16:51 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 14:16:51 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 14:16:51 - INFO - Highlighting completed.
+2024-09-15 14:16:52 - INFO - Starting to reorder.
+2024-09-15 14:16:52 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 14:16:52 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 14:16:52 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 14:16:52 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 14:16:52 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 14:16:52 - INFO - Reordering completed.
+2024-09-15 14:19:41 - INFO - Starting to merge.
+2024-09-15 14:19:41 - INFO - Added sheet: target_0. (1/3)
+2024-09-15 14:19:41 - INFO - Added sheet: target_1. (2/3)
+2024-09-15 14:19:41 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-15 14:19:41 - INFO - Added sheet: target_2. (3/3)
+2024-09-15 14:19:41 - INFO - Merging completed.
+2024-09-15 14:19:41 - INFO - Starting to highlight.
+2024-09-15 14:19:41 - WARNING - Invalid processing time value: INVALID
+2024-09-15 14:19:41 - WARNING - Invalid JSON format found: INVALID
+2024-09-15 14:19:41 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-15 14:19:41 - WARNING - Anomaly value detected: target_1
+2024-09-15 14:19:41 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-15 14:19:41 - WARNING - Processing time threshold exceeded: target_2
+2024-09-15 14:19:41 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-15 14:19:41 - WARNING - Processing time threshold exceeded: target_3
+2024-09-15 14:19:41 - WARNING - Anomaly value detected: target_3
+2024-09-15 14:19:41 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-15 14:19:41 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-15 14:19:41 - INFO - Highlighting completed.
+2024-09-15 14:19:42 - INFO - Starting to reorder.
+2024-09-15 14:19:42 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-15 14:19:42 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-15 14:19:42 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-15 14:19:42 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-15 14:19:42 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-15 14:19:42 - INFO - Reordering completed.
+2024-09-16 00:06:49 - INFO - Starting to merge.
+2024-09-16 00:06:49 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 00:06:49 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 00:06:49 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 00:06:49 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 00:06:49 - INFO - Merging completed.
+2024-09-16 00:06:49 - INFO - Starting to highlight.
+2024-09-16 00:06:49 - WARNING - Invalid processing time value: INVALID
+2024-09-16 00:06:49 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 00:06:49 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 00:06:49 - WARNING - Anomaly value detected: target_1
+2024-09-16 00:06:49 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 00:06:49 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 00:06:49 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 00:06:49 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 00:06:49 - WARNING - Anomaly value detected: target_3
+2024-09-16 00:06:49 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 00:06:49 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 00:06:49 - INFO - Highlighting completed.
+2024-09-16 00:06:49 - INFO - Starting to reorder.
+2024-09-16 00:06:49 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 00:06:49 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 00:06:49 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 00:06:49 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 00:06:49 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 00:06:49 - INFO - Reordering completed.
+2024-09-16 01:12:15 - INFO - Starting to log summary.
+2024-09-16 01:12:15 - INFO - Summary for 2023-10-01:
+2024-09-16 01:12:15 - WARNING - Exceeded threshold detected : {'target1'}
+2024-09-16 01:12:15 - WARNING - Anomaly value detected : {'target2'}
+2024-09-16 01:12:15 - WARNING - Merge failed sheets : {'sheet1', 'sheet2'}
+2024-09-16 01:12:15 - INFO - Summary for 2023-10-02:
+2024-09-16 01:12:15 - INFO - No anomalies detected.
+2024-09-16 01:12:15 - INFO - Finished logging summary.
+2024-09-16 01:12:15 - INFO - Starting to log summary.
+2024-09-16 01:12:15 - INFO - Summary for 2023-10-01:
+2024-09-16 01:12:15 - WARNING - Partial data loss : ['target2']
+2024-09-16 01:12:15 - WARNING - Anomaly value detected : {'target3'}
+2024-09-16 01:12:15 - WARNING - Merge failed sheets : {'sheet3'}
+2024-09-16 01:12:15 - INFO - Summary for 2023-10-02:
+2024-09-16 01:12:15 - WARNING - No CSV files found.
+2024-09-16 01:12:15 - INFO - Finished logging summary.
+2024-09-16 01:37:28 - INFO - Process started.
+2024-09-16 01:37:41 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 02:06:57 - INFO - Starting to create 'output/19880209/19880209_abc0.xlsx'.
+2024-09-16 02:07:00 - INFO - Starting to merge.
+2024-09-16 02:07:04 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-16 02:07:04 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-16 02:07:04 - INFO - Merging completed.
+2024-09-16 02:07:04 - INFO - Starting to highlight.
+2024-09-16 02:07:13 - WARNING - Processing time threshold exceeded: abc01-foo
+2024-09-16 02:07:13 - WARNING - Anomaly value detected: abc01-foo
+2024-09-16 02:07:13 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-16 02:07:13 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-16 02:07:13 - INFO - Highlighting completed.
+2024-09-16 02:07:13 - INFO - Starting to reorder.
+2024-09-16 02:07:13 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-16 02:07:13 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-16 02:07:13 - INFO - Reordering completed.
+2024-09-16 02:07:13 - INFO - Saving 'output/19880209/19880209_abc0.xlsx'.
+2024-09-16 02:07:19 - INFO - Finished creating 'output/19880209/19880209_abc0.xlsx'.
+2024-09-16 02:07:19 - INFO - Starting to create 'output/19880209/19880209_def0.xlsx'.
+2024-09-16 02:07:19 - INFO - Starting to merge.
+2024-09-16 02:07:19 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-16 02:07:24 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-16 02:07:24 - INFO - Merging completed.
+2024-09-16 02:07:24 - INFO - Starting to highlight.
+2024-09-16 02:07:24 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-16 02:07:37 - WARNING - Processing time threshold exceeded: def02-foo
+2024-09-16 02:07:37 - WARNING - Anomaly value detected: def02-foo
+2024-09-16 02:07:37 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-16 02:07:37 - INFO - Highlighting completed.
+2024-09-16 02:07:37 - INFO - Starting to reorder.
+2024-09-16 02:07:37 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-16 02:07:37 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-16 02:07:37 - INFO - Reordering completed.
+2024-09-16 02:07:37 - INFO - Saving 'output/19880209/19880209_def0.xlsx'.
+2024-09-16 02:07:43 - INFO - Finished creating 'output/19880209/19880209_def0.xlsx'.
+2024-09-16 02:07:43 - INFO - Starting to create 'output/19880210/19880210_abc0.xlsx'.
+2024-09-16 02:07:43 - INFO - Starting to merge.
+2024-09-16 02:07:48 - INFO - Added sheet: abc01-foo. (1/2)
+2024-09-16 02:07:48 - INFO - Added sheet: abc02-foo. (2/2)
+2024-09-16 02:07:48 - INFO - Merging completed.
+2024-09-16 02:07:48 - INFO - Starting to highlight.
+2024-09-16 02:07:59 - WARNING - Processing time threshold exceeded: abc01-foo
+2024-09-16 02:07:59 - WARNING - Anomaly value detected: abc01-foo
+2024-09-16 02:07:59 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2024-09-16 02:07:59 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2024-09-16 02:07:59 - INFO - Highlighting completed.
+2024-09-16 02:07:59 - INFO - Starting to reorder.
+2024-09-16 02:07:59 - INFO - Reordered sheet: abc01-foo. (1/2)
+2024-09-16 02:07:59 - INFO - Reordered sheet: abc02-foo. (2/2)
+2024-09-16 02:07:59 - INFO - Reordering completed.
+2024-09-16 02:07:59 - INFO - Saving 'output/19880210/19880210_abc0.xlsx'.
+2024-09-16 02:08:07 - INFO - Finished creating 'output/19880210/19880210_abc0.xlsx'.
+2024-09-16 02:08:07 - INFO - Starting to create 'output/19880210/19880210_def0.xlsx'.
+2024-09-16 02:08:07 - INFO - Starting to merge.
+2024-09-16 02:08:07 - INFO - Added sheet: def01-foo. (1/2)
+2024-09-16 02:08:07 - INFO - Added sheet: def02-foo. (2/2)
+2024-09-16 02:08:07 - INFO - Merging completed.
+2024-09-16 02:08:07 - INFO - Starting to highlight.
+2024-09-16 02:08:07 - INFO - Analyzed sheet: def01-foo. (1/2)
+2024-09-16 02:08:07 - WARNING - Processing time threshold exceeded: def02-foo
+2024-09-16 02:08:07 - INFO - Analyzed sheet: def02-foo. (2/2)
+2024-09-16 02:08:07 - INFO - Highlighting completed.
+2024-09-16 02:08:07 - INFO - Starting to reorder.
+2024-09-16 02:08:07 - INFO - Reordered sheet: def02-foo. (1/2)
+2024-09-16 02:08:07 - INFO - Reordered sheet: def01-foo. (2/2)
+2024-09-16 02:08:07 - INFO - Reordering completed.
+2024-09-16 02:08:07 - INFO - Saving 'output/19880210/19880210_def0.xlsx'.
+2024-09-16 02:08:07 - INFO - Finished creating 'output/19880210/19880210_def0.xlsx'.
+2024-09-16 02:08:07 - INFO - Starting to log summary.
+2024-09-16 02:08:07 - INFO - Summary for 19880209:
+2024-09-16 02:08:07 - WARNING - Partial data loss : ['def01-foo']
+2024-09-16 02:08:07 - WARNING - Exceeded threshold detected : {'abc01-foo', 'def02-foo'}
+2024-09-16 02:08:07 - WARNING - Anomaly value detected : {'abc01-foo', 'def02-foo'}
+2024-09-16 02:08:07 - INFO - Summary for 19880210:
+2024-09-16 02:08:07 - WARNING - Partial data loss : ['def01-foo']
+2024-09-16 02:08:07 - WARNING - Exceeded threshold detected : {'abc01-foo', 'def02-foo'}
+2024-09-16 02:08:07 - WARNING - Anomaly value detected : {'abc01-foo'}
+2024-09-16 02:08:07 - INFO - Finished logging summary.
+2024-09-16 02:08:07 - INFO - Process completed.
+2024-09-16 02:08:38 - INFO - Process started.
+2024-09-16 02:08:38 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 04:22:52 - INFO - Process started.
+2024-09-16 04:22:52 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 04:23:25 - INFO - Starting to create output/abc01-foo.xlsx.
+2024-09-16 04:23:25 - INFO - Starting to merge.
+2024-09-16 04:23:30 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:23:34 - INFO - Added sheet: 19880210. (2/2)
+2024-09-16 04:23:34 - INFO - Merging completed.
+2024-09-16 04:23:34 - INFO - Starting to highlight.
+2024-09-16 04:23:45 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-16 04:23:45 - WARNING - Anomaly value detected: 19880209
+2024-09-16 04:23:45 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:24:49 - INFO - Process started.
+2024-09-16 04:24:49 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 04:24:49 - INFO - Starting to create output/abc01-foo.xlsx.
+2024-09-16 04:24:49 - INFO - Starting to merge.
+2024-09-16 04:24:54 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:24:58 - INFO - Added sheet: 19880210. (2/2)
+2024-09-16 04:24:58 - INFO - Merging completed.
+2024-09-16 04:24:58 - INFO - Starting to highlight.
+2024-09-16 04:25:08 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-16 04:25:08 - WARNING - Anomaly value detected: 19880209
+2024-09-16 04:25:08 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:25:19 - WARNING - Processing time threshold exceeded: 19880210
+2024-09-16 04:25:19 - WARNING - Anomaly value detected: 19880210
+2024-09-16 04:25:19 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-16 04:25:19 - INFO - Highlighting completed.
+2024-09-16 04:25:19 - INFO - Starting to reorder.
+2024-09-16 04:25:19 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:25:19 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-16 04:25:19 - INFO - Reordering completed.
+2024-09-16 04:25:19 - INFO - Saving output/abc01-foo.xlsx.
+2024-09-16 04:25:29 - INFO - Finished creating output/abc01-foo.xlsx.
+2024-09-16 04:25:29 - INFO - Starting to create output/abc02-foo.xlsx.
+2024-09-16 04:25:29 - INFO - Starting to merge.
+2024-09-16 04:25:30 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:25:30 - INFO - Added sheet: 19880210. (2/2)
+2024-09-16 04:25:30 - INFO - Merging completed.
+2024-09-16 04:25:30 - INFO - Starting to highlight.
+2024-09-16 04:25:30 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:25:30 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-16 04:25:30 - INFO - Highlighting completed.
+2024-09-16 04:25:30 - INFO - Starting to reorder.
+2024-09-16 04:25:30 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:25:30 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-16 04:25:30 - INFO - Reordering completed.
+2024-09-16 04:25:30 - INFO - Saving output/abc02-foo.xlsx.
+2024-09-16 04:25:30 - INFO - Finished creating output/abc02-foo.xlsx.
+2024-09-16 04:25:30 - WARNING - No CSV files found for host def01-foo.
+2024-09-16 04:25:30 - INFO - Starting to create output/def02-foo.xlsx.
+2024-09-16 04:25:30 - INFO - Starting to merge.
+2024-09-16 04:25:34 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:25:34 - INFO - Added sheet: 19880210. (2/2)
+2024-09-16 04:25:34 - INFO - Merging completed.
+2024-09-16 04:25:34 - INFO - Starting to highlight.
+2024-09-16 04:25:44 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-16 04:25:44 - WARNING - Anomaly value detected: 19880209
+2024-09-16 04:25:44 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:25:44 - WARNING - Processing time threshold exceeded: 19880210
+2024-09-16 04:25:44 - INFO - Analyzed sheet: 19880210. (2/2)
+2024-09-16 04:25:44 - INFO - Highlighting completed.
+2024-09-16 04:25:44 - INFO - Starting to reorder.
+2024-09-16 04:25:44 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:25:44 - INFO - Reordered sheet: 19880210. (2/2)
+2024-09-16 04:25:44 - INFO - Reordering completed.
+2024-09-16 04:25:44 - INFO - Saving output/def02-foo.xlsx.
+2024-09-16 04:25:50 - INFO - Finished creating output/def02-foo.xlsx.
+2024-09-16 04:25:50 - INFO - Starting to log summary.
+2024-09-16 04:25:50 - INFO - Summary for abc01-foo:
+2024-09-16 04:25:50 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-16 04:25:50 - WARNING - Anomaly value detected : {'19880209', '19880210'}
+2024-09-16 04:25:50 - INFO - Summary for abc02-foo:
+2024-09-16 04:25:50 - INFO - No anomalies detected.
+2024-09-16 04:25:50 - INFO - Summary for def01-foo:
+2024-09-16 04:25:50 - WARNING - No CSV files found.
+2024-09-16 04:25:50 - INFO - Summary for def02-foo:
+2024-09-16 04:25:50 - WARNING - Exceeded threshold detected : {'19880209', '19880210'}
+2024-09-16 04:25:50 - WARNING - Anomaly value detected : {'19880209'}
+2024-09-16 04:25:50 - INFO - Finished logging summary.
+2024-09-16 04:25:50 - INFO - Process completed.
+2024-09-16 04:26:55 - INFO - Process started.
+2024-09-16 04:26:55 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 04:26:55 - INFO - Starting to create output/abc01-foo.xlsx.
+2024-09-16 04:26:55 - INFO - Starting to merge.
+2024-09-16 04:26:56 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:26:56 - INFO - Added sheet: 19880213. (2/2)
+2024-09-16 04:26:56 - INFO - Merging completed.
+2024-09-16 04:26:56 - INFO - Starting to highlight.
+2024-09-16 04:26:57 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-16 04:26:57 - WARNING - Anomaly value detected: 19880209
+2024-09-16 04:26:57 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:26:57 - INFO - Analyzed sheet: 19880213. (2/2)
+2024-09-16 04:26:57 - INFO - Highlighting completed.
+2024-09-16 04:26:57 - INFO - Starting to reorder.
+2024-09-16 04:26:57 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:26:57 - INFO - Reordered sheet: 19880213. (2/2)
+2024-09-16 04:26:57 - INFO - Reordering completed.
+2024-09-16 04:26:57 - INFO - Saving output/abc01-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Finished creating output/abc01-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to create output/abc02-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to merge.
+2024-09-16 04:26:58 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:26:58 - INFO - Added sheet: 19880213. (2/2)
+2024-09-16 04:26:58 - INFO - Merging completed.
+2024-09-16 04:26:58 - INFO - Starting to highlight.
+2024-09-16 04:26:58 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:26:58 - INFO - Analyzed sheet: 19880213. (2/2)
+2024-09-16 04:26:58 - INFO - Highlighting completed.
+2024-09-16 04:26:58 - INFO - Starting to reorder.
+2024-09-16 04:26:58 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:26:58 - INFO - Reordered sheet: 19880213. (2/2)
+2024-09-16 04:26:58 - INFO - Reordering completed.
+2024-09-16 04:26:58 - INFO - Saving output/abc02-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Finished creating output/abc02-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to create output/def01-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to merge.
+2024-09-16 04:26:58 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:26:58 - INFO - Added sheet: 19880213. (2/2)
+2024-09-16 04:26:58 - INFO - Merging completed.
+2024-09-16 04:26:58 - INFO - Starting to highlight.
+2024-09-16 04:26:58 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:26:58 - INFO - Analyzed sheet: 19880213. (2/2)
+2024-09-16 04:26:58 - INFO - Highlighting completed.
+2024-09-16 04:26:58 - INFO - Starting to reorder.
+2024-09-16 04:26:58 - INFO - Reordered sheet: 19880213. (1/2)
+2024-09-16 04:26:58 - INFO - Reordered sheet: 19880209. (2/2)
+2024-09-16 04:26:58 - INFO - Reordering completed.
+2024-09-16 04:26:58 - INFO - Saving output/def01-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Finished creating output/def01-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to create output/def02-foo.xlsx.
+2024-09-16 04:26:58 - INFO - Starting to merge.
+2024-09-16 04:26:59 - INFO - Added sheet: 19880209. (1/2)
+2024-09-16 04:26:59 - INFO - Added sheet: 19880213. (2/2)
+2024-09-16 04:26:59 - INFO - Merging completed.
+2024-09-16 04:26:59 - INFO - Starting to highlight.
+2024-09-16 04:27:00 - WARNING - Processing time threshold exceeded: 19880209
+2024-09-16 04:27:00 - WARNING - Anomaly value detected: 19880209
+2024-09-16 04:27:00 - INFO - Analyzed sheet: 19880209. (1/2)
+2024-09-16 04:27:00 - INFO - Analyzed sheet: 19880213. (2/2)
+2024-09-16 04:27:00 - INFO - Highlighting completed.
+2024-09-16 04:27:00 - INFO - Starting to reorder.
+2024-09-16 04:27:00 - INFO - Reordered sheet: 19880209. (1/2)
+2024-09-16 04:27:00 - INFO - Reordered sheet: 19880213. (2/2)
+2024-09-16 04:27:00 - INFO - Reordering completed.
+2024-09-16 04:27:00 - INFO - Saving output/def02-foo.xlsx.
+2024-09-16 04:27:01 - INFO - Finished creating output/def02-foo.xlsx.
+2024-09-16 04:27:01 - INFO - Starting to log summary.
+2024-09-16 04:27:01 - INFO - Summary for abc01-foo:
+2024-09-16 04:27:01 - WARNING - Partial data loss : ['19880213']
+2024-09-16 04:27:01 - WARNING - Exceeded threshold detected : {'19880209'}
+2024-09-16 04:27:01 - WARNING - Anomaly value detected : {'19880209'}
+2024-09-16 04:27:01 - INFO - Summary for abc02-foo:
+2024-09-16 04:27:01 - WARNING - Partial data loss : ['19880213']
+2024-09-16 04:27:01 - INFO - Summary for def01-foo:
+2024-09-16 04:27:01 - WARNING - Partial data loss : ['19880209']
+2024-09-16 04:27:01 - INFO - Summary for def02-foo:
+2024-09-16 04:27:01 - WARNING - Partial data loss : ['19880213']
+2024-09-16 04:27:01 - WARNING - Exceeded threshold detected : {'19880209'}
+2024-09-16 04:27:01 - WARNING - Anomaly value detected : {'19880209'}
+2024-09-16 04:27:01 - INFO - Finished logging summary.
+2024-09-16 04:27:01 - INFO - Process completed.
+2024-09-16 04:59:14 - INFO - Starting to merge.
+2024-09-16 04:59:14 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 04:59:14 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 04:59:14 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 04:59:14 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 04:59:14 - INFO - Merging completed.
+2024-09-16 04:59:14 - INFO - Starting to highlight.
+2024-09-16 04:59:14 - WARNING - Invalid processing time value: INVALID
+2024-09-16 04:59:14 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 04:59:14 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 04:59:14 - WARNING - Anomaly value detected: target_1
+2024-09-16 04:59:14 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 04:59:14 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 04:59:14 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 04:59:14 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 04:59:14 - WARNING - Anomaly value detected: target_3
+2024-09-16 04:59:14 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 04:59:14 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 04:59:14 - INFO - Highlighting completed.
+2024-09-16 04:59:15 - INFO - Starting to reorder.
+2024-09-16 04:59:15 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 04:59:15 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 04:59:15 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 04:59:15 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 04:59:15 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 04:59:15 - INFO - Reordering completed.
+2024-09-16 04:59:15 - INFO - Starting to log summary.
+2024-09-16 04:59:15 - INFO - Summary for 2023-10-01:
+2024-09-16 04:59:15 - WARNING - Exceeded threshold detected : {'target1'}
+2024-09-16 04:59:15 - WARNING - Anomaly value detected : {'target2'}
+2024-09-16 04:59:15 - WARNING - Merge failed sheets : {'sheet1', 'sheet2'}
+2024-09-16 04:59:15 - INFO - Summary for 2023-10-02:
+2024-09-16 04:59:15 - INFO - No anomalies detected.
+2024-09-16 04:59:15 - INFO - Finished logging summary.
+2024-09-16 04:59:15 - INFO - Starting to log summary.
+2024-09-16 04:59:15 - INFO - Summary for 2023-10-01:
+2024-09-16 04:59:15 - WARNING - Some CSV files not found: ['target2']
+2024-09-16 04:59:15 - WARNING - Anomaly value detected: {'target3'}
+2024-09-16 04:59:15 - WARNING - Merge failed sheets: {'sheet3'}
+2024-09-16 04:59:15 - INFO - Summary for 2023-10-02:
+2024-09-16 04:59:15 - WARNING - No CSV files found.
+2024-09-16 04:59:15 - INFO - Finished logging summary.
+2024-09-16 05:00:16 - INFO - Starting to log summary.
+2024-09-16 05:00:16 - INFO - Summary for 2023-10-01:
+2024-09-16 05:00:16 - WARNING - Exceeded threshold detected : {'target1'}
+2024-09-16 05:00:16 - WARNING - Anomaly value detected : {'target2'}
+2024-09-16 05:00:16 - WARNING - Merge failed sheets : {'sheet1', 'sheet2'}
+2024-09-16 05:00:16 - INFO - Summary for 2023-10-02:
+2024-09-16 05:00:16 - INFO - No anomalies detected.
+2024-09-16 05:00:16 - INFO - Finished logging summary.
+2024-09-16 05:00:16 - INFO - Starting to log summary.
+2024-09-16 05:00:16 - INFO - Summary for 2023-10-01:
+2024-09-16 05:00:16 - WARNING - Some CSV files not found: ['target2']
+2024-09-16 05:00:16 - WARNING - Anomaly value detected: {'target3'}
+2024-09-16 05:00:16 - WARNING - Merge failed sheets: {'sheet3'}
+2024-09-16 05:00:16 - INFO - Summary for 2023-10-02:
+2024-09-16 05:00:16 - WARNING - No CSV files found.
+2024-09-16 05:00:16 - INFO - Finished logging summary.
+2024-09-16 05:01:39 - INFO - Starting to log summary.
+2024-09-16 05:01:39 - INFO - Summary for 2023-10-01:
+2024-09-16 05:01:39 - WARNING - Some CSV files not found: ['target2']
+2024-09-16 05:01:39 - WARNING - Anomaly value detected: {'target3'}
+2024-09-16 05:01:39 - WARNING - Merge failed sheets: {'sheet3'}
+2024-09-16 05:01:39 - INFO - Summary for 2023-10-02:
+2024-09-16 05:01:39 - WARNING - No CSV files found.
+2024-09-16 05:01:39 - INFO - Finished logging summary.
+2024-09-16 05:03:02 - INFO - Starting to log summary.
+2024-09-16 05:03:02 - INFO - Summary for 2023-10-01:
+2024-09-16 05:03:02 - WARNING - Exceeded threshold detected : {'target1'}
+2024-09-16 05:03:02 - WARNING - Anomaly value detected : {'target2'}
+2024-09-16 05:03:02 - WARNING - Merge failed sheets : {'sheet1', 'sheet2'}
+2024-09-16 05:03:02 - INFO - Summary for 2023-10-02:
+2024-09-16 05:03:02 - INFO - No anomalies detected.
+2024-09-16 05:03:02 - INFO - Finished logging summary.
+2024-09-16 05:08:09 - INFO - Process started.
+2024-09-16 05:08:09 - INFO - Configuration file config/config.yml loaded successfully.
+2024-09-16 06:47:37 - INFO - Starting to log summary.
+2024-09-16 06:47:37 - INFO - Summary for 19880209:
+2024-09-16 06:47:37 - WARNING - merge_failed : {'target_0', 'target_1'}
+2024-09-16 06:47:37 - WARNING - threshold_exceeded : {'target_2'}
+2024-09-16 06:47:37 - WARNING - anomaly_detected : {'target_3'}
+2024-09-16 06:47:37 - INFO - Summary for 19880210:
+2024-09-16 06:47:37 - INFO - No anomalies detected.
+2024-09-16 06:47:37 - INFO - Finished logging summary.
+2024-09-16 06:48:22 - INFO - Starting to log summary.
+2024-09-16 06:48:22 - INFO - Summary for 19880209:
+2024-09-16 06:48:22 - WARNING - merge_failed : {'target_0', 'target_1'}
+2024-09-16 06:48:22 - WARNING - threshold_exceeded : {'target_2'}
+2024-09-16 06:48:22 - WARNING - anomaly_detected : {'target_3'}
+2024-09-16 06:48:22 - INFO - Summary for 19880210:
+2024-09-16 06:48:22 - INFO - No anomalies detected.
+2024-09-16 06:48:22 - INFO - Finished logging summary.
+2024-09-16 06:48:44 - INFO - Starting to log summary.
+2024-09-16 06:48:44 - INFO - Summary for 19880209:
+2024-09-16 06:48:44 - WARNING - merge_failed : {'target_0', 'target_1'}
+2024-09-16 06:48:44 - WARNING - threshold_exceeded : {'target_2'}
+2024-09-16 06:48:44 - WARNING - anomaly_detected : {'target_3'}
+2024-09-16 06:48:44 - INFO - Summary for 19880210:
+2024-09-16 06:48:44 - INFO - No anomalies detected.
+2024-09-16 06:48:44 - INFO - Finished logging summary.
+2024-09-16 06:50:34 - INFO - Starting to log summary.
+2024-09-16 06:50:34 - INFO - Summary for 19880209:
+2024-09-16 06:50:34 - WARNING - Merge failed sheets : {'target_0', 'target_1'}
+2024-09-16 06:50:34 - WARNING - Exceeded threshold detected : {'target_2'}
+2024-09-16 06:50:34 - WARNING - Anomaly value detected : {'target_3'}
+2024-09-16 06:50:34 - INFO - Summary for 19880210:
+2024-09-16 06:50:34 - INFO - No anomalies detected.
+2024-09-16 06:50:34 - INFO - Finished logging summary.
+2024-09-16 06:51:10 - INFO - Starting to log summary.
+2024-09-16 06:51:10 - INFO - Summary for 19880209:
+2024-09-16 06:51:10 - WARNING - Merge failed sheets : {'target_0', 'target_1'}
+2024-09-16 06:51:10 - WARNING - Exceeded threshold detected : {'target_2'}
+2024-09-16 06:51:10 - WARNING - Anomaly value detected : {'target_3'}
+2024-09-16 06:51:10 - INFO - Summary for 19880210:
+2024-09-16 06:51:10 - INFO - No anomalies detected.
+2024-09-16 06:51:10 - INFO - Finished logging summary.
+2024-09-16 06:51:47 - INFO - Starting to log summary.
+2024-09-16 06:51:47 - INFO - Summary for 19880209:
+2024-09-16 06:51:47 - WARNING - Merge failed sheets: {'target_0', 'target_1'}
+2024-09-16 06:51:47 - WARNING - Exceeded threshold detected: {'target_2'}
+2024-09-16 06:51:47 - WARNING - Anomaly value detected: {'target_3'}
+2024-09-16 06:51:47 - INFO - Summary for 19880210:
+2024-09-16 06:51:47 - INFO - No anomalies detected.
+2024-09-16 06:51:47 - INFO - Finished logging summary.
+2024-09-16 06:51:54 - INFO - Starting to log summary.
+2024-09-16 06:51:54 - INFO - Summary for 19880209:
+2024-09-16 06:51:54 - WARNING - Merge failed sheets: {'target_0', 'target_1'}
+2024-09-16 06:51:54 - WARNING - Exceeded threshold detected: {'target_2'}
+2024-09-16 06:51:54 - WARNING - Anomaly value detected: {'target_3'}
+2024-09-16 06:51:54 - INFO - Summary for 19880210:
+2024-09-16 06:51:54 - INFO - No anomalies detected.
+2024-09-16 06:51:54 - INFO - Finished logging summary.
+2024-09-16 07:00:44 - INFO - Starting to log summary.
+2024-09-16 07:00:44 - INFO - Summary for 2023-10-01:
+2024-09-16 07:00:44 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:00:44 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:00:44 - WARNING - Merge failed sheets: {'sheet1', 'sheet2'}
+2024-09-16 07:00:44 - INFO - Summary for 2023-10-02:
+2024-09-16 07:00:44 - INFO - No anomalies detected.
+2024-09-16 07:00:44 - INFO - Summary for 2023-10-03:
+2024-09-16 07:00:44 - WARNING - Exceeded threshold detected: {'target3'}
+2024-09-16 07:00:44 - INFO - Summary for 2023-10-04:
+2024-09-16 07:00:44 - WARNING - Anomaly value detected: {'target4'}
+2024-09-16 07:00:44 - INFO - Summary for 2023-10-05:
+2024-09-16 07:00:44 - WARNING - Merge failed sheets: {'sheet3'}
+2024-09-16 07:00:44 - INFO - Finished logging summary.
+2024-09-16 07:02:23 - INFO - Starting to log summary.
+2024-09-16 07:02:23 - INFO - Summary for 2023-10-01:
+2024-09-16 07:02:23 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:02:23 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:02:23 - WARNING - Merge failed sheets: {'sheet2', 'sheet1'}
+2024-09-16 07:02:23 - INFO - Summary for 2023-10-02:
+2024-09-16 07:02:23 - INFO - No anomalies detected.
+2024-09-16 07:02:23 - INFO - Finished logging summary.
+2024-09-16 07:02:47 - INFO - Starting to log summary.
+2024-09-16 07:02:47 - INFO - Summary for 2023-10-01:
+2024-09-16 07:02:47 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:02:47 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:02:47 - WARNING - Merge failed sheets: {'sheet1', 'sheet2'}
+2024-09-16 07:02:47 - INFO - Summary for 2023-10-02:
+2024-09-16 07:02:47 - INFO - No anomalies detected.
+2024-09-16 07:02:47 - INFO - Finished logging summary.
+2024-09-16 07:02:52 - INFO - Starting to log summary.
+2024-09-16 07:02:52 - INFO - Summary for 2023-10-01:
+2024-09-16 07:02:52 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:02:52 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:02:52 - WARNING - Merge failed sheets: {'sheet1', 'sheet2'}
+2024-09-16 07:02:52 - INFO - Summary for 2023-10-02:
+2024-09-16 07:02:52 - INFO - No anomalies detected.
+2024-09-16 07:02:52 - INFO - Finished logging summary.
+2024-09-16 07:02:58 - INFO - Starting to log summary.
+2024-09-16 07:02:58 - INFO - Summary for 2023-10-01:
+2024-09-16 07:02:58 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:02:58 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:02:58 - WARNING - Merge failed sheets: {'sheet1', 'sheet2'}
+2024-09-16 07:02:58 - INFO - Summary for 2023-10-02:
+2024-09-16 07:02:58 - INFO - No anomalies detected.
+2024-09-16 07:02:58 - INFO - Finished logging summary.
+2024-09-16 07:03:11 - INFO - Starting to log summary.
+2024-09-16 07:03:11 - INFO - Summary for 2023-10-01:
+2024-09-16 07:03:11 - WARNING - Exceeded threshold detected: {'target1'}
+2024-09-16 07:03:11 - WARNING - Anomaly value detected: {'target2'}
+2024-09-16 07:03:11 - WARNING - Merge failed sheets: {'sheet1', 'sheet2'}
+2024-09-16 07:03:11 - INFO - Summary for 2023-10-02:
+2024-09-16 07:03:11 - INFO - No anomalies detected.
+2024-09-16 07:03:11 - INFO - Finished logging summary.
+2024-09-16 07:11:56 - INFO - Starting to merge.
+2024-09-16 07:11:56 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 07:11:56 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 07:11:56 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 07:11:56 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 07:11:56 - INFO - Merging completed.
+2024-09-16 07:11:56 - INFO - Starting to highlight.
+2024-09-16 07:11:56 - WARNING - Invalid processing time value: INVALID
+2024-09-16 07:11:56 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 07:11:56 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 07:11:56 - WARNING - Anomaly value detected: target_1
+2024-09-16 07:11:56 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 07:11:56 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 07:11:56 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 07:11:56 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 07:11:56 - WARNING - Anomaly value detected: target_3
+2024-09-16 07:11:56 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 07:11:56 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 07:11:56 - INFO - Highlighting completed.
+2024-09-16 07:11:56 - INFO - Starting to reorder.
+2024-09-16 07:11:56 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 07:11:56 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 07:11:56 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 07:11:56 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 07:11:56 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 07:11:56 - INFO - Reordering completed.
+2024-09-16 07:11:56 - INFO - Starting to log summary.
+2024-09-16 07:11:56 - INFO - Summary for 19880209:
+2024-09-16 07:11:56 - WARNING - Exceeded threshold detected: {'target_0'}
+2024-09-16 07:11:56 - WARNING - Anomaly value detected: {'target_1'}
+2024-09-16 07:11:56 - WARNING - Merge failed sheets: {'target_3', 'target_2'}
+2024-09-16 07:11:56 - INFO - Summary for 19880210:
+2024-09-16 07:11:56 - INFO - No anomalies detected.
+2024-09-16 07:11:56 - INFO - Finished logging summary.
+2024-09-16 07:12:08 - INFO - Starting to merge.
+2024-09-16 07:12:08 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 07:12:08 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 07:12:08 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 07:12:08 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 07:12:08 - INFO - Merging completed.
+2024-09-16 07:12:08 - INFO - Starting to highlight.
+2024-09-16 07:12:08 - WARNING - Invalid processing time value: INVALID
+2024-09-16 07:12:08 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 07:12:08 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 07:12:08 - WARNING - Anomaly value detected: target_1
+2024-09-16 07:12:08 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 07:12:08 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 07:12:08 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 07:12:08 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 07:12:08 - WARNING - Anomaly value detected: target_3
+2024-09-16 07:12:08 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 07:12:08 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 07:12:08 - INFO - Highlighting completed.
+2024-09-16 07:12:08 - INFO - Starting to reorder.
+2024-09-16 07:12:08 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 07:12:08 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 07:12:08 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 07:12:08 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 07:12:08 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 07:12:08 - INFO - Reordering completed.
+2024-09-16 07:12:08 - INFO - Starting to log summary.
+2024-09-16 07:12:08 - INFO - Summary for 19880209:
+2024-09-16 07:12:08 - WARNING - Exceeded threshold detected: {'target_0'}
+2024-09-16 07:12:08 - WARNING - Anomaly value detected: {'target_1'}
+2024-09-16 07:12:08 - WARNING - Merge failed sheets: {'target_2', 'target_3'}
+2024-09-16 07:12:08 - INFO - Summary for 19880210:
+2024-09-16 07:12:08 - INFO - No anomalies detected.
+2024-09-16 07:12:08 - INFO - Finished logging summary.
+2024-09-16 07:55:10 - INFO - Starting to log summary.
+2024-09-16 07:55:10 - INFO - Summary for 19880209:
+2024-09-16 07:55:10 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 07:55:10 - WARNING - Exceeded threshold detected: {'target_0'}
+2024-09-16 07:55:11 - WARNING - Anomaly value detected: {'target_1'}
+2024-09-16 07:55:11 - WARNING - Merge failed sheets: {'target_3', 'target_2'}
+2024-09-16 07:55:11 - INFO - Summary for 19880210:
+2024-09-16 07:55:11 - INFO - No anomalies detected.
+2024-09-16 07:55:11 - INFO - Finished logging summary.
+2024-09-16 07:55:48 - INFO - Starting to log summary.
+2024-09-16 07:55:48 - INFO - Summary for 19880209:
+2024-09-16 07:55:48 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 07:55:48 - WARNING - Exceeded threshold detected: {'target_0'}
+2024-09-16 07:55:48 - WARNING - Anomaly value detected: {'target_1'}
+2024-09-16 07:55:48 - WARNING - Merge failed sheets: {'target_2', 'target_3'}
+2024-09-16 07:55:48 - INFO - Summary for 19880210:
+2024-09-16 07:55:48 - INFO - No anomalies detected.
+2024-09-16 07:55:48 - INFO - Finished logging summary.
+2024-09-16 07:55:55 - INFO - Starting to log summary.
+2024-09-16 07:55:55 - INFO - Summary for 19880209:
+2024-09-16 07:55:55 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 07:55:55 - WARNING - Exceeded threshold detected: {'target_0'}
+2024-09-16 07:55:55 - WARNING - Anomaly value detected: {'target_1'}
+2024-09-16 07:55:55 - WARNING - Merge failed sheets: {'target_3', 'target_2'}
+2024-09-16 07:55:55 - INFO - Summary for 19880210:
+2024-09-16 07:55:55 - INFO - No anomalies detected.
+2024-09-16 07:55:55 - INFO - Finished logging summary.
+2024-09-16 08:03:05 - INFO - Starting to log summary.
+2024-09-16 08:03:05 - INFO - Summary for 19880209:
+2024-09-16 08:03:05 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:03:05 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:03:05 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:03:05 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:03:05 - INFO - Summary for 19880210:
+2024-09-16 08:03:05 - INFO - No anomalies detected.
+2024-09-16 08:03:05 - INFO - Finished logging summary.
+2024-09-16 08:03:38 - INFO - Starting to log summary.
+2024-09-16 08:03:38 - INFO - Summary for 19880209:
+2024-09-16 08:03:38 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:03:38 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:03:38 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:03:38 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:03:38 - INFO - Summary for 19880210:
+2024-09-16 08:03:38 - INFO - No anomalies detected.
+2024-09-16 08:03:38 - INFO - Finished logging summary.
+2024-09-16 08:04:29 - INFO - Starting to log summary.
+2024-09-16 08:04:29 - INFO - Summary for 19880209:
+2024-09-16 08:04:29 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:04:29 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:04:29 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:04:29 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:04:29 - INFO - Summary for 19880210:
+2024-09-16 08:04:29 - INFO - No anomalies detected.
+2024-09-16 08:04:29 - INFO - Finished logging summary.
+2024-09-16 08:04:35 - INFO - Starting to log summary.
+2024-09-16 08:04:35 - INFO - Summary for 19880209:
+2024-09-16 08:04:35 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:04:35 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:04:35 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:04:35 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:04:35 - INFO - Summary for 19880210:
+2024-09-16 08:04:35 - INFO - No anomalies detected.
+2024-09-16 08:04:35 - INFO - Finished logging summary.
+2024-09-16 08:04:53 - INFO - Starting to merge.
+2024-09-16 08:04:53 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 08:04:53 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 08:04:53 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 08:04:53 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 08:04:53 - INFO - Merging completed.
+2024-09-16 08:04:53 - INFO - Starting to highlight.
+2024-09-16 08:04:53 - WARNING - Invalid processing time value: INVALID
+2024-09-16 08:04:53 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 08:04:53 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 08:04:53 - WARNING - Anomaly value detected: target_1
+2024-09-16 08:04:53 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 08:04:53 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 08:04:53 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 08:04:53 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 08:04:53 - WARNING - Anomaly value detected: target_3
+2024-09-16 08:04:53 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 08:04:53 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 08:04:53 - INFO - Highlighting completed.
+2024-09-16 08:04:54 - INFO - Starting to reorder.
+2024-09-16 08:04:54 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 08:04:54 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 08:04:54 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 08:04:54 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 08:04:54 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 08:04:54 - INFO - Reordering completed.
+2024-09-16 08:04:54 - INFO - Starting to log summary.
+2024-09-16 08:04:54 - INFO - Summary for 19880209:
+2024-09-16 08:04:54 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:04:54 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:04:54 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:04:54 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:04:54 - INFO - Summary for 19880210:
+2024-09-16 08:04:54 - INFO - No anomalies detected.
+2024-09-16 08:04:54 - INFO - Finished logging summary.
+2024-09-16 08:16:29 - INFO - Starting to merge.
+2024-09-16 08:16:29 - INFO - Added sheet: target_0. (1/3)
+2024-09-16 08:16:29 - INFO - Added sheet: target_1. (2/3)
+2024-09-16 08:16:29 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2024-09-16 08:16:29 - INFO - Added sheet: target_2. (3/3)
+2024-09-16 08:16:29 - INFO - Merging completed.
+2024-09-16 08:16:29 - INFO - Starting to highlight.
+2024-09-16 08:16:29 - WARNING - Invalid processing time value: INVALID
+2024-09-16 08:16:29 - WARNING - Invalid JSON format found: INVALID
+2024-09-16 08:16:29 - INFO - Analyzed sheet: target_0. (1/5)
+2024-09-16 08:16:29 - WARNING - Anomaly value detected: target_1
+2024-09-16 08:16:29 - INFO - Analyzed sheet: target_1. (2/5)
+2024-09-16 08:16:29 - WARNING - Processing time threshold exceeded: target_2
+2024-09-16 08:16:29 - INFO - Analyzed sheet: target_2. (3/5)
+2024-09-16 08:16:29 - WARNING - Processing time threshold exceeded: target_3
+2024-09-16 08:16:29 - WARNING - Anomaly value detected: target_3
+2024-09-16 08:16:29 - INFO - Analyzed sheet: target_3. (4/5)
+2024-09-16 08:16:29 - INFO - Analyzed sheet: no_csv. (5/5)
+2024-09-16 08:16:29 - INFO - Highlighting completed.
+2024-09-16 08:16:30 - INFO - Starting to reorder.
+2024-09-16 08:16:30 - INFO - Reordered sheet: target_1. (1/5)
+2024-09-16 08:16:30 - INFO - Reordered sheet: target_2. (2/5)
+2024-09-16 08:16:30 - INFO - Reordered sheet: target_3. (3/5)
+2024-09-16 08:16:30 - INFO - Reordered sheet: target_0. (4/5)
+2024-09-16 08:16:30 - INFO - Reordered sheet: no_csv. (5/5)
+2024-09-16 08:16:30 - INFO - Reordering completed.
+2024-09-16 08:16:30 - INFO - Starting to log summary.
+2024-09-16 08:16:30 - INFO - Summary for 19880209:
+2024-09-16 08:16:30 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2024-09-16 08:16:30 - WARNING - Exceeded threshold detected: ['target_0']
+2024-09-16 08:16:30 - WARNING - Anomaly value detected: ['target_1']
+2024-09-16 08:16:30 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2024-09-16 08:16:30 - INFO - Summary for 19880210:
+2024-09-16 08:16:30 - INFO - No anomalies detected.
+2024-09-16 08:16:30 - INFO - Finished logging summary.

@@ -1,0 +1,304 @@
+2025-01-03 10:27:38 - INFO - Starting to merge.
+2025-01-03 10:27:38 - INFO - Added sheet: target_0. (1/3)
+2025-01-03 10:27:38 - INFO - Added sheet: target_1. (2/3)
+2025-01-03 10:27:38 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-01-03 10:27:38 - INFO - Added sheet: target_2. (3/3)
+2025-01-03 10:27:38 - INFO - Merging completed.
+2025-01-03 10:27:38 - INFO - Starting to highlight.
+2025-01-03 10:27:38 - WARNING - Invalid processing time value: INVALID
+2025-01-03 10:27:38 - WARNING - Invalid JSON format found: INVALID
+2025-01-03 10:27:38 - INFO - Analyzed sheet: target_0. (1/5)
+2025-01-03 10:27:38 - WARNING - Anomaly value detected: target_1
+2025-01-03 10:27:38 - INFO - Analyzed sheet: target_1. (2/5)
+2025-01-03 10:27:38 - WARNING - Processing time threshold exceeded: target_2
+2025-01-03 10:27:38 - INFO - Analyzed sheet: target_2. (3/5)
+2025-01-03 10:27:38 - WARNING - Processing time threshold exceeded: target_3
+2025-01-03 10:27:38 - WARNING - Anomaly value detected: target_3
+2025-01-03 10:27:38 - INFO - Analyzed sheet: target_3. (4/5)
+2025-01-03 10:27:38 - INFO - Analyzed sheet: no_csv. (5/5)
+2025-01-03 10:27:38 - INFO - Highlighting completed.
+2025-01-03 10:27:38 - INFO - Starting to reorder.
+2025-01-03 10:27:38 - INFO - Reordered sheet: target_1. (1/5)
+2025-01-03 10:27:38 - INFO - Reordered sheet: target_2. (2/5)
+2025-01-03 10:27:38 - INFO - Reordered sheet: target_3. (3/5)
+2025-01-03 10:27:38 - INFO - Reordered sheet: target_0. (4/5)
+2025-01-03 10:27:38 - INFO - Reordered sheet: no_csv. (5/5)
+2025-01-03 10:27:38 - INFO - Reordering completed.
+2025-01-03 10:27:39 - INFO - Starting to log summary.
+2025-01-03 10:27:39 - INFO - Summary for 19880209:
+2025-01-03 10:27:39 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-01-03 10:27:39 - WARNING - Exceeded threshold detected: ['target_0']
+2025-01-03 10:27:39 - WARNING - Anomaly value detected: ['target_1']
+2025-01-03 10:27:39 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-01-03 10:27:39 - INFO - Summary for 19880210:
+2025-01-03 10:27:39 - INFO - No anomalies detected.
+2025-01-03 10:27:39 - INFO - Finished logging summary.
+2025-01-03 10:35:16 - INFO - Process started.
+2025-01-03 10:35:16 - INFO - Configuration file config/config.yml loaded successfully.
+2025-01-03 10:35:16 - WARNING - No CSV files found for date 20250102.
+2025-01-03 10:35:16 - INFO - Starting to log summary.
+2025-01-03 10:35:16 - INFO - Summary for 20250102:
+2025-01-03 10:35:16 - WARNING - No CSV files found.
+2025-01-03 10:35:16 - INFO - Finished logging summary.
+2025-01-03 10:35:16 - INFO - Process completed.
+2025-01-03 10:40:32 - INFO - Process started.
+2025-01-03 10:40:32 - INFO - Configuration file config/config.yml loaded successfully.
+2025-01-03 10:40:32 - INFO - Starting to create output/19880209/19880209_abc0.xlsx.
+2025-01-03 10:40:32 - INFO - Starting to merge.
+2025-01-03 10:40:33 - INFO - Added sheet: abc01-foo. (1/2)
+2025-01-03 10:40:33 - INFO - Added sheet: abc02-foo. (2/2)
+2025-01-03 10:40:33 - INFO - Merging completed.
+2025-01-03 10:40:33 - INFO - Starting to highlight.
+2025-01-03 10:40:36 - WARNING - Processing time threshold exceeded: abc01-foo
+2025-01-03 10:40:36 - WARNING - Anomaly value detected: abc01-foo
+2025-01-03 10:40:36 - INFO - Analyzed sheet: abc01-foo. (1/2)
+2025-01-03 10:40:36 - INFO - Analyzed sheet: abc02-foo. (2/2)
+2025-01-03 10:40:36 - INFO - Highlighting completed.
+2025-01-03 10:40:36 - INFO - Starting to reorder.
+2025-01-03 10:40:36 - INFO - Reordered sheet: abc01-foo. (1/2)
+2025-01-03 10:40:36 - INFO - Reordered sheet: abc02-foo. (2/2)
+2025-01-03 10:40:36 - INFO - Reordering completed.
+2025-01-03 10:40:36 - INFO - Saving output/19880209/19880209_abc0.xlsx.
+2025-01-03 10:40:38 - INFO - Finished creating output/19880209/19880209_abc0.xlsx.
+2025-01-03 10:40:38 - INFO - Starting to create output/19880209/19880209_def0.xlsx.
+2025-01-03 10:40:38 - INFO - Starting to merge.
+2025-01-03 10:40:38 - INFO - Added sheet: def01-foo. (1/2)
+2025-01-03 10:40:39 - INFO - Added sheet: def02-foo. (2/2)
+2025-01-03 10:40:39 - INFO - Merging completed.
+2025-01-03 10:40:39 - INFO - Starting to highlight.
+2025-01-03 10:40:39 - INFO - Analyzed sheet: def01-foo. (1/2)
+2025-01-03 10:40:40 - WARNING - Processing time threshold exceeded: def02-foo
+2025-01-03 10:40:40 - WARNING - Anomaly value detected: def02-foo
+2025-01-03 10:40:40 - INFO - Analyzed sheet: def02-foo. (2/2)
+2025-01-03 10:40:40 - INFO - Highlighting completed.
+2025-01-03 10:40:40 - INFO - Starting to reorder.
+2025-01-03 10:40:40 - INFO - Reordered sheet: def02-foo. (1/2)
+2025-01-03 10:40:40 - INFO - Reordered sheet: def01-foo. (2/2)
+2025-01-03 10:40:40 - INFO - Reordering completed.
+2025-01-03 10:40:40 - INFO - Saving output/19880209/19880209_def0.xlsx.
+2025-01-03 10:40:42 - INFO - Finished creating output/19880209/19880209_def0.xlsx.
+2025-01-03 10:40:42 - INFO - Starting to log summary.
+2025-01-03 10:40:42 - INFO - Summary for 19880209:
+2025-01-03 10:40:42 - WARNING - Some CSV files not found: ['def01-foo']
+2025-01-03 10:40:42 - WARNING - Exceeded threshold detected: ['abc01-foo', 'def02-foo']
+2025-01-03 10:40:42 - WARNING - Anomaly value detected: ['abc01-foo', 'def02-foo']
+2025-01-03 10:40:42 - INFO - Finished logging summary.
+2025-01-03 10:40:42 - INFO - Process completed.
+2025-01-03 11:02:49 - INFO - Starting to merge.
+2025-01-03 11:02:49 - INFO - Added sheet: target_0. (1/3)
+2025-01-03 11:02:49 - INFO - Added sheet: target_1. (2/3)
+2025-01-03 11:02:49 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-01-03 11:02:49 - INFO - Added sheet: target_2. (3/3)
+2025-01-03 11:02:49 - INFO - Merging completed.
+2025-01-03 11:02:50 - INFO - Starting to highlight.
+2025-01-03 11:02:50 - WARNING - Invalid processing time value: INVALID
+2025-01-03 11:02:50 - WARNING - Invalid JSON format found: INVALID
+2025-01-03 11:02:50 - INFO - Analyzed sheet: target_0. (1/5)
+2025-01-03 11:02:50 - WARNING - Anomaly value detected: target_1
+2025-01-03 11:02:50 - INFO - Analyzed sheet: target_1. (2/5)
+2025-01-03 11:02:50 - WARNING - Processing time threshold exceeded: target_2
+2025-01-03 11:02:50 - INFO - Analyzed sheet: target_2. (3/5)
+2025-01-03 11:02:50 - WARNING - Processing time threshold exceeded: target_3
+2025-01-03 11:02:50 - WARNING - Anomaly value detected: target_3
+2025-01-03 11:02:50 - INFO - Analyzed sheet: target_3. (4/5)
+2025-01-03 11:02:50 - INFO - Analyzed sheet: no_csv. (5/5)
+2025-01-03 11:02:50 - INFO - Highlighting completed.
+2025-01-03 11:02:50 - INFO - Starting to reorder.
+2025-01-03 11:02:50 - INFO - Reordered sheet: target_1. (1/5)
+2025-01-03 11:02:50 - INFO - Reordered sheet: target_2. (2/5)
+2025-01-03 11:02:50 - INFO - Reordered sheet: target_3. (3/5)
+2025-01-03 11:02:50 - INFO - Reordered sheet: target_0. (4/5)
+2025-01-03 11:02:50 - INFO - Reordered sheet: no_csv. (5/5)
+2025-01-03 11:02:50 - INFO - Reordering completed.
+2025-01-03 11:02:50 - INFO - Starting to log summary.
+2025-01-03 11:02:50 - INFO - Summary for 19880209:
+2025-01-03 11:02:50 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-01-03 11:02:50 - WARNING - Exceeded threshold detected: ['target_0']
+2025-01-03 11:02:50 - WARNING - Anomaly value detected: ['target_1']
+2025-01-03 11:02:50 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-01-03 11:02:50 - INFO - Summary for 19880210:
+2025-01-03 11:02:50 - INFO - No anomalies detected.
+2025-01-03 11:02:50 - INFO - Finished logging summary.
+2025-08-03 07:23:59 - INFO - Process started.
+2025-08-03 07:24:04 - INFO - Configuration file /app/src/consolidate_csv_to_excel/config/config.yml loaded successfully.
+2025-08-03 07:24:06 - ERROR - An error occured: [Errno 2] No such file or directory: 'log_directory'
+Traceback (most recent call last):
+  File "/app/src/consolidate_csv_to_excel/consolidate_csvs_to_excel_by_date.py", line 28, in main
+    target_fullnames = TargetHandler.get_target_fullnames(target_prefixes)
+  File "/app/src/consolidate_csv_to_excel/target_handler.py", line 23, in get_target_fullnames
+    target_folders = os.listdir(_TARGET_FOLDERS_BASE_PATH)
+FileNotFoundError: [Errno 2] No such file or directory: 'log_directory'
+2025-08-03 07:25:50 - INFO - Process started.
+2025-08-03 07:25:50 - INFO - Configuration file /app/src/consolidate_csv_to_excel/config/config.yml loaded successfully.
+2025-08-03 07:25:50 - WARNING - No CSV files found for date 19880209.
+2025-08-03 07:25:50 - INFO - Starting to log summary.
+2025-08-03 07:25:50 - INFO - Summary for 19880209:
+2025-08-03 07:25:50 - WARNING - No CSV files found.
+2025-08-03 07:25:50 - INFO - Finished logging summary.
+2025-08-03 07:25:50 - INFO - Process completed.
+2025-08-03 08:25:18 - INFO - Starting to log summary.
+2025-08-03 08:25:18 - INFO - Summary for 19880209:
+2025-08-03 08:25:18 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 08:25:18 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 08:25:18 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 08:25:18 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 08:25:18 - INFO - Summary for 19880210:
+2025-08-03 08:25:18 - INFO - No anomalies detected.
+2025-08-03 08:25:18 - INFO - Finished logging summary.
+2025-08-03 08:26:16 - INFO - Starting to log summary.
+2025-08-03 08:26:16 - INFO - Summary for 19880209:
+2025-08-03 08:26:16 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 08:26:16 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 08:26:16 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 08:26:16 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 08:26:16 - INFO - Summary for 19880210:
+2025-08-03 08:26:16 - INFO - No anomalies detected.
+2025-08-03 08:26:16 - INFO - Finished logging summary.
+2025-08-03 08:51:21 - INFO - Process started.
+2025-08-03 08:51:21 - INFO - Configuration file /app/src/consolidate_csv_to_excel/config/config.yml loaded successfully.
+2025-08-03 08:51:25 - WARNING - No CSV files found for date 19880209.
+2025-08-03 08:51:25 - INFO - Starting to log summary.
+2025-08-03 08:51:25 - INFO - Summary for 19880209:
+2025-08-03 08:51:25 - WARNING - No CSV files found.
+2025-08-03 08:51:25 - INFO - Finished logging summary.
+2025-08-03 08:51:25 - INFO - Process completed.
+2025-08-03 09:11:56 - INFO - Starting to merge.
+2025-08-03 09:11:56 - INFO - Added sheet: target_0. (1/3)
+2025-08-03 09:11:56 - INFO - Added sheet: target_1. (2/3)
+2025-08-03 09:11:56 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-08-03 09:11:56 - INFO - Added sheet: target_2. (3/3)
+2025-08-03 09:11:56 - INFO - Merging completed.
+2025-08-03 09:20:22 - INFO - Starting to merge.
+2025-08-03 09:20:22 - INFO - Added sheet: target_0. (1/3)
+2025-08-03 09:20:22 - INFO - Added sheet: target_1. (2/3)
+2025-08-03 09:20:22 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-08-03 09:20:22 - INFO - Added sheet: target_2. (3/3)
+2025-08-03 09:20:22 - INFO - Merging completed.
+2025-08-03 09:20:22 - INFO - Starting to log summary.
+2025-08-03 09:20:22 - INFO - Summary for 19880209:
+2025-08-03 09:20:22 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 09:20:22 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 09:20:22 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 09:20:22 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 09:20:22 - INFO - Summary for 19880210:
+2025-08-03 09:20:22 - INFO - No anomalies detected.
+2025-08-03 09:20:22 - INFO - Finished logging summary.
+2025-08-03 09:30:12 - INFO - Starting to reorder.
+2025-08-03 09:30:12 - INFO - Reordered sheet: target_1. (1/5)
+2025-08-03 09:30:12 - INFO - Reordered sheet: target_2. (2/5)
+2025-08-03 09:30:12 - INFO - Reordered sheet: target_3. (3/5)
+2025-08-03 09:30:12 - INFO - Reordered sheet: target_0. (4/5)
+2025-08-03 09:30:12 - INFO - Reordered sheet: no_csv. (5/5)
+2025-08-03 09:30:12 - INFO - Reordering completed.
+2025-08-03 09:31:15 - INFO - Starting to merge.
+2025-08-03 09:31:15 - INFO - Added sheet: target_0. (1/3)
+2025-08-03 09:31:15 - INFO - Added sheet: target_1. (2/3)
+2025-08-03 09:31:15 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-08-03 09:31:15 - INFO - Added sheet: target_2. (3/3)
+2025-08-03 09:31:15 - INFO - Merging completed.
+2025-08-03 09:31:17 - INFO - Starting to reorder.
+2025-08-03 09:31:17 - INFO - Reordered sheet: target_1. (1/5)
+2025-08-03 09:31:17 - INFO - Reordered sheet: target_2. (2/5)
+2025-08-03 09:31:17 - INFO - Reordered sheet: target_3. (3/5)
+2025-08-03 09:31:17 - INFO - Reordered sheet: target_0. (4/5)
+2025-08-03 09:31:17 - INFO - Reordered sheet: no_csv. (5/5)
+2025-08-03 09:31:17 - INFO - Reordering completed.
+2025-08-03 09:31:17 - INFO - Starting to log summary.
+2025-08-03 09:31:17 - INFO - Summary for 19880209:
+2025-08-03 09:31:17 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 09:31:17 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 09:31:17 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 09:31:17 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 09:31:17 - INFO - Summary for 19880210:
+2025-08-03 09:31:17 - INFO - No anomalies detected.
+2025-08-03 09:31:17 - INFO - Finished logging summary.
+2025-08-03 09:31:54 - INFO - Starting to highlight.
+2025-08-03 09:31:54 - WARNING - Invalid processing time value: INVALID
+2025-08-03 09:31:54 - WARNING - Invalid JSON format found: INVALID
+2025-08-03 09:31:54 - INFO - Analyzed sheet: target_0. (1/5)
+2025-08-03 09:31:54 - WARNING - Anomaly value detected: target_1
+2025-08-03 09:31:54 - INFO - Analyzed sheet: target_1. (2/5)
+2025-08-03 09:31:54 - WARNING - Processing time threshold exceeded: target_2
+2025-08-03 09:31:54 - INFO - Analyzed sheet: target_2. (3/5)
+2025-08-03 09:31:54 - WARNING - Processing time threshold exceeded: target_3
+2025-08-03 09:31:54 - WARNING - Anomaly value detected: target_3
+2025-08-03 09:31:54 - INFO - Analyzed sheet: target_3. (4/5)
+2025-08-03 09:31:54 - INFO - Analyzed sheet: no_csv. (5/5)
+2025-08-03 09:31:54 - INFO - Highlighting completed.
+2025-08-03 09:31:54 - INFO - Starting to reorder.
+2025-08-03 09:31:54 - INFO - Reordered sheet: target_1. (1/5)
+2025-08-03 09:31:54 - INFO - Reordered sheet: target_2. (2/5)
+2025-08-03 09:31:54 - INFO - Reordered sheet: target_3. (3/5)
+2025-08-03 09:31:54 - INFO - Reordered sheet: target_0. (4/5)
+2025-08-03 09:31:54 - INFO - Reordered sheet: no_csv. (5/5)
+2025-08-03 09:31:54 - INFO - Reordering completed.
+2025-08-03 09:32:57 - INFO - Starting to merge.
+2025-08-03 09:32:57 - INFO - Added sheet: target_0. (1/3)
+2025-08-03 09:32:57 - INFO - Added sheet: target_1. (2/3)
+2025-08-03 09:32:57 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-08-03 09:32:57 - INFO - Added sheet: target_2. (3/3)
+2025-08-03 09:32:57 - INFO - Merging completed.
+2025-08-03 09:32:57 - INFO - Starting to highlight.
+2025-08-03 09:32:57 - WARNING - Invalid processing time value: INVALID
+2025-08-03 09:32:57 - WARNING - Invalid JSON format found: INVALID
+2025-08-03 09:32:57 - INFO - Analyzed sheet: target_0. (1/5)
+2025-08-03 09:32:57 - WARNING - Anomaly value detected: target_1
+2025-08-03 09:32:57 - INFO - Analyzed sheet: target_1. (2/5)
+2025-08-03 09:32:57 - WARNING - Processing time threshold exceeded: target_2
+2025-08-03 09:32:57 - INFO - Analyzed sheet: target_2. (3/5)
+2025-08-03 09:32:57 - WARNING - Processing time threshold exceeded: target_3
+2025-08-03 09:32:57 - WARNING - Anomaly value detected: target_3
+2025-08-03 09:32:57 - INFO - Analyzed sheet: target_3. (4/5)
+2025-08-03 09:32:57 - INFO - Analyzed sheet: no_csv. (5/5)
+2025-08-03 09:32:57 - INFO - Highlighting completed.
+2025-08-03 09:32:58 - INFO - Starting to reorder.
+2025-08-03 09:32:58 - INFO - Reordered sheet: target_1. (1/5)
+2025-08-03 09:32:58 - INFO - Reordered sheet: target_2. (2/5)
+2025-08-03 09:32:58 - INFO - Reordered sheet: target_3. (3/5)
+2025-08-03 09:32:58 - INFO - Reordered sheet: target_0. (4/5)
+2025-08-03 09:32:58 - INFO - Reordered sheet: no_csv. (5/5)
+2025-08-03 09:32:58 - INFO - Reordering completed.
+2025-08-03 09:32:58 - INFO - Starting to log summary.
+2025-08-03 09:32:58 - INFO - Summary for 19880209:
+2025-08-03 09:32:58 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 09:32:58 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 09:32:58 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 09:32:58 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 09:32:58 - INFO - Summary for 19880210:
+2025-08-03 09:32:58 - INFO - No anomalies detected.
+2025-08-03 09:32:58 - INFO - Finished logging summary.
+2025-08-03 09:52:27 - INFO - Starting to merge.
+2025-08-03 09:52:27 - INFO - Added sheet: target_0. (1/3)
+2025-08-03 09:52:27 - INFO - Added sheet: target_1. (2/3)
+2025-08-03 09:52:27 - ERROR - Failed to read CSV file at INVALID_CSV_PATH.csv: [Errno 2] No such file or directory: 'INVALID_CSV_PATH.csv'
+2025-08-03 09:52:27 - INFO - Added sheet: target_2. (3/3)
+2025-08-03 09:52:27 - INFO - Merging completed.
+2025-08-03 09:52:28 - INFO - Starting to highlight.
+2025-08-03 09:52:28 - WARNING - Invalid processing time value: INVALID
+2025-08-03 09:52:28 - WARNING - Invalid JSON format found: INVALID
+2025-08-03 09:52:28 - INFO - Analyzed sheet: target_0. (1/5)
+2025-08-03 09:52:28 - WARNING - Anomaly value detected: target_1
+2025-08-03 09:52:28 - INFO - Analyzed sheet: target_1. (2/5)
+2025-08-03 09:52:28 - WARNING - Processing time threshold exceeded: target_2
+2025-08-03 09:52:28 - INFO - Analyzed sheet: target_2. (3/5)
+2025-08-03 09:52:28 - WARNING - Processing time threshold exceeded: target_3
+2025-08-03 09:52:28 - WARNING - Anomaly value detected: target_3
+2025-08-03 09:52:28 - INFO - Analyzed sheet: target_3. (4/5)
+2025-08-03 09:52:28 - INFO - Analyzed sheet: no_csv. (5/5)
+2025-08-03 09:52:28 - INFO - Highlighting completed.
+2025-08-03 09:52:28 - INFO - Starting to reorder.
+2025-08-03 09:52:28 - INFO - Reordered sheet: target_1. (1/5)
+2025-08-03 09:52:28 - INFO - Reordered sheet: target_2. (2/5)
+2025-08-03 09:52:28 - INFO - Reordered sheet: target_3. (3/5)
+2025-08-03 09:52:28 - INFO - Reordered sheet: target_0. (4/5)
+2025-08-03 09:52:28 - INFO - Reordered sheet: no_csv. (5/5)
+2025-08-03 09:52:28 - INFO - Reordering completed.
+2025-08-03 09:52:28 - INFO - Starting to log summary.
+2025-08-03 09:52:28 - INFO - Summary for 19880209:
+2025-08-03 09:52:28 - WARNING - Some CSV files not found: ['target_4', 'target_5']
+2025-08-03 09:52:28 - WARNING - Exceeded threshold detected: ['target_0']
+2025-08-03 09:52:28 - WARNING - Anomaly value detected: ['target_1']
+2025-08-03 09:52:28 - WARNING - Merge failed sheets: ['target_2', 'target_3']
+2025-08-03 09:52:28 - INFO - Summary for 19880210:
+2025-08-03 09:52:28 - INFO - No anomalies detected.
+2025-08-03 09:52:28 - INFO - Finished logging summary.
