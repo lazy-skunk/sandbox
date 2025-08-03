@@ -2,10 +2,10 @@ import logging
 from inspect import currentframe, getouterframes
 from pathlib import Path
 
+_DEFAULT_SANDBOX_PATH = Path("/app/src")
+
 
 class SandboxLogger:
-    _DEFAULT_SANDBOX_PATH = Path("/app/sandbox")
-
     @classmethod
     def get_logger(cls) -> logging.Logger:
         experiment_name = cls._get_experiment_name()
@@ -14,7 +14,7 @@ class SandboxLogger:
         if logger.hasHandlers():
             return logger
 
-        log_dir = cls._DEFAULT_SANDBOX_PATH / experiment_name
+        log_dir = _DEFAULT_SANDBOX_PATH / experiment_name
         log_path = log_dir / f"{experiment_name}.log"
 
         logger.setLevel(logging.DEBUG)
@@ -44,7 +44,7 @@ class SandboxLogger:
         path_parts = caller_file_path.parts
 
         try:
-            sandbox_index = path_parts.index(cls._DEFAULT_SANDBOX_PATH.name)
+            sandbox_index = path_parts.index(_DEFAULT_SANDBOX_PATH.name)
             experiment_name = path_parts[sandbox_index + 1]
         except (ValueError, IndexError) as e:
             raise RuntimeError("Invalid directory structure") from e
