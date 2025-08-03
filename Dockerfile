@@ -13,7 +13,7 @@ RUN apt-get update \
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 ENV PATH="/root/.local/bin:$PATH"
-COPY pyproject.toml poetry.lock ./
+COPY pyproject.toml poetry.lock poetry.toml ./
 RUN poetry install --no-root --with dev
 
 RUN poetry run jupyter notebook --generate-config \

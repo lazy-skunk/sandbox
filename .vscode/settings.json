@@ -17,7 +17,7 @@
             "source.organizeImports": "explicit"
         }
     },
-    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
     "python.testing.pytestEnabled": true,
     "notebook.formatOnSave.enabled": true,
     "notebook.defaultFormatter": "ms-python.black-formatter",
