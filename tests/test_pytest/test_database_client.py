@@ -2,6 +2,8 @@ import pandas as pd
 import pytest
 from pytest_mock import MockerFixture
 
+from src.test_pytest.database_client import DatabaseClient
+
 
 @pytest.fixture
 def db_params() -> dict:
@@ -18,13 +20,13 @@ class TestDatabaseClient:
     def test_fetch_table(self, mocker: MockerFixture, db_params: dict) -> None:
         mock_conn = mocker.MagicMock()
         mock_connect = mocker.patch(
-            "sandbox.test_pytest.src.database_client.psycopg2.connect",
+            "src.test_pytest.database_client.psycopg2.connect",
             return_value=mock_conn,
         )
 
         expected_df = pd.DataFrame({"id": [1], "name": ["test"]})
         mock_read_sql = mocker.patch(
-            "sandbox.test_pytest.src.database_client.pd.read_sql",
+            "src.test_pytest.database_client.pd.read_sql",
             return_value=expected_df,
         )
 
