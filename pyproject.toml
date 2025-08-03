@@ -22,6 +22,7 @@ dependencies = [
     "sqlglot (>=27.6.0,<28.0.0)",
     "dotenv (>=0.9.9,<0.10.0)",
     "nbconvert (>=7.16.6,<8.0.0)",
+    "django (>=5.2.4,<6.0.0)",
 ]
 
 [tool.poetry]
@@ -34,6 +35,7 @@ black = "^25.1.0"
 flake8 = "^7.3.0"
 isort = "^6.0.1"
 mypy = "^1.17.1"
+django-debug-toolbar = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
