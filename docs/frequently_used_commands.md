@@ -15,6 +15,6 @@ docker-compose down --rmi all --volumes
 ## Jupyter Notebook
 
 ```
-poetry run jupyter server list
-poetry run jupyter notebook --ip=127.0.0.1 --port=8888 --no-browser --allow-root
+jupyter server list
+jupyter notebook --ip=127.0.0.1 --port=8888 --no-browser --allow-root
 ```
