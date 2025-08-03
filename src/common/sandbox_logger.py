@@ -14,7 +14,7 @@ class SandboxLogger:
         if logger.hasHandlers():
             return logger
 
-        log_dir = _DEFAULT_SANDBOX_PATH / experiment_name
+        log_dir = _DEFAULT_SANDBOX_PATH / experiment_name / "log"
         log_path = log_dir / f"{experiment_name}.log"
 
         logger.setLevel(logging.DEBUG)
