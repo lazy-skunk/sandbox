@@ -11,8 +11,6 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./playground:/playground
-      - ./.git:/playground/.git
-      - ~/.gitconfig:/root/.gitconfig
     stdin_open: true
     tty: true
 
@@ -28,8 +26,6 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./backend:/backend
-      - ./.git:/backend/.git
-      - ~/.gitconfig:/root/.gitconfig
     stdin_open: true
     tty: true
 
@@ -39,8 +35,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./frontend:/frontend
-      - ./.git:/backend/.git
-      - ~/.gitconfig:/root/.gitconfig
     ports:
       - "3000:3000"
     stdin_open: true
