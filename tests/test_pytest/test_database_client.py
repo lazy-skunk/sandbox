@@ -2,8 +2,6 @@ import pandas as pd
 import pytest
 from pytest_mock import MockerFixture
 
-from sandbox.test_pytest.src.database_client import DatabaseClient
-
 
 @pytest.fixture
 def db_params() -> dict:
