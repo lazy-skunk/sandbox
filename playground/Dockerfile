@@ -5,9 +5,9 @@ WORKDIR /playground
 RUN apt-get update \
    && apt-get install -y \
    git \
-   # texlive-xetex \
-   # texlive-fonts-recommended \
-   # texlive-plain-generic \
+   texlive-xetex \
+   texlive-fonts-recommended \
+   texlive-plain-generic \
    && apt-get clean \
    && rm -rf /var/lib/apt/lists/*
 
