@@ -1,0 +1,13 @@
+{
+    "files.insertFinalNewline": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never",
+            "source.organizeImports": "explicit",
+        }
+    },
+}
