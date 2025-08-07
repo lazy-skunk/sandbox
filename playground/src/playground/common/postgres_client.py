@@ -70,7 +70,7 @@ class PostgresClient:
             self._connection = psycopg2.connect(**self._connection_params)
 
     @contextmanager
-    def _cursor(self) -> Generator[psycopg2.extensions.cursor, None, None]:
+    def _cursor(self) -> Generator[psycopg2.extensions.cursor]:
         if self._connection is None:
             raise RuntimeError(
                 "Database connection not established. Use context manager."

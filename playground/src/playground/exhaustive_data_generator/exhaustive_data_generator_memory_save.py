@@ -1,9 +1,10 @@
 import logging
 import sys
+from collections.abc import Generator
 from datetime import datetime, timedelta
 from itertools import cycle, product
 from pathlib import Path
-from typing import Any, Generator, TypedDict
+from typing import Any, TypedDict
 
 import pandas as pd
 
@@ -45,7 +46,7 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
         table_full_name = f"{schema}.{table}"
 
         table_combination_count = 1
-        for column, values in table_meta["column_value_map"].items():
+        for _column, values in table_meta["column_value_map"].items():
             value_count = len(values)
             table_combination_count *= value_count
 
@@ -60,7 +61,7 @@ def _estimate_combination_count(tables_meta: list[TableMeta]) -> int:
 def _generate_pseudo_joined_rows(
     table_meta: TableMeta,
     total_combinations: int,
-) -> Generator[dict[str, Any], Any, None]:
+) -> Generator[dict[str, Any]]:
     column_value_map = table_meta["column_value_map"]
     join_key_column = table_meta["join_key_column"]
 
@@ -72,7 +73,7 @@ def _generate_pseudo_joined_rows(
         if i > total_combinations:
             break
 
-        row = dict(zip(column_names, values))
+        row = dict(zip(column_names, values, strict=False))
 
         if join_key_column:
             row[join_key_column] = i

@@ -1,10 +1,11 @@
 import copy
 import logging
 import sys
+from collections.abc import Callable
 from datetime import datetime, timedelta
 from itertools import product
 from pathlib import Path
-from typing import Any, Callable, TypedDict
+from typing import Any, TypedDict
 
 import pandas as pd
 
@@ -136,7 +137,7 @@ _test_scenarios: TestPatterns = {
             },
         },
         "expected_condition": lambda df: (
-            (df["table_1_col_1"] == 1) & ((df["table_3_col_3"]))
+            (df["table_1_col_1"] == 1) & (df["table_3_col_3"])
         ),
     },
     "flag_2": {
@@ -281,7 +282,9 @@ def example() -> None:  # noqa C901
             base_tables = ["parent_table_1", "parent_table_2"]
 
             for tables_meta, parent_table in zip(
-                base_tables_meta_list, base_tables
+                base_tables_meta_list,
+                base_tables,
+                strict=False,
             ):
                 for table_meta in tables_meta:
                     table_name = table_meta["table_name"]

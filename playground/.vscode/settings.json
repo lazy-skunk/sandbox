@@ -2,43 +2,34 @@
     "files.insertFinalNewline": true,
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
+            "source.fixAll": "never",
             "source.organizeImports": "explicit"
         }
     },
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
     "python.testing.pytestEnabled": true,
     "notebook.formatOnSave.enabled": true,
-    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "notebook.defaultFormatter": "charliermarsh.ruff",
     "notebook.codeActionsOnSave": {
+        "source.fixAll": "never",
         "source.organizeImports": "explicit"
     },
     "mypy-type-checker.args": [
         "--config-file=pyproject.toml"
     ],
-    "black-formatter.args": [
-        "--config=pyproject.toml"
+    "python.analysis.include": [
+        "src/**/*",
+        "tests/**/*"
     ],
-    "flake8.args": [
-        "--max-line-length=79",
-        "--extend-ignore=E203", // Ignored due to false positive.
-        "--max-complexity=7" // The number of objects an average human can hold in short-term memory is 7 ± 2.
-    ],
-    "isort.args": [
-        "--settings-path=pyproject.toml"
+    "python.analysis.exclude": [
+        "**/*cache*",
+        "**/.ipynb_checkpoints"
     ],
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/.mypy_cache": true,
-        "**/.pytest_cache": true,
-        "**/__pycache__": true,
-        "**/.ipynb_checkpoints": true,
-        "**/sandbox.egg-info": true
+        "**/*cache*": true,
+        "**/.ipynb_checkpoints": true
     }
 }

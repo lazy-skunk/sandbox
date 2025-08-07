@@ -38,7 +38,7 @@ def read_relationships_from_csv(file_path: str) -> dict[str, list[str]]:
     """
     relationships: dict[str, list[str]] = {}
 
-    with open(file_path, mode="r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         reader = csv.reader(f)
         next(reader, None)
 
@@ -72,7 +72,7 @@ def add_edges_to_graph_from_relationships(
 
     Returns:
         None: user_groups_graph は関数内で直接更新されます。
-    """
+    """  # noqa: E501
     for user_group, sub_groups in relationships.items():
         for sub_group in sub_groups:
             user_groups_graph.add_edge(user_group, sub_group)
@@ -90,7 +90,7 @@ def get_root_nodes(user_groups_graph: networkx.DiGraph) -> list[str]:
 
     Returns:
         list: ルートノードのリスト
-    """
+    """  # noqa: E501
     root_nodes = []
 
     ZERO_INDEGREE = 0
@@ -218,7 +218,7 @@ def set_node_colors(user_groups_graph: networkx.DiGraph) -> list[str]:
     4. 上記のいずれにも該当しない場合: ピンク色を割り当てます。
 
     各ノードに割り当てられた色は、リスト形式で返されます。
-    """
+    """  # noqa: E501
     node_colors: list[str] = []
 
     for node in user_groups_graph.nodes():

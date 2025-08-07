@@ -219,7 +219,7 @@ def example() -> None:
 
     dfs_to_create_expected_df = []
     for table_meta, split_cartesian_df in zip(
-        tables_meta, split_cartesian_dfs
+        tables_meta, split_cartesian_dfs, strict=False
     ):
         # テーブル結合用の列に共通の番号を付与する。
         joined_key_assigned_df = _assign_join_key_values(
@@ -240,7 +240,9 @@ def example() -> None:
 
     expected_df = dfs_to_create_expected_df[0]
 
-    for df, table_meta in zip(dfs_to_create_expected_df[1:], tables_meta[1:]):
+    for df, table_meta in zip(
+        dfs_to_create_expected_df[1:], tables_meta[1:], strict=False
+    ):
         expected_df = pd.merge(
             expected_df,
             df,
