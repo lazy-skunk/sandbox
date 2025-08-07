@@ -3,10 +3,9 @@ FROM python:3.13-slim
 WORKDIR /playground
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+    && apt-get install -y \
     git \
     curl \
-    ca-certificates \
     texlive-xetex \
     texlive-fonts-recommended \
     texlive-plain-generic \
