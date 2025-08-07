@@ -1,0 +1,26 @@
+{
+    "files.insertFinalNewline": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true,
+        "**/sandbox.egg-info": true
+    }
+}

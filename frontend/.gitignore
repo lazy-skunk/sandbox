@@ -1,9 +1,0 @@
-*egg-info
-.coverage
-.ipynb_checkpoints
-.mypy_cache
-.pytest_cache
-.venv
-__pycache__
-build
-htmlcov
