@@ -30,6 +30,6 @@
     ],
     "files.exclude": {
         "**/*cache*": true,
-        "**/.ipynb_checkpoints": true,
+        "**/.ipynb_checkpoints": true
     }
 }
