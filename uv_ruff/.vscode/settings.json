@@ -7,7 +7,29 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
             "source.fixAll": "never",
-            "source.organizeImports": "explicit",
+            "source.organizeImports": "explicit"
         }
     },
+    "python.testing.pytestEnabled": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.organizeImports": "explicit"
+    },
+    "mypy-type-checker.args": [
+        "--config-file=pyproject.toml"
+    ],
+    "python.analysis.include": [
+        "src/**/*",
+        "tests/**/*"
+    ],
+    "python.analysis.exclude": [
+        "**/*cache*",
+        "**/.ipynb_checkpoints"
+    ],
+    "files.exclude": {
+        "**/*cache*": true,
+        "**/.ipynb_checkpoints": true,
+    }
 }

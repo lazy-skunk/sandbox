@@ -1,11 +1,17 @@
-FROM python:3.13-slim
+FROM python:3.13
 
 WORKDIR /workspace
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    ca-certificates \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-ADD https://astral.sh/uv/install.sh /uv-installer.sh
-
-RUN sh /uv-installer.sh && rm /uv-installer.sh
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ENV PATH="/root/.local/bin/:$PATH"
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONIOENCODING=utf-8

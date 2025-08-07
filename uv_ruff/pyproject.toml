@@ -1,5 +1,5 @@
 [project]
-name = "numbers"
+name = "sample_project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -12,6 +12,10 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
+    "mypy>=1.17.1",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
     "ruff>=0.12.7",
 ]
 
@@ -39,3 +43,12 @@ fixable = ["ALL"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 7
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-config=.coveragerc --cov-report=html"
+pythonpath = ["src"]
+testpaths = ["tests"]
