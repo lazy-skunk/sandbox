@@ -3,11 +3,8 @@
 ## Docker
 
 ```
-docker-compose images
-docker-compose ps
 docker-compose build --no-cache
-docker-compose up -d
-docker-compose exec app bash
-docker-compose stop
+docker-compose up --build -d
+docker-compose down
 docker-compose down --rmi all --volumes
 ```

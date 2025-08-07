@@ -2,7 +2,7 @@
 
 ## Python
 
-```Python
+```Django
 python manage.py runserver
 python manage.py check
 python manage.py shell
