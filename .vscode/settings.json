@@ -1,53 +1,5 @@
 {
     "files.insertFinalNewline": true,
     "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
-    },
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "python.testing.pytestEnabled": true,
-    "notebook.formatOnSave.enabled": true,
-    "notebook.defaultFormatter": "ms-python.black-formatter",
-    "notebook.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-    },
-    "mypy-type-checker.args": [
-        "--config-file=pyproject.toml"
-    ],
-    "black-formatter.args": [
-        "--config=pyproject.toml"
-    ],
-    "flake8.args": [
-        "--max-line-length=79",
-        "--extend-ignore=E203", // Ignored due to false positive.
-        "--max-complexity=7" // The number of objects an average human can hold in short-term memory is 7 ± 2.
-    ],
-    "isort.args": [
-        "--settings-path=pyproject.toml"
-    ],
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/.mypy_cache": true,
-        "**/.pytest_cache": true,
-        "**/__pycache__": true,
-        "**/.ipynb_checkpoints": true,
-        "**/sandbox.egg-info": true
-    }
+    "editor.formatOnSave": true
 }
