@@ -1,16 +1,17 @@
-FROM python:latest
+FROM python:3.13-slim
 
-WORKDIR /backend
+WORKDIR /workspace
 
 RUN apt-get update \
-   && apt-get install -y \
-   git \
-   && apt-get clean \
-   && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    ca-certificates \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sSL https://install.python-poetry.org | python3 -
-ENV PATH="/root/.local/bin:$PATH"
-COPY pyproject.toml poetry.lock poetry.toml ./
-RUN poetry install --no-root --with dev
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-COPY . .
+ENV PATH="/root/.local/bin/:$PATH"
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONIOENCODING=utf-8
