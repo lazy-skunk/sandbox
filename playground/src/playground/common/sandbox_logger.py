@@ -6,9 +6,9 @@ _DEFAULT_SANDBOX_PATH = Path("/app/src")
 
 
 class SandboxLogger:
-    @classmethod
-    def get_logger(cls) -> logging.Logger:
-        experiment_name = cls._get_experiment_name()
+    @staticmethod
+    def get_logger() -> logging.Logger:
+        experiment_name = SandboxLogger._get_experiment_name()
         logger = logging.getLogger(experiment_name)
 
         if logger.hasHandlers():
@@ -35,8 +35,8 @@ class SandboxLogger:
 
         return logger
 
-    @classmethod
-    def _get_experiment_name(cls) -> str:
+    @staticmethod
+    def _get_experiment_name() -> str:
         outer_frames = getouterframes(currentframe())
         CALLER_FRAME_INDEX = 1
         caller_frame_info = outer_frames[CALLER_FRAME_INDEX]
