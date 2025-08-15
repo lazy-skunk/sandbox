@@ -13,6 +13,7 @@ def test_generate_phonetic_dfs() -> None:
         pd.DataFrame({"code": ["Delta"]}),
         pd.DataFrame({"code": ["Echo"]}),
     ]
-    actual_dfs = generate_phonetic_dfs()
-    for actual_df, expected_df in zip(actual_dfs, expected_dfs, strict=True):
+    for actual_df, expected_df in zip(
+        generate_phonetic_dfs(), expected_dfs, strict=True
+    ):
         pd.testing.assert_frame_equal(actual_df, expected_df)
