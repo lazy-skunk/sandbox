@@ -13,10 +13,11 @@ def load_phonetic_dfs(directory: Path) -> Generator[pd.DataFrame]:
     for csv_file_path in csv_file_paths:
         df = pd.read_csv(csv_file_path)
 
-        if not df.empty:
-            yield df
-        else:
+        if df.empty:
             print("0件")
+            continue
+
+        yield df
 
 
 def _print_with_for(directory: Path) -> None:
