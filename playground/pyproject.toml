@@ -47,6 +47,9 @@ select = [
     "SIM",
     # isort
     "I",
+    "UP",
+    "PD",
+    "NPY"
 ]
 ignore = []
 fixable = ["ALL"]
