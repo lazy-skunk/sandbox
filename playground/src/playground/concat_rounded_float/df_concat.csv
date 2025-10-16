@@ -1,0 +1,7 @@
+score,original_dtype,score_length
+0.123,float32,5
+0.235,float32,5
+0.346,float32,5
+0.123,float64,5
+0.235,float64,5
+0.346,float64,5
