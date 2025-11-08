@@ -11,7 +11,7 @@ ENV UV_PROJECT_ENVIRONMENT="/usr/local"
 RUN apt-get update && \
     apt-get install -y \
     git \
-    curl && \
+    curl \
     texlive-xetex \
     texlive-fonts-recommended \
     texlive-plain-generic && \
