@@ -50,6 +50,8 @@ select = [
     "SIM",
     # isort
     "I",
+    # mccabe
+    "C90",
     "UP",
     "PD",
     "NPY"
