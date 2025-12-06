@@ -107,7 +107,7 @@ def _build_psutil_memory_metrics(
     before_snapshot: ProcessSnapshot, after_snapshot: ProcessSnapshot
 ) -> dict[str, float]:
     psutil_memory_metrics = {
-        "rss_delta_mib": round(
+        "resident_set_size_delta_mib": round(
             (
                 after_snapshot.resident_memory_bytes
                 - before_snapshot.resident_memory_bytes
@@ -120,7 +120,7 @@ def _build_psutil_memory_metrics(
         before_snapshot.unique_memory_bytes is not None
         and after_snapshot.unique_memory_bytes is not None
     ):
-        psutil_memory_metrics["uss_delta_mib"] = round(
+        psutil_memory_metrics["unique_set_size_delta_mib"] = round(
             (
                 after_snapshot.unique_memory_bytes
                 - before_snapshot.unique_memory_bytes
