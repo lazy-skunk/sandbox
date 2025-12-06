@@ -10,6 +10,7 @@ from typing import Any, ParamSpec, Protocol, TypeVar, cast
 import psutil
 
 _BYTES_PER_MIB = 1024**2
+_ROUND_DIGITS = 3
 logging.basicConfig(level=logging.DEBUG)
 _LOGGER = logging.getLogger(__name__)
 
@@ -32,9 +33,7 @@ class ProcessIOCounters(Protocol):
     write_count: int
 
 
-PsutilResult = TypeVar(
-    "PsutilResult", ProcessMemoryInfo, ProcessIOCounters
-)
+PsutilResult = TypeVar("PsutilResult", ProcessMemoryInfo, ProcessIOCounters)
 
 
 @dataclass(frozen=True)
@@ -114,7 +113,7 @@ def _build_psutil_memory_metrics(
                 - before_snapshot.resident_memory_bytes
             )
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         )
     }
     if (
@@ -127,7 +126,7 @@ def _build_psutil_memory_metrics(
                 - before_snapshot.unique_memory_bytes
             )
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         )
 
     return psutil_memory_metrics
@@ -150,12 +149,12 @@ def _build_io_metrics(
         "read_mib": round(
             (after_io_counters.read_bytes - before_io_counters.read_bytes)
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         ),
         "write_mib": round(
             (after_io_counters.write_bytes - before_io_counters.write_bytes)
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         ),
         "read_operations": (
             after_io_counters.read_count - before_io_counters.read_count
@@ -209,12 +208,12 @@ def _finalize_tracemalloc_capture(
         "allocated_delta_mib": round(
             (current_bytes - tracemalloc_state.initial_allocated_bytes)
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         ),
         "peak_delta_mib": round(
             (peak_bytes - tracemalloc_state.initial_peak_bytes)
             / _BYTES_PER_MIB,
-            3,
+            _ROUND_DIGITS,
         ),
     }
 
@@ -246,9 +245,9 @@ def _create_log_payload(
     )
 
     processing_time_payload = {
-        "elapsed_wall_seconds": round(elapsed_time, 3),
-        "cpu_seconds": round(elapsed_cpu_time, 3),
-        "io_wait_seconds": round(io_wait_seconds, 3),
+        "elapsed_wall_seconds": round(elapsed_time, _ROUND_DIGITS),
+        "cpu_seconds": round(elapsed_cpu_time, _ROUND_DIGITS),
+        "io_wait_seconds": round(io_wait_seconds, _ROUND_DIGITS),
     }
 
     io_payload: dict[str, float | int | str] = {}
