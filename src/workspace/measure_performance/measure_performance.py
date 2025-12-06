@@ -14,7 +14,6 @@ import pandas as pd
 import psutil
 
 _BYTES_PER_MIB = 1024**2
-_PSUTIL_PROCESS = psutil.Process()
 # logging.basicConfig(level=logging.DEBUG)
 _LOGGER = logging.getLogger(__name__)
 
@@ -70,8 +69,10 @@ def _call_psutil_process_method_safely[PsutilResult](
 
 
 def _capture_process_snapshot() -> ProcessSnapshot:
+    psutil_process = psutil.Process()
+
     process_memory_info = _call_psutil_process_method_safely(
-        cast(Callable[[], ProcessMemoryInfo], _PSUTIL_PROCESS.memory_info)
+        cast(Callable[[], ProcessMemoryInfo], psutil_process.memory_info)
     )
     resident_memory_bytes = (
         process_memory_info.rss if process_memory_info else 0
@@ -80,7 +81,7 @@ def _capture_process_snapshot() -> ProcessSnapshot:
     process_memory_full_info = _call_psutil_process_method_safely(
         cast(
             Callable[[], ProcessMemoryFullInfo],
-            _PSUTIL_PROCESS.memory_full_info,
+            psutil_process.memory_full_info,
         )
     )
     unique_memory_bytes = (
@@ -92,7 +93,7 @@ def _capture_process_snapshot() -> ProcessSnapshot:
     process_io_counters = _call_psutil_process_method_safely(
         cast(
             Callable[[], ProcessIOCounters],
-            _PSUTIL_PROCESS.io_counters,
+            psutil_process.io_counters,
         )
     )
 
