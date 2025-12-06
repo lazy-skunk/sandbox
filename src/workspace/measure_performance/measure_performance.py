@@ -4,17 +4,13 @@ import tracemalloc
 from collections.abc import Callable
 from dataclasses import dataclass
 from functools import wraps
-from pathlib import Path
-from tempfile import TemporaryDirectory
 from time import perf_counter, process_time
 from typing import Any, ParamSpec, Protocol, TypeVar, cast
 
-import numpy as np
-import pandas as pd
 import psutil
 
 _BYTES_PER_MIB = 1024**2
-# logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
 _LOGGER = logging.getLogger(__name__)
 
 Parameters = ParamSpec("Parameters")
@@ -326,20 +322,27 @@ def measure_performance[**Parameters, ReturnType](
     return wrapper
 
 
-@measure_performance
-def test_function(rows: int = 500000) -> pd.DataFrame:
-    temp_df = pd.DataFrame(
-        {
-            "id": np.arange(rows, dtype=np.int64),
-            "value": np.linspace(0, 1, rows, dtype=np.float64),
-        }
-    )
-    with TemporaryDirectory() as temp_dir:
-        csv_path = Path(temp_dir) / "temp.csv"
-        temp_df.to_csv(csv_path, index=False)
-        return pd.read_csv(csv_path, dtype={"id": "int64", "value": "float64"})
-
-
 if __name__ == "__main__":
+    from pathlib import Path
+    from tempfile import TemporaryDirectory
+
+    import numpy as np
+    import pandas as pd
+
+    @measure_performance
+    def test_function(rows: int = 500000) -> pd.DataFrame:
+        temp_df = pd.DataFrame(
+            {
+                "id": np.arange(rows, dtype=np.int64),
+                "value": np.linspace(0, 1, rows, dtype=np.float64),
+            }
+        )
+        with TemporaryDirectory() as temp_dir:
+            csv_path = Path(temp_dir) / "temp.csv"
+            temp_df.to_csv(csv_path, index=False)
+            return pd.read_csv(
+                csv_path, dtype={"id": "int64", "value": "float64"}
+            )
+
     temp_df = test_function()
     print(temp_df.head())
