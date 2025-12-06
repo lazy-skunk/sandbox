@@ -15,7 +15,6 @@ _LOGGER = logging.getLogger(__name__)
 
 Parameters = ParamSpec("Parameters")
 ReturnType = TypeVar("ReturnType")
-PsutilResult = TypeVar("PsutilResult")
 
 
 class ProcessMemoryInfo(Protocol):
@@ -31,6 +30,11 @@ class ProcessIOCounters(Protocol):
     write_bytes: int
     read_count: int
     write_count: int
+
+
+PsutilResult = TypeVar(
+    "PsutilResult", ProcessMemoryInfo, ProcessIOCounters
+)
 
 
 @dataclass(frozen=True)
@@ -225,7 +229,7 @@ def _create_log_payload(
     status: str,
     before_process_snapshot: ProcessSnapshot,
     after_process_snapshot: ProcessSnapshot,
-    tracemalloc_state: TracemallocState,
+    tracemalloc_state: TracemallocState | None,
     start_time: float,
     start_cpu_time: float,
 ) -> dict[str, Any]:
@@ -258,9 +262,10 @@ def _create_log_payload(
         "psutil": process_metrics.memory_info
     }
 
-    tracemalloc_metrics = _finalize_tracemalloc_capture(tracemalloc_state)
-    if tracemalloc_metrics is not None:
-        memory_payload["python"] = tracemalloc_metrics
+    if tracemalloc_state is not None:
+        tracemalloc_metrics = _finalize_tracemalloc_capture(tracemalloc_state)
+        if tracemalloc_metrics is not None:
+            memory_payload["python"] = tracemalloc_metrics
 
     return {
         "function": wrapped_function_name,
@@ -273,53 +278,63 @@ def _create_log_payload(
 
 
 def measure_performance[**Parameters, ReturnType](
-    wrapped_function: Callable[Parameters, ReturnType],
-) -> Callable[Parameters, ReturnType]:
-    @wraps(wrapped_function)
-    def wrapper(
-        *wrapped_function_args: Parameters.args,
-        **wrapped_function_kwargs: Parameters.kwargs,
-    ) -> ReturnType:
-        start_time = perf_counter()
-        start_cpu_time = process_time()
+    *,
+    enable_tracemalloc: bool,
+) -> Callable[
+    [Callable[Parameters, ReturnType]], Callable[Parameters, ReturnType]
+]:
+    def decorator(
+        function_to_wrap: Callable[Parameters, ReturnType],
+    ) -> Callable[Parameters, ReturnType]:
+        @wraps(function_to_wrap)
+        def wrapper(
+            *wrapped_function_args: Parameters.args,
+            **wrapped_function_kwargs: Parameters.kwargs,
+        ) -> ReturnType:
+            start_time = perf_counter()
+            start_cpu_time = process_time()
 
-        before_process_snapshot = _capture_process_snapshot()
-        tracemalloc_state = _initialize_tracemalloc_capture()
+            before_process_snapshot = _capture_process_snapshot()
+            tracemalloc_state: TracemallocState | None = None
+            if enable_tracemalloc:
+                tracemalloc_state = _initialize_tracemalloc_capture()
 
-        try:
-            return_value = wrapped_function(
-                *wrapped_function_args, **wrapped_function_kwargs
-            )
-        except BaseException:
-            after_process_snapshot = _capture_process_snapshot()
-            log_payload = _create_log_payload(
-                wrapped_function.__name__,
-                "error",
-                before_process_snapshot,
-                after_process_snapshot,
-                tracemalloc_state,
-                start_time,
-                start_cpu_time,
-            )
-            structured_log_payload = json.dumps(log_payload, indent=2)
-            _LOGGER.debug(structured_log_payload)
-            raise
-        else:
-            after_process_snapshot = _capture_process_snapshot()
-            log_payload = _create_log_payload(
-                wrapped_function.__name__,
-                "success",
-                before_process_snapshot,
-                after_process_snapshot,
-                tracemalloc_state,
-                start_time,
-                start_cpu_time,
-            )
-            structured_log_payload = json.dumps(log_payload, indent=2)
-            _LOGGER.debug(structured_log_payload)
-            return return_value
+            try:
+                return_value = function_to_wrap(
+                    *wrapped_function_args, **wrapped_function_kwargs
+                )
+            except BaseException:
+                after_process_snapshot = _capture_process_snapshot()
+                log_payload = _create_log_payload(
+                    function_to_wrap.__name__,
+                    "error",
+                    before_process_snapshot,
+                    after_process_snapshot,
+                    tracemalloc_state,
+                    start_time,
+                    start_cpu_time,
+                )
+                structured_log_payload = json.dumps(log_payload, indent=2)
+                _LOGGER.debug(structured_log_payload)
+                raise
+            else:
+                after_process_snapshot = _capture_process_snapshot()
+                log_payload = _create_log_payload(
+                    function_to_wrap.__name__,
+                    "success",
+                    before_process_snapshot,
+                    after_process_snapshot,
+                    tracemalloc_state,
+                    start_time,
+                    start_cpu_time,
+                )
+                structured_log_payload = json.dumps(log_payload, indent=2)
+                _LOGGER.debug(structured_log_payload)
+                return return_value
 
-    return wrapper
+        return wrapper
+
+    return decorator
 
 
 if __name__ == "__main__":
@@ -329,7 +344,7 @@ if __name__ == "__main__":
     import numpy as np
     import pandas as pd
 
-    @measure_performance
+    @measure_performance(enable_tracemalloc=True)
     def test_function(rows: int = 500000) -> pd.DataFrame:
         temp_df = pd.DataFrame(
             {
