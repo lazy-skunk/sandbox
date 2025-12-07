@@ -2,7 +2,7 @@ import logging
 from inspect import currentframe, getouterframes
 from pathlib import Path
 
-_DEFAULT_SANDBOX_PATH = Path("/app/src")
+_DEFAULT_SANDBOX_PATH = Path("/workspace/src")
 
 
 class SandboxLogger:
