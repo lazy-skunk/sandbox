@@ -4,6 +4,7 @@
 		"ms-python.mypy-type-checker",
 		"ms-toolsai.jupyter",
 		"charliermarsh.ruff",
-		"ms-vscode.live-server"
+		"ms-vscode.live-server",
+		"mermaidchart.vscode-mermaid-chart"
 	]
 }
