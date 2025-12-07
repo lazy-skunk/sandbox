@@ -336,7 +336,7 @@ def measure_performance[**Parameters, ReturnType](
     return decorator
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     from pathlib import Path
     from tempfile import TemporaryDirectory
 
