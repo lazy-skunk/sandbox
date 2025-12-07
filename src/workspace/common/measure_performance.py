@@ -11,7 +11,6 @@ import psutil
 
 _BYTES_PER_MIB = 1024**2
 _ROUND_DIGITS = 3
-logging.basicConfig(level=logging.DEBUG)
 _LOGGER = logging.getLogger(__name__)
 
 Parameters = ParamSpec("Parameters")
@@ -342,6 +341,8 @@ if __name__ == "__main__":  # pragma: no cover
 
     import numpy as np
     import pandas as pd
+
+    logging.basicConfig(level=logging.DEBUG)
 
     @measure_performance(enable_tracemalloc=True)
     def test_function(rows: int = 500000) -> pd.DataFrame:

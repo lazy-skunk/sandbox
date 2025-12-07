@@ -5,8 +5,8 @@ import psutil
 import pytest
 from pytest import LogCaptureFixture, MonkeyPatch
 
-import workspace.measure_performance.measure_performance as measure_performance_module  # noqa: E501
-from workspace.measure_performance.measure_performance import (
+import workspace.common.measure_performance as measure_performance_module  # noqa: E501
+from workspace.common.measure_performance import (
     ProcessIOCounters,
     ProcessSnapshot,
     _capture_process_snapshot,
@@ -144,7 +144,7 @@ def test_capture_process_snapshot_reads_psutil(
     process_mock.io_counters.return_value = io_counters_mock
 
     monkeypatch.setattr(
-        "workspace.measure_performance.measure_performance.psutil.Process",
+        "workspace.common.measure_performance.psutil.Process",
         lambda: process_mock,
     )
 
