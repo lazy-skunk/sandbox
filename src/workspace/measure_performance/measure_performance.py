@@ -38,8 +38,8 @@ PsutilResult = TypeVar("PsutilResult", ProcessMemoryInfo, ProcessIOCounters)
 
 @dataclass(frozen=True)
 class ProcessSnapshot:
-    resident_memory_bytes: int
-    unique_memory_bytes: float | None
+    resident_set_size_bytes: int
+    unique_set_size_bytes: float | None
     process_io_counters: ProcessIOCounters | None
 
 
@@ -73,7 +73,7 @@ def _capture_process_snapshot() -> ProcessSnapshot:
     process_memory_info = _call_psutil_process_method_safely(
         cast(Callable[[], ProcessMemoryInfo], psutil_process.memory_info)
     )
-    resident_memory_bytes = (
+    resident_set_size_bytes = (
         process_memory_info.rss if process_memory_info else 0
     )
 
@@ -83,7 +83,7 @@ def _capture_process_snapshot() -> ProcessSnapshot:
             psutil_process.memory_full_info,
         )
     )
-    unique_memory_bytes = (
+    unique_set_size_bytes = (
         float(process_memory_full_info.uss)
         if process_memory_full_info is not None
         else None
@@ -97,8 +97,8 @@ def _capture_process_snapshot() -> ProcessSnapshot:
     )
 
     return ProcessSnapshot(
-        resident_memory_bytes=resident_memory_bytes,
-        unique_memory_bytes=unique_memory_bytes,
+        resident_set_size_bytes=resident_set_size_bytes,
+        unique_set_size_bytes=unique_set_size_bytes,
         process_io_counters=process_io_counters,
     )
 
@@ -109,21 +109,21 @@ def _build_psutil_memory_metrics(
     psutil_memory_metrics = {
         "resident_set_size_delta_mib": round(
             (
-                after_snapshot.resident_memory_bytes
-                - before_snapshot.resident_memory_bytes
+                after_snapshot.resident_set_size_bytes
+                - before_snapshot.resident_set_size_bytes
             )
             / _BYTES_PER_MIB,
             _ROUND_DIGITS,
         )
     }
     if (
-        before_snapshot.unique_memory_bytes is not None
-        and after_snapshot.unique_memory_bytes is not None
+        before_snapshot.unique_set_size_bytes is not None
+        and after_snapshot.unique_set_size_bytes is not None
     ):
         psutil_memory_metrics["unique_set_size_delta_mib"] = round(
             (
-                after_snapshot.unique_memory_bytes
-                - before_snapshot.unique_memory_bytes
+                after_snapshot.unique_set_size_bytes
+                - before_snapshot.unique_set_size_bytes
             )
             / _BYTES_PER_MIB,
             _ROUND_DIGITS,
