@@ -21,6 +21,7 @@ dev = [
     "numpy>=2.3.2",
     "pandas>=2.3.1",
     "psycopg2-binary>=2.9.10",
+    "pulp>=3.3.0",
     "pyarrow>=21.0.0",
     "pydantic>=2.11.9",
     "pydantic-settings>=2.10.1",
@@ -30,6 +31,7 @@ dev = [
     "ruff>=0.12.7",
     "scikit-learn>=1.7.1",
     "sqlglot>=27.6.0",
+    "types-pyyaml>=6.0.12.20250915",
 ]
 
 [tool.ruff]
