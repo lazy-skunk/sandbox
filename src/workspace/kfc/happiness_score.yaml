@@ -1,0 +1,23 @@
+items:
+  boneless_chicken:
+    kcal: 191
+    protein: 20.3
+    fat: 8.5
+    carb: 8.3
+    salt: 1.7
+    price: 310
+  hot_chicken_fillet_burger:
+    kcal: 384
+    protein: 24.4
+    fat: 17.8
+    carb: 31.9
+    salt: 2.6
+    price: 470
+
+weights:
+  fat: -0.2
+  carb: 0.7
+  protein: 1.0
+  salt: -0.5
+
+budget: 3000
