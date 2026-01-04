@@ -11,7 +11,7 @@ class SandboxLogger:
         experiment_name = SandboxLogger._get_experiment_name()
         logger = logging.getLogger(experiment_name)
 
-        if logger.hasHandlers():
+        if logger.handlers:
             return logger
 
         log_dir = cls._DEFAULT_SANDBOX_PATH / experiment_name / "log"
