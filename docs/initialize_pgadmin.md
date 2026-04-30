@@ -1,5 +1,3 @@
-# Initialize pgAdmin
-
 ## pgAdmin
 
 ```

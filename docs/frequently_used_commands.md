@@ -1,5 +1,3 @@
-# Frequently Used Commands
-
 ## Docker
 
 ```
@@ -10,6 +8,7 @@ docker-compose down --rmi all --volumes
 ```
 
 ## Jupyter Notebook
+
 ```
-jupyter nbconvert --to pdf NOTEBOOK_NAME.ipynb 
+jupyter nbconvert --to pdf NOTEBOOK_NAME.ipynb
 ```
