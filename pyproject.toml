@@ -31,7 +31,7 @@ dev = [
     "pytest-mock>=3.14.1",
     "ruff>=0.12.7",
     "scikit-learn>=1.7.1",
-    "sqlglot>=27.6.0",
+    "sqlglot>=30.7.0",
     "types-pyyaml>=6.0.12.20250915",
 ]
 
