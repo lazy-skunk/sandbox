@@ -27,7 +27,7 @@ def _what_kind_of_data_does_pandas_handle() -> None:
     * Each column in a DataFrame is a Series
     * You can do things by applying a method to a DataFrame or Series
     """
-    df = pd.DataFrame(
+    passengers = pd.DataFrame(
         {
             "Name": [
                 "Braund, Mr. Owen Harris",
@@ -38,15 +38,15 @@ def _what_kind_of_data_does_pandas_handle() -> None:
             "Sex": ["male", "male", "female"],
         }
     )
-    print(df)
-    print(df["Age"])
+    print(passengers)
+    print(passengers["Age"])
 
     ages = pd.Series([22, 35, 58], name="Age")
     print(ages)
-    print(df["Age"].max())
+    print(passengers["Age"].max())
     print(ages.max())
 
-    print(df.describe())
+    print(passengers.describe())
 
 
 def _how_do_I_read_and_write_tabular_data() -> None:
@@ -246,10 +246,14 @@ def _how_to_reshape_the_layout_of_tables() -> None:
     no2 = air_quality[air_quality["parameter"] == "no2"]
     no2_subset = no2.sort_index().groupby(["location"]).head(2)
     print(no2_subset)
-    print(no2_subset.pivot(columns="location", values="value"))
+    print(
+        no2_subset.pivot_table(
+            columns="location", values="value", aggfunc="first"
+        )
+    )
     print(no2.head())
 
-    no2.pivot(columns="location", values="value").plot()
+    no2.pivot_table(columns="location", values="value", aggfunc="first").plot()
 
     print(
         air_quality.pivot_table(
@@ -270,7 +274,9 @@ def _how_to_reshape_the_layout_of_tables() -> None:
     )
     print(air_quality.groupby(["parameter", "location"])[["value"]].mean())
 
-    no2_pivoted = no2.pivot(columns="location", values="value").reset_index()
+    no2_pivoted = no2.pivot_table(
+        columns="location", values="value", aggfunc="first"
+    ).reset_index()
     print(no2_pivoted.head())
 
     no_2 = no2_pivoted.melt(id_vars="date.utc")
@@ -326,8 +332,7 @@ def _how_to_combine_data_from_multiple_tables() -> None:
 
     employees = pd.read_csv(_EMPLOYEES_CSV_PATH, parse_dates=True)
     departments = pd.read_csv(_DEPARTMENTS_CSV_PATH, parse_dates=True)
-    employees_with_department = pd.merge(
-        employees,
+    employees_with_department = employees.merge(
         departments,
         how="left",
         left_on="department_id",
@@ -372,8 +377,8 @@ def _how_to_handle_time_series_data_with_ease() -> None:
     plt.xlabel("Hour of the day")
     plt.ylabel("$NO_2 (µg/m^3)$")
 
-    no_2 = air_quality.pivot(
-        index="datetime", columns="location", values="value"
+    no_2 = air_quality.pivot_table(
+        index="datetime", columns="location", values="value", aggfunc="first"
     )
     print(no_2.head())
     print(no_2.index.year, no_2.index.weekday)

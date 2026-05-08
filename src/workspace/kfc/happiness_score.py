@@ -4,10 +4,10 @@ from typing import Any
 import yaml
 from pulp import LpMaximize, LpProblem, LpStatus, LpVariable, lpSum, value
 
-from workspace.common.sandbox_logger import SandboxLogger
+from workspace.common.sandbox_logger import get_logger
 
 _CONFIG_PATH = Path(__file__).with_suffix(".yaml")
-_logger = SandboxLogger.get_logger()
+_logger = get_logger()
 
 
 def _load_config(path: Path) -> dict[str, Any]:

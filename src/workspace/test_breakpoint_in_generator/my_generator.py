@@ -11,27 +11,27 @@ def load_phonetic_dfs(directory: Path) -> Generator[pd.DataFrame]:
     csv_file_paths = directory.glob("*.csv")
 
     for csv_file_path in csv_file_paths:
-        df = pd.read_csv(csv_file_path)
+        phonetic_data = pd.read_csv(csv_file_path)
 
-        if df.empty:
+        if phonetic_data.empty:
             print("0件")
             continue
 
-        yield df
+        yield phonetic_data
 
 
 def _print_with_for(directory: Path) -> None:
-    for df in load_phonetic_dfs(directory):
-        print(df.head())
+    for phonetic_data in load_phonetic_dfs(directory):
+        print(phonetic_data.head())
 
 
 def _print_with_next(directory: Path) -> None:
     csv_file_paths = list(directory.glob("*.csv"))
 
-    df = load_phonetic_dfs(directory)
+    phonetic_dfs = load_phonetic_dfs(directory)
     try:
         for _ in range(len(csv_file_paths)):
-            print(next(df))
+            print(next(phonetic_dfs))
     except StopIteration:
         print("StopIteration 時にやりたいことをする。")
 
