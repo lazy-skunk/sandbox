@@ -9,6 +9,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./:/workspace
+      - ~/.gitconfig:/root/.gitconfig:ro
     stdin_open: true
     tty: true
 
