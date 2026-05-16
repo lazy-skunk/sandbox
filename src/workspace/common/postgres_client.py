@@ -1,31 +1,27 @@
-import os
 from collections.abc import Generator, Sequence
 from contextlib import contextmanager
 from types import TracebackType
 from typing import Self
 
 import psycopg2
-from dotenv import load_dotenv
 from psycopg2.extras import RealDictCursor, RealDictRow
+
+from workspace.common.postgres_settings import PostgresSettings
 
 
 class PostgresClient:
-    def __init__(
-        self,
-        dbname: str,
-        user: str,
-        password: str,
-        host: str,
-        port: int,
-    ) -> None:
-        self._connection_params: dict[str, str | int] = {
-            "dbname": dbname,
-            "user": user,
-            "password": password,
-            "host": host,
-            "port": port,
-        }
+    def __init__(self, settings: PostgresSettings) -> None:
+        self._settings = settings
         self._connection: psycopg2.extensions.connection | None = None
+
+    def _connection_params(self) -> dict[str, str | int]:
+        return {
+            "dbname": self._settings.postgres_db,
+            "user": self._settings.postgres_user,
+            "password": self._settings.postgres_password,
+            "host": self._settings.postgres_host,
+            "port": self._settings.postgres_port,
+        }
 
     def execute(self, sql: str, params: tuple = ()) -> None:
         if self._connection is None:
@@ -67,7 +63,7 @@ class PostgresClient:
 
     def _connect(self) -> None:
         if self._connection is None:
-            self._connection = psycopg2.connect(**self._connection_params)
+            self._connection = psycopg2.connect(**self._connection_params())
 
     @contextmanager
     def _cursor(self) -> Generator[psycopg2.extensions.cursor]:
@@ -113,15 +109,9 @@ class PostgresClient:
 
 
 def _how_to_use() -> None:
-    load_dotenv()
+    settings = PostgresSettings()
 
-    with PostgresClient(
-        dbname=os.getenv("POSTGRES_DB", "postgres"),
-        user=os.getenv("POSTGRES_USER", "user"),
-        password=os.getenv("POSTGRES_PASSWORD", "password"),
-        host=os.getenv("POSTGRES_HOST", "postgres"),
-        port=5432,
-    ) as db:
+    with PostgresClient(settings) as db:
         db.execute(
             """
             CREATE TEMP TABLE temp_users (
