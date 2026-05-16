@@ -3,10 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./:/workspace
       - ~/.gitconfig:/root/.gitconfig:ro
@@ -18,9 +14,9 @@ services:
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_DB_NAME: ${POSTGRES_DB_NAME}
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT}:5432"
     # volumes:
     #   - pgdata:/var/lib/postgresql/data
 
@@ -30,4 +26,4 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
-      - "5050:80"
+      - "${PGADMIN_PORT}:80"

@@ -11,14 +11,12 @@ ENV UV_PROJECT_ENVIRONMENT="/usr/local"
 RUN apt-get update && \
     apt-get install -y \
     git \
-    curl \
-    texlive-xetex \
-    texlive-fonts-recommended \
-    texlive-plain-generic && \
+    curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen --no-install-project
+COPY pyproject.toml uv.lock README.md ./
+COPY src/ ./src/
+RUN uv sync --frozen
