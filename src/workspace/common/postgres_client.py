@@ -117,7 +117,7 @@ def _how_to_use() -> None:
 
     with PostgresClient(
         dbname=os.getenv("POSTGRES_DB", "postgres"),
-        user=os.getenv("POSTGRES_USER", "admin"),
+        user=os.getenv("POSTGRES_USER", "user"),
         password=os.getenv("POSTGRES_PASSWORD", "password"),
         host=os.getenv("POSTGRES_HOST", "postgres"),
         port=5432,
