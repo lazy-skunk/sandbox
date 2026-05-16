@@ -6,7 +6,10 @@ from typing import Self
 import psycopg2
 from psycopg2.extras import RealDictCursor, RealDictRow
 
-from workspace.common.postgres_settings import PostgresSettings
+from workspace.common.postgres_settings import (
+    PostgresSettings,
+    load_postgres_settings,
+)
 
 
 class PostgresClient:
@@ -16,7 +19,7 @@ class PostgresClient:
 
     def _connection_params(self) -> dict[str, str | int]:
         return {
-            "dbname": self._settings.postgres_db,
+            "dbname": self._settings.postgres_db_name,
             "user": self._settings.postgres_user,
             "password": self._settings.postgres_password,
             "host": self._settings.postgres_host,
@@ -109,7 +112,7 @@ class PostgresClient:
 
 
 def _how_to_use() -> None:
-    settings = PostgresSettings()
+    settings = load_postgres_settings()
 
     with PostgresClient(settings) as db:
         db.execute(
