@@ -32,7 +32,7 @@ dev = [
     "ruff>=0.15.12",
     "scikit-learn>=1.8.0",
     "sqlglot>=30.7.0",
-    "types-pyyaml>=6.0.12.20250915",
+    "types-pyyaml>=6.0.12.20260510",
 ]
 
 [tool.ruff]
