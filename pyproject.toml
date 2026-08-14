@@ -12,6 +12,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "apache-airflow==2.10.3",
     "dotenv>=0.9.9",
     "jupyter>=1.1.1",
     "matplotlib>=3.11.1",
