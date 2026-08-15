@@ -3929,11 +3929,11 @@ wheels = [
 
 [[package]]
 name = "sqlglot"
-version = "30.13.0"
+version = "30.16.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/bf/62/6d5bd3169478b7f09e08ab3e50175d486a9e7f3a419b88fc9280ba564ab1/sqlglot-30.13.0.tar.gz", hash = "sha256:f0a6eb79de2fd6efe2689f8cf197caa4f08bfe77c7880315616fa4420b8ba2bf", size = 5932385, upload-time = "2026-07-20T20:16:54.873Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/42/97ae59ab9479f345f97db948792b41bdaf51c38589f994ab97014ffae2b9/sqlglot-30.16.0.tar.gz", hash = "sha256:26abd1ef583fbecde24931eb56a5df4a086ba50ba0b36738233da9da16ffea13", size = 5984853, upload-time = "2026-08-10T15:43:47.176Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f2/2f/2076eca54f6a8ed1c86301bdb4bb2ae4181b0c1c4dbc041062ca997dc1b2/sqlglot-30.13.0-py3-none-any.whl", hash = "sha256:08f87ff7b052246d61b731628c8c2db0bc91f2c9e69f5ba68a1d160a9f5b49b1", size = 719120, upload-time = "2026-07-20T20:16:53.248Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/bc/c92985806306174ae08ca84576a62659e8a406d7f670d2b2bc1a96340f87/sqlglot-30.16.0-py3-none-any.whl", hash = "sha256:f14f119e87bb1397316ab2b3c1f12dddd3b098921185dc69935952111be91788", size = 737757, upload-time = "2026-08-10T15:43:45.331Z" },
 ]
 
 [[package]]
@@ -4283,7 +4283,7 @@ dev = [
     { name = "pytest-mock", specifier = ">=3.15.1" },
     { name = "ruff", specifier = ">=0.16.1" },
     { name = "scikit-learn", specifier = ">=1.9.0" },
-    { name = "sqlglot", specifier = ">=30.13.0" },
+    { name = "sqlglot", specifier = ">=30.16.0" },
     { name = "types-pyyaml", specifier = ">=6.0.12.20260724" },
 ]
 
