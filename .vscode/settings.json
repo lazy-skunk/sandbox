@@ -1,31 +1,29 @@
 {
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "never",
-            "source.organizeImports.ruff": "explicit"
-        }
-    },
-    "python.testing.pytestEnabled": true,
-    "notebook.defaultFormatter": "charliermarsh.ruff",
-    "notebook.codeActionsOnSave": {
-        "source.fixAll.ruff": "never",
-        "source.organizeImports.ruff": "explicit"
-    },
-    "mypy-type-checker.args": [
-        "--config-file=pyproject.toml"
-    ],
-    "python.analysis.include": [
-        "src/**/*",
-        "tests/**/*"
-    ],
-    "python.analysis.exclude": [
-        "**/*cache*",
-        "**/.ipynb_checkpoints"
-    ],
-    "files.exclude": {
-        "**/*cache*": true,
-        "**/.ipynb_checkpoints": true
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "never",
+      "source.organizeImports.ruff": "explicit"
     }
+  },
+  "python.testing.pytestEnabled": true,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.codeActionsOnSave": {
+    "source.fixAll.ruff": "never",
+    "source.organizeImports.ruff": "explicit"
+  },
+  "mypy-type-checker.args": ["--config-file=pyproject.toml"],
+  "python.analysis.include": ["src/**/*", "tests/**/*"],
+  "python.analysis.exclude": ["**/node_modules", "**/__pycache__", "**/.*"],
+  "files.exclude": {
+    "**/*cache*": true,
+    "**/.ipynb_checkpoints": true
+  }
 }
