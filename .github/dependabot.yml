@@ -6,7 +6,25 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "00:00"
-      timezone: "Japan"
+      timezone: "Asia/Tokyo"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "00:00"
+      timezone: "Asia/Tokyo"
+
+  - package-ecosystem: "docker-compose"
+    directories:
+      - "/"
+      - "/src/workspace/airflow"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "00:00"
+      timezone: "Asia/Tokyo"
 
   - package-ecosystem: "uv"
     directory: "/"
@@ -14,4 +32,4 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "00:00"
-      timezone: "Japan"
+      timezone: "Asia/Tokyo"
