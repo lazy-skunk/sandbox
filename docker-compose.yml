@@ -5,7 +5,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/workspace
-      - ~/.gitconfig:/root/.gitconfig:ro
     stdin_open: true
     tty: true
 
