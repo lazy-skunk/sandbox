@@ -3722,6 +3722,65 @@ wheels = [
 ]
 
 [[package]]
+name = "sandbox"
+version = "0.1.0"
+source = { virtual = "." }
+
+[package.dev-dependencies]
+dev = [
+    { name = "apache-airflow" },
+    { name = "dotenv" },
+    { name = "jupyter" },
+    { name = "matplotlib" },
+    { name = "mypy" },
+    { name = "nbconvert" },
+    { name = "networkx" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pre-commit" },
+    { name = "psycopg2-binary" },
+    { name = "pulp" },
+    { name = "pyarrow" },
+    { name = "pydantic" },
+    { name = "pydantic-settings" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-mock" },
+    { name = "ruff" },
+    { name = "scikit-learn" },
+    { name = "sqlglot" },
+    { name = "types-pyyaml" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "apache-airflow", specifier = "==2.10.3" },
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "matplotlib", specifier = ">=3.11.1" },
+    { name = "mypy", specifier = ">=2.3.0" },
+    { name = "nbconvert", specifier = ">=7.17.1" },
+    { name = "networkx", specifier = ">=3.6.1" },
+    { name = "numpy", specifier = ">=2.5.1" },
+    { name = "pandas", specifier = ">=3.0.5" },
+    { name = "pre-commit", specifier = ">=4.6.1" },
+    { name = "psycopg2-binary", specifier = ">=2.9.12" },
+    { name = "pulp", specifier = ">=3.3.2" },
+    { name = "pyarrow", specifier = ">=25.0.0" },
+    { name = "pydantic", specifier = ">=2.13.4" },
+    { name = "pydantic-settings", specifier = ">=2.14.2" },
+    { name = "pytest", specifier = ">=9.1.1" },
+    { name = "pytest-cov", specifier = ">=7.1.0" },
+    { name = "pytest-mock", specifier = ">=3.15.1" },
+    { name = "ruff", specifier = ">=0.16.1" },
+    { name = "scikit-learn", specifier = ">=1.9.0" },
+    { name = "sqlglot", specifier = ">=30.16.0" },
+    { name = "types-pyyaml", specifier = ">=6.0.12.20260724" },
+]
+
+[[package]]
 name = "scikit-learn"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4226,65 +4285,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/8e/f1/d0a4c936ba77eb1050da6ea5e7cd80aa36add343d9e5f7f9cf79a206c5b8/wirerope-1.0.0.tar.gz", hash = "sha256:7da8bb6feeff9dd939bd7141ef0dc392674e43ba662e20909d6729db81a7c8d0", size = 10930, upload-time = "2025-01-16T11:01:25.427Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/42/2d/3557ee32d8268b04ce8aada3212b0d49f2ddcf86dc200f3999a772262dc5/wirerope-1.0.0-py2.py3-none-any.whl", hash = "sha256:59346555c7b5dbd1c683a4e123f8bed30ca99df646f6867ea6439ceabf43c2f6", size = 9166, upload-time = "2025-01-16T11:01:23.507Z" },
-]
-
-[[package]]
-name = "workspace"
-version = "0.1.0"
-source = { editable = "." }
-
-[package.dev-dependencies]
-dev = [
-    { name = "apache-airflow" },
-    { name = "dotenv" },
-    { name = "jupyter" },
-    { name = "matplotlib" },
-    { name = "mypy" },
-    { name = "nbconvert" },
-    { name = "networkx" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "pre-commit" },
-    { name = "psycopg2-binary" },
-    { name = "pulp" },
-    { name = "pyarrow" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "pytest-mock" },
-    { name = "ruff" },
-    { name = "scikit-learn" },
-    { name = "sqlglot" },
-    { name = "types-pyyaml" },
-]
-
-[package.metadata]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "apache-airflow", specifier = "==2.10.3" },
-    { name = "dotenv", specifier = ">=0.9.9" },
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "matplotlib", specifier = ">=3.11.1" },
-    { name = "mypy", specifier = ">=2.3.0" },
-    { name = "nbconvert", specifier = ">=7.17.1" },
-    { name = "networkx", specifier = ">=3.6.1" },
-    { name = "numpy", specifier = ">=2.5.1" },
-    { name = "pandas", specifier = ">=3.0.5" },
-    { name = "pre-commit", specifier = ">=4.6.1" },
-    { name = "psycopg2-binary", specifier = ">=2.9.12" },
-    { name = "pulp", specifier = ">=3.3.2" },
-    { name = "pyarrow", specifier = ">=25.0.0" },
-    { name = "pydantic", specifier = ">=2.13.4" },
-    { name = "pydantic-settings", specifier = ">=2.14.2" },
-    { name = "pytest", specifier = ">=9.1.1" },
-    { name = "pytest-cov", specifier = ">=7.1.0" },
-    { name = "pytest-mock", specifier = ">=3.15.1" },
-    { name = "ruff", specifier = ">=0.16.1" },
-    { name = "scikit-learn", specifier = ">=1.9.0" },
-    { name = "sqlglot", specifier = ">=30.16.0" },
-    { name = "types-pyyaml", specifier = ">=6.0.12.20260724" },
 ]
 
 [[package]]

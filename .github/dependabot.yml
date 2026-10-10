@@ -19,7 +19,7 @@ updates:
   - package-ecosystem: "docker-compose"
     directories:
       - "/"
-      - "/src/workspace/airflow"
+      - "/playground/airflow"
     schedule:
       interval: "weekly"
       day: "monday"

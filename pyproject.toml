@@ -1,14 +1,16 @@
 [project]
-name = "workspace"
+name = "sandbox"
 version = "0.1.0"
-description = "workspace"
+description = "Just for learning."
 readme = "README.md"
+authors = [
+    { name = "lazy-skunk", email = "65598223+lazy-skunk@users.noreply.github.com" }
+]
 requires-python = ">=3.13"
 dependencies = []
 
-[build-system]
-requires = ["uv_build>=0.12.2,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
 
 [dependency-groups]
 dev = [
@@ -56,9 +58,8 @@ select = [
     "I",
     # mccabe
     "C90",
-    "UP",
     "PD",
-    "NPY"
+    "NPY",
 ]
 ignore = []
 fixable = ["ALL"]
@@ -71,6 +72,5 @@ ignore_missing_imports = true
 disallow_untyped_defs = true
 
 [tool.pytest.ini_options]
-addopts = "--cov=src --cov-config=.coveragerc --cov-report=html"
-pythonpath = ["src"]
+addopts = "--cov=playground --cov-config=.coveragerc --cov-report=html"
 testpaths = ["tests"]
