@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from pulp import LpMaximize, LpProblem, LpStatus, LpVariable, lpSum, value
+from pulp import LpMaximize, LpProblem, LpVariable, lpSum, value
 
 from playground.common.sandbox_logger import get_logger
 
@@ -34,7 +34,9 @@ def _build_problem(
 ) -> tuple[LpProblem, dict[str, LpVariable]]:
     problem = LpProblem("happiness_maximization", LpMaximize)
     quantities = {
-        name: LpVariable(f"quantity_{name}", lowBound=0, cat="Integer")
+        name: problem.add_variable(
+            f"quantity_{name}", lowBound=0, cat="Integer"
+        )
         for name in items
     }
     problem += lpSum(scores[name] * quantities[name] for name in items)
@@ -53,7 +55,10 @@ def _summarize_solution(
     total_price = 0.0
     total_happiness = 0.0
     for name in items:
-        count = int(value(quantities[name]))
+        quantity = value(quantities[name])
+        if quantity is None:
+            raise ValueError(f"No solution value for {name}")
+        count = int(quantity)
         price = items[name]["price"] * count
         happiness = scores[name] * count
 
@@ -73,9 +78,11 @@ def main() -> None:
     scores = _compute_scores(items, weights)
 
     problem, quantities = _build_problem(items, scores, budget)
-    problem.solve()
+    stats = problem.solve()
 
-    _logger.info(f"{LpStatus[problem.status]=}")
+    _logger.info(f"{stats.status_str=}")
+    if not stats.has_solution:
+        return
     total_price, total_happiness = _summarize_solution(
         items, scores, quantities
     )
