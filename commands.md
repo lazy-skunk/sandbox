@@ -2,7 +2,7 @@
 
 ```
 docker compose build --no-cache
-docker compose up --build --detach
+docker compose up --detach
 docker compose stop
 docker compose down --rmi all --volumes
 ```
