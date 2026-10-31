@@ -10,7 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
 
-      - uses: $/.github/actions/setup-python-env
+      - uses: astral-sh/setup-uv@v8.1.0
+
+      - run: uv sync --frozen
 
       - name: Run pytest
         run: uv run --frozen --no-sync pytest
