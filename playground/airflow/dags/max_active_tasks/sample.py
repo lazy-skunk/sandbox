@@ -1,7 +1,6 @@
 from time import sleep
 
-from airflow.decorators import dag, task
-from airflow.utils.task_group import TaskGroup
+from airflow.sdk import TaskGroup, dag, task
 
 
 @dag(
