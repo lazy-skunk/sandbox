@@ -1,8 +1,6 @@
-from airflow.decorators import dag, task, task_group
-from airflow.exceptions import AirflowFailException
-from airflow.models.param import Param
-from airflow.operators.empty import EmptyOperator
-from airflow.operators.python import get_current_context
+from airflow.providers.standard.operators.empty import EmptyOperator
+from airflow.sdk import Param, dag, get_current_context, task, task_group
+from airflow.sdk.exceptions import AirflowFailException
 
 
 @dag(

@@ -1,7 +1,6 @@
 import re
 
-from airflow.decorators import dag, task, task_group
-from airflow.operators.python import get_current_context
+from airflow.sdk import dag, get_current_context, task, task_group
 
 
 def get_normalized_run_id() -> str:

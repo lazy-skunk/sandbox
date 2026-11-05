@@ -1,44 +1,77 @@
-## Airflow 起動
+## Running Airflow in Docker
+
+https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
 
 ```bash
-# Download the docker-compose.yaml file
-curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.3/docker-compose.yaml'
+# Fetching docker-compose.yaml
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml'
 
-# Make expected directories and set an expected environment variable
-mkdir -p ./dags ./logs ./plugins
-echo "AIRFLOW_UID=$(id -u)" > .env
+# Setting the right Airflow user
+mkdir -p ./dags ./logs ./plugins ./config
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+
+# Initialize airflow.cfg (Optional)
+docker compose run airflow-cli airflow config list
 
 # Initialize the database
 docker compose up airflow-init
 
-# Start up all services
+# Running Airflow
 docker compose up
+
+# Cleaning up
+docker compose down --volumes --rmi all
 ```
 
-## DB 登録
+## Test database
 
+Paste below the `postgres` service in `docker-compose.yaml`:
+
+```yaml
+test-postgres:
+  image: postgres:16
+  environment:
+    POSTGRES_USER: airflow
+    POSTGRES_PASSWORD: airflow
+    POSTGRES_DB: airflow
+  volumes:
+    - test-postgres-db-volume:/var/lib/postgresql/data
+  healthcheck:
+    test: ["CMD", "pg_isready", "-U", "airflow"]
+    interval: 10s
+    retries: 5
+    start_period: 5s
+  restart: always
 ```
-docker compose -f playground/airflow/docker-compose.yaml \
-  exec airflow-webserver \
-  airflow connections add homomo_postgres \
+
+Add under the top-level `volumes`:
+
+```yaml
+volumes:
+  postgres-db-volume:
+  test-postgres-db-volume:
+```
+
+```bash
+docker compose exec airflow-apiserver \
+  airflow connections add test_postgres \
   --conn-type postgres \
-  --conn-host postgres \
+  --conn-host test-postgres \
   --conn-schema airflow \
   --conn-login airflow \
   --conn-password airflow \
   --conn-port 5432
 ```
 
-## DB 確認
+## Check the test database
 
-```
-docker compose -f playground/airflow/docker-compose.yaml \
-  exec postgres psql -U airflow -d airflow
+```bash
+docker compose exec test-postgres psql -U airflow -d airflow
 
 \dt
 ```
 
-## ログイン
+## Login
 
 http://localhost:8080/
 

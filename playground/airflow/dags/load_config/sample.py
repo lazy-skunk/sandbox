@@ -1,6 +1,6 @@
 from time import sleep
 
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 
 
 def load_config_function() -> dict[str, str]:
