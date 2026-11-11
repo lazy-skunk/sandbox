@@ -1,19 +1,19 @@
 from collections.abc import Generator
 from pathlib import Path
 
-import pandas as pd
+import polars as pl
 
 _BASE_DIR = Path(__file__).parent
 _DATA_DIR = _BASE_DIR / "data"
 
 
-def load_phonetic_dfs(directory: Path) -> Generator[pd.DataFrame]:
+def load_phonetic_dfs(directory: Path) -> Generator[pl.DataFrame]:
     csv_file_paths = directory.glob("*.csv")
 
     for csv_file_path in csv_file_paths:
-        phonetic_data = pd.read_csv(csv_file_path)
+        phonetic_data = pl.read_csv(csv_file_path, raise_if_empty=False)
 
-        if phonetic_data.empty:
+        if phonetic_data.is_empty():
             print("0件")
             continue
 
