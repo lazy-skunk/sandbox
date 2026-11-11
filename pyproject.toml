@@ -68,5 +68,6 @@ fixable = ["ALL"]
 max-complexity = 7
 
 [tool.pytest.ini_options]
+strict = true
 addopts = "--cov=playground --cov-config=.coveragerc --cov-branch --cov-report=html"
 testpaths = ["tests"]
