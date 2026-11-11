@@ -19,7 +19,7 @@ class PostgresSettings(BaseSettings):
 
 @lru_cache
 def load_postgres_settings() -> PostgresSettings:
-    return PostgresSettings()  # type: ignore
+    return PostgresSettings()
 
 
 settings = load_postgres_settings()

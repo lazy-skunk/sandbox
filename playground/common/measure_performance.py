@@ -304,7 +304,11 @@ def measure_performance[**Parameters, ReturnType](
             except BaseException:
                 after_process_snapshot = _capture_process_snapshot()
                 log_payload = _create_log_payload(
-                    function_to_wrap.__name__,
+                    getattr(
+                        function_to_wrap,
+                        "__name__",
+                        type(function_to_wrap).__name__,
+                    ),
                     "error",
                     before_process_snapshot,
                     after_process_snapshot,
@@ -318,7 +322,11 @@ def measure_performance[**Parameters, ReturnType](
             else:
                 after_process_snapshot = _capture_process_snapshot()
                 log_payload = _create_log_payload(
-                    function_to_wrap.__name__,
+                    getattr(
+                        function_to_wrap,
+                        "__name__",
+                        type(function_to_wrap).__name__,
+                    ),
                     "success",
                     before_process_snapshot,
                     after_process_snapshot,
