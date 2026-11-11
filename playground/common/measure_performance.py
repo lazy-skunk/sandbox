@@ -348,13 +348,13 @@ if __name__ == "__main__":  # pragma: no cover
     from tempfile import TemporaryDirectory
 
     import numpy as np
-    import pandas as pd
+    import polars as pl
 
     logging.basicConfig(level=logging.DEBUG)
 
     @measure_performance(enable_tracemalloc=True)
-    def test_function(rows: int = 500000) -> pd.DataFrame:
-        temp_df = pd.DataFrame(
+    def test_function(rows: int = 500000) -> pl.DataFrame:
+        temp_df = pl.DataFrame(
             {
                 "id": np.arange(rows, dtype=np.int64),
                 "value": np.linspace(0, 1, rows, dtype=np.float64),
@@ -362,9 +362,10 @@ if __name__ == "__main__":  # pragma: no cover
         )
         with TemporaryDirectory() as temp_dir:
             csv_path = Path(temp_dir) / "temp.csv"
-            temp_df.to_csv(csv_path, index=False)
-            return pd.read_csv(
-                csv_path, dtype={"id": "int64", "value": "float64"}
+            temp_df.write_csv(csv_path)
+            return pl.read_csv(
+                csv_path,
+                schema_overrides={"id": pl.Int64, "value": pl.Float64},
             )
 
     temp_df = test_function()
