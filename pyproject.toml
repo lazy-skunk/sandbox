@@ -33,7 +33,7 @@ dev = [
     "pytest>=9.2.0",
     "pytest-cov>=7.1.0",
     "pytest-mock>=3.17.0",
-    "ruff>=0.17.3",
+    "ruff>=0.17.4",
     "scikit-learn>=1.9.1",
     "sqlglot>=30.29.0",
     "types-pyyaml>=6.0.12.20260724",
@@ -70,3 +70,9 @@ max-complexity = 7
 [tool.pytest.ini_options]
 addopts = "--cov=playground --cov-config=.coveragerc --cov-report=html"
 testpaths = ["tests"]
+
+# Notebook cells display bare expressions and preserve long prose/examples.
+[tool.ruff.lint.per-file-ignores]
+"playground/anti_join/anti_join.py" = ["B018", "C901", "E501"]
+"playground/cosine_similarity/cosine_similarity.py" = ["B018", "C901", "E501"]
+"playground/union_find/union_find.py" = ["B018", "C901", "E501"]
