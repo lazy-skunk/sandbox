@@ -17,7 +17,6 @@ dev = [
     "apache-airflow==3.3.2",
     "dotenv>=0.9.9",
     "flask>=3.1,<4",
-    "fastexcel>=0.12",
     "marimo>=0.25.2,<1",
     "matplotlib>=3.11.2",
     "mcp>=1.26,<2",
@@ -38,7 +37,6 @@ dev = [
     "scikit-learn>=1.9.1",
     "sqlglot>=30.29.0",
     "types-pyyaml>=6.0.12.20260724",
-    "xlsxwriter>=3.2",
 ]
 
 [tool.ruff]
