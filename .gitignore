@@ -1,5 +1,6 @@
 *cache*
-.ipynb_checkpoints
 .coverage
 htmlcov
 log
+
+__marimo__/
