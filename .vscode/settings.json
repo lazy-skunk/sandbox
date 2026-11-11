@@ -9,16 +9,17 @@
     }
   },
   "python.testing.pytestEnabled": true,
-  "notebook.defaultFormatter": "charliermarsh.ruff",
-  "notebook.codeActionsOnSave": {
-    "source.fixAll.ruff": "never",
-    "source.organizeImports.ruff": "explicit"
-  },
-  "mypy-type-checker.args": ["--config-file=pyproject.toml"],
-  "python.analysis.include": ["playground/**/*", "tests/**/*"],
-  "python.analysis.exclude": ["**/node_modules", "**/__pycache__", "**/.*"],
+  "python.analysis.include": [
+    "playground/**/*",
+    "tests/**/*"
+  ],
+  "python.analysis.exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.*"
+  ],
   "files.exclude": {
     "**/*cache*": true,
-    "**/.ipynb_checkpoints": true
+    "**/__marimo__": true
   }
 }
