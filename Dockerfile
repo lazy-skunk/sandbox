@@ -1,4 +1,4 @@
-FROM python:3.15-slim
+FROM python:3.14-slim
 
 WORKDIR /workspace
 
@@ -11,11 +11,12 @@ ENV UV_PROJECT_ENVIRONMENT="/usr/local"
 RUN apt-get update && \
     apt-get install -y \
     git \
-    curl && \
+    curl \
+    zstd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen
+RUN uv sync --locked
