@@ -2936,9 +2936,7 @@ wheels = [
 name = "sandbox"
 version = "0.1.0"
 source = { virtual = "." }
-
-[package.dev-dependencies]
-dev = [
+dependencies = [
     { name = "apache-airflow" },
     { name = "dotenv" },
     { name = "flask" },
@@ -2948,26 +2946,28 @@ dev = [
     { name = "networkx" },
     { name = "numpy" },
     { name = "polars" },
-    { name = "pre-commit" },
     { name = "psycopg2-binary" },
     { name = "pulp", extra = ["cbc"] },
     { name = "pyarrow" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
+    { name = "scikit-learn" },
+    { name = "sqlglot" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "pytest-mock" },
     { name = "ruff" },
-    { name = "scikit-learn" },
-    { name = "sqlglot" },
     { name = "ty" },
     { name = "types-pyyaml" },
 ]
 
 [package.metadata]
-
-[package.metadata.requires-dev]
-dev = [
+requires-dist = [
     { name = "apache-airflow", specifier = "==3.3.2" },
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "flask", specifier = ">=3.1,<4" },
@@ -2977,18 +2977,22 @@ dev = [
     { name = "networkx", specifier = ">=3.6.1" },
     { name = "numpy", specifier = ">=2.5.3" },
     { name = "polars", specifier = ">=1.36,<2" },
-    { name = "pre-commit", specifier = ">=4.7.0" },
     { name = "psycopg2-binary", specifier = ">=2.9.12" },
     { name = "pulp", extras = ["cbc"], specifier = ">=4.2.0" },
     { name = "pyarrow", specifier = ">=26.0.1" },
     { name = "pydantic", specifier = ">=2.14.3" },
     { name = "pydantic-settings", specifier = ">=2.16.2" },
+    { name = "scikit-learn", specifier = ">=1.9.1" },
+    { name = "sqlglot", specifier = ">=30.29.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pre-commit", specifier = ">=4.7.0" },
     { name = "pytest", specifier = ">=9.2.0" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
     { name = "pytest-mock", specifier = ">=3.17.0" },
     { name = "ruff", specifier = ">=0.17.3" },
-    { name = "scikit-learn", specifier = ">=1.9.1" },
-    { name = "sqlglot", specifier = ">=30.29.0" },
     { name = "ty", specifier = ">=0.0.100" },
     { name = "types-pyyaml", specifier = ">=6.0.12.20260724" },
 ]
