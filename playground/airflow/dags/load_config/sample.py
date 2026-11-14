@@ -40,7 +40,8 @@ def build_load_config_sample_dag() -> None:
             print(key, value)
 
     config = load_config_task()
-    print_config(config)  # type: ignore[arg-type]
+    # Airflow resolves the XComArg to the returned dict at task execution time.
+    print_config(config)  # ty: ignore[invalid-argument-type]
 
 
 build_load_config_sample_dag()

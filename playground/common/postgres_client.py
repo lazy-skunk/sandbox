@@ -4,6 +4,7 @@ from types import TracebackType
 from typing import Self
 
 import psycopg2
+import psycopg2.extensions
 from psycopg2.extras import RealDictCursor, RealDictRow
 
 from playground.common.postgres_settings import (
