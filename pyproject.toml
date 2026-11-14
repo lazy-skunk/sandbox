@@ -38,7 +38,7 @@ dev = [
     "pytest-mock>=3.17.0",
     "ruff>=0.17.3",
     "ty>=0.0.100",
-    "types-pyyaml>=6.0.12.20260724",
+    "types-pyyaml>=6.0.12.20261111",
 ]
 
 [tool.ruff]
