@@ -3,8 +3,7 @@ services:
     build: .
     volumes:
       - .:/workspace
-    stdin_open: true
-    tty: true
+    command: sleep infinity
 
   postgres:
     image: postgres:latest
