@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCP 学習用</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@latest"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-background: var(--color-gray-100);
+      --color-foreground: var(--color-gray-900);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: var(--color-gray-900);
+        --color-foreground: var(--color-gray-100);
+      }
+    }
+  </style>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body class="bg-background text-foreground scheme-light-dark">
+  <main class="mx-auto grid max-w-[44rem] gap-6 p-6">
+    <h1 class="text-lg font-bold">MCP 学習用</h1>
+    <form id="chat-form" class="grid gap-2 rounded bg-foreground/3 p-4">
+      <label for="message">質問</label>
+      <textarea id="message" rows="3" maxlength="4000" required class="rounded bg-foreground/3 p-2 hover:bg-foreground/6 motion-safe:transition-colors">まだ買っていない食品は何？</textarea>
+      <button id="send" type="submit" class="justify-self-start rounded bg-foreground/3 px-4 py-2 enabled:cursor-pointer enabled:hover:bg-foreground/6 disabled:text-foreground/50 disabled:active:translate-y-0 motion-safe:transition motion-safe:active:translate-y-px">送信</button>
+      <p id="status" role="status" class="text-foreground/50"></p>
+    </form>
+
+    <section class="grid gap-2 rounded bg-foreground/3 p-4">
+      <h2 class="font-semibold">回答</h2>
+      <p id="answer" class="whitespace-pre-wrap wrap-anywhere"></p>
+    </section>
+
+    <section class="grid gap-2 rounded bg-foreground/3 p-4">
+      <h2 class="font-semibold">MCP 通信記録</h2>
+      <pre id="trace" class="whitespace-pre-wrap wrap-anywhere"></pre>
+    </section>
+
+    <section class="grid gap-2 rounded bg-foreground/3 p-4">
+      <h2 class="font-semibold">サンプルの買い物リスト</h2>
+      <table class="w-full overflow-hidden rounded bg-foreground/3 text-left">
+        <thead class="bg-foreground/3">
+          <tr>
+            <th scope="col" class="p-2 font-semibold">品目</th>
+            <th scope="col" class="p-2 font-semibold">カテゴリ</th>
+            <th scope="col" class="p-2 font-semibold">購入状況</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr class="even:bg-foreground/3">
+            <td class="p-2">{{ item.name }}</td>
+            <td class="p-2">{{ item.category }}</td>
+            <td class="p-2">{{ "購入済み" if item.purchased else "未購入" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

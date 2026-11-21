@@ -3,7 +3,24 @@ services:
     build: .
     volumes:
       - .:/workspace
+    environment:
+      OLLAMA_URL: http://ollama:11434
+      OLLAMA_MODEL: gemma4:e2b
+    ports:
+      - "127.0.0.1:8000:8000"
     command: sleep infinity
+
+  ollama:
+    image: ollama/ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    volumes:
+      - ollama_data:/root/.ollama
 
   postgres:
     image: postgres:latest
@@ -24,3 +41,4 @@ services:
 
 volumes:
   db_data:
+  ollama_data:
