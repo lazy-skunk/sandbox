@@ -65,6 +65,8 @@ select = [
     # mccabe
     "C90",
     "NPY",
+    "AIR",
+    "FAST"
 ]
 ignore = []
 fixable = ["ALL"]

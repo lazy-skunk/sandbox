@@ -17,6 +17,7 @@ def load_config_function() -> dict[str, str]:
 
 @dag(
     dag_id="LOAD_CONFIG",
+    schedule=None,
     tags=["homomo", "load_config"],
 )
 def build_load_config_sample_dag() -> None:

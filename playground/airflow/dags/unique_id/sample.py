@@ -12,6 +12,7 @@ def get_normalized_run_id() -> str:
 
 @dag(
     dag_id="UNIQUE_ID",
+    schedule=None,
     tags=["homomo", "unique_id"],
 )
 def build_unique_id_sample_dag() -> None:

@@ -11,6 +11,7 @@ from airflow.sdk import (
 
 @dag(
     dag_id="NONE_FAILED",
+    schedule=None,
     tags=["homomo", "TriggerRule"],
     params={
         "guest_count": Param(100, type="integer", minimum=0),
@@ -37,15 +38,15 @@ def build_none_failed_dag() -> None:
                 return regular_party.task_id
 
             choose_party_plan() >> [regular_party, too_many_guests]
-            none_failed = EmptyOperator(
+            join_after_guest_count_check = EmptyOperator(
                 task_id="join_after_guest_count_check",
                 trigger_rule=TriggerRule.NONE_FAILED,
             )
-            too_many_guests >> none_failed
+            too_many_guests >> join_after_guest_count_check
 
         guest_count_check = check_guest_count()
-        order_food = EmptyOperator(task_id="uber_eats")
-        do_something >> guest_count_check >> order_food
+        uber_eats = EmptyOperator(task_id="uber_eats")
+        do_something >> guest_count_check >> uber_eats
 
     @task_group()
     def hold_party() -> None:

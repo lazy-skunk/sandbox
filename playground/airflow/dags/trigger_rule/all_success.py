@@ -5,6 +5,7 @@ from airflow.sdk.exceptions import AirflowFailException
 
 @dag(
     dag_id="ALL_SUCCESS",
+    schedule=None,
     tags=["homomo", "TriggerRule"],
     params={
         "guest_count": Param(0, type="integer", minimum=0),
@@ -40,8 +41,8 @@ def build_all_success_dag() -> None:  # noqa: C901
             choose_party_plan() >> [no_guests, regular_party, too_many_guests]
 
         guest_count_check = check_guest_count()
-        order_food = EmptyOperator(task_id="uber_eats")
-        do_something >> guest_count_check >> order_food
+        uber_eats = EmptyOperator(task_id="uber_eats")
+        do_something >> guest_count_check >> uber_eats
 
     @task_group()
     def hold_party() -> None:

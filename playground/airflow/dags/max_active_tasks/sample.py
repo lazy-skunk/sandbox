@@ -5,6 +5,7 @@ from airflow.sdk import TaskGroup, dag, task
 
 @dag(
     dag_id="MAX_ACTIVE_TASKS",
+    schedule=None,
     tags=["homomo", "max_active_tasks"],
     max_active_tasks=2,
 )
